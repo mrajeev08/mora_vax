@@ -50,8 +50,8 @@ cov %>%
                            resighted = resighted),
          year = 2018, 
          cov_est = vacc/pop_est, 
-         cov_est_lower = vacc/(pop_est + CI), 
-         cov_est_upper = vacc/(pop_est - CI)) -> cov_commune_2018
+         cov_est_lower = vacc/(pop_est + pop_CI), 
+         cov_est_upper = vacc/(pop_est - pop_CI)) -> cov_commune_2018
 
 # 2019 coverage estimates
 vacc_2019 %>%
@@ -74,14 +74,37 @@ cov_commune %>%
   filter(!is.na(year)) -> map_cov
 st_geometry(map_cov) <- map_cov$geometry
 
-ggplot(map_cov) +
+
+# Map with midpoint
+fig1A <-
+  ggplot(map_cov) +
   geom_sf(fill = NA) + 
   stat_sf_coordinates(data = filter(map_cov, vacc != 0), 
-                      aes(size = sqrt(vacc)*0.25, fill = cov_est), 
-                      shape = 21, color = "grey") +
-  facet_wrap(~year) +
+                      aes(size = vacc, fill = cov_est, shape = factor(year)), 
+                      color = "#3D4849") +
+  facet_wrap(~year, ncol = 2) +
   theme_map() +
-  scale_size_identity()
+  theme(strip.text = element_text(face = "bold", hjust = 0.45)) +
+  scale_fill_distiller(name = "Cov.\n estimate", direction = 1) +
+  scale_shape_manual(values = c(21, 23), guide = "none") +
+  scale_size(name = "No. dogs\n vaccinated", 
+             breaks = c(50, 150, 400, 1000)) +
+  labs(tag = "A")
   
-# Plot with # & cov estimate (midpoint)
+
 # Plot with range
+fig1B <- 
+  ggplot(cov_commune) +
+  geom_pointrange(aes(x = commune, y = cov_est, ymin = cov_est_upper, 
+                      ymax = cov_est_lower, 
+                      shape = factor(year)), color = "#3D4849") +
+  scale_shape_manual(values = c(16, 18), name = "Year") +
+  labs(x = "Commune", y = "Coverage", tag = "B") +
+  ylim(c(0, 1)) +
+  theme_minimal_hgrid() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+fig1 <- (fig1A / fig1B) + plot_layout(heights = c(2, 1), guides = "collect")
+
+ggsave("figs/fig1.jpeg", height = 6, width = 7)
+                  
