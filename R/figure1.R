@@ -1,4 +1,4 @@
-# Make all figures
+# pkgs
 library(sf)
 library(dplyr)
 library(readr)
