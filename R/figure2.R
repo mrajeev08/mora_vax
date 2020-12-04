@@ -25,7 +25,7 @@ ggplot(costs) +
            position = position_dodge()) +
   labs(x = "Category", y = "Approximate cost (USD)", tag = "A") +
   scale_fill_brewer(palette = "Dark2", name = "Year") +
-  theme_minimal_hgrid() +
+  theme_minimal_hgrid(font_size = 12) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) -> fig2A
 
 # Figure 1B Cost per animal vaccinated
@@ -41,17 +41,18 @@ costs_per_animal %>%
   summarize(total = sum(cost_per_animal)) -> total_per_animal
 
 ggplot() +
-  geom_col(data =costs_per_animal, 
+  geom_col(data = costs_per_animal, 
            aes(x = factor(year), y = cost_per_animal, alpha = type, 
                fill = factor(year)), width = 0.5) +
   geom_text(data = total_per_animal, 
             aes(x = factor(year), y = total, label = format(total, digits = 3)), 
-            hjust = -0.05) +
+            hjust = -0.15) +
   scale_alpha_manual(values = c(0.75, 0.5), name = "Category") + 
   scale_fill_brewer(palette = "Dark2", name = "Year", guide = "none") +
   labs(x = "Year", y = "Cost per animal \n vaccinated (USD)", tag = "B") +
+  ylim(c(0, 3)) +
   coord_flip() +
-  theme_cowplot() + 
+  theme_cowplot(font_size = 12) + 
   theme(axis.line.y = element_blank()) -> fig2B
 
 # Figure 1C Willingness to pay
@@ -82,7 +83,7 @@ ggplot(willingness) +
             size = 1.25) +
   scale_linetype_manual(values = c(4, 2, 1), name = "") +
   labs(x = "Amount charged to owner (USD)", y = "Coverage", tag = "C") +
-  theme_minimal_hgrid() -> fig2C
+  theme_minimal_hgrid(font_size = 12) -> fig2C
 
 # Figure 1D cost recovery (given estimate for both years)
 cost_tradeoff <- function(charged, base_cost, cost_per_animal, nvacc, 
@@ -116,9 +117,9 @@ ggplot() +
   ylim(c(0, 5)) +
   xlim(c(0, 1.75)) +
   scale_color_brewer(palette = "Dark2", name = "Year") +
-  theme_minimal_grid() -> fig2D
+  theme_minimal_grid(font_size = 12) -> fig2D
 
 
 # arrange
 fig2 <- fig2A + fig2B + fig2C + fig2D 
-ggsave("figs/fig2.jpeg", height = 6, width = 8)
+ggsave("figs/fig2.jpeg", height = 8, width = 10)
