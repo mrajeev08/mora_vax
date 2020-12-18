@@ -1,0 +1,421 @@
+---
+title: "Demographic estimates from age data"
+author: "Malavika Rajeev"
+date: "12/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# pkgs
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(tidyr)
+library(patchwork)
+library(cowplot)
+
+```
+
+## Age data
+I have this age data from campaigns from 2018 & 2019 for doggoes in Moramanga District:
+
+```{r}
+# Age pyramid
+animals_age <- read_csv("animals_age.csv")
+
+animals_age %>%
+  mutate(Sex = toupper(Sex), age = floor(age_mos/12)) %>%
+  group_by(Sex, age) %>%
+  summarize(N  = n()) %>%
+  mutate(N = ifelse(Sex == "M", -N, N)) -> age_pyramid
+
+ggplot(age_pyramid, aes(x = age, y = N, fill = Sex)) +
+  geom_col() +
+  scale_y_continuous(breaks = c(seq(-600, -200, 200), seq(200, 600, 200)), 
+                     labels = c(seq(600, 200, -200), seq(200, 600, 200)), 
+                     limits = c(-600, 600)) +
+  coord_flip() +
+  labs(x = "Age in years", y = "Number of individuals")
+
+```
+
+Looks like fast growing & slightly sex biased population (standard free-roaming dog pop characteristics)
+
+## Annie's thesis
+
+I pulled from Annie's thesis to estimate growth/survival. Jess's original code:
+
+```{r}
+age_pyramid %>%
+  filter(!is.na(age) & !is.na(N)) %>%
+  mutate(age_class = case_when(age == 0 ~ 0, # < 1 yr olds
+                               age == 1 ~ 1, # 1 - 2 yr olds
+                               age > 1 & age < 5 ~ 2, # 2 - 5 yr olds
+                               age >= 5 ~ 3)) %>% # 5+ yr olds
+  group_by(age_class) %>%
+  summarize(N = sum(abs(N))) %>%
+  mutate(prop = N/sum(N)) -> n_by_age
+
+# Original model from Annie's thesis
+SS <- function(par, number.individuals) {
+  ## put chosen parameters into the matrix; and use exponential to
+  # ensure doesnt go negative
+  psurv <- exp(par[1:2])/(1+exp(par[1:2]))
+  ## make the matrix with this value of psurv
+  mat1 <- matrix(0,4,4)
+  mat1[1,1] <- psurv[1]*0 ## after one year, no one stays a baby
+  mat1[2,1] <- psurv[1]*1 ## every baby becomes juvenile
+  mat1[2,2] <- psurv[2]*0 ## no one stays a juvenile
+  mat1[3,2] <- psurv[2]*1 ## every juvenile becomes adult
+  mat1[3,3] <- psurv[2]*(1-1/3) ## 1-1/3 of them stay in that age
+  class
+  mat1[4,3] <- psurv[2]*1/3 ## 1/3 of them age up
+  mat1[4,4] <- psurv[2] ## surviving
+  ## add in the fertility
+  ## xxj note I've added another value - so I've said that in column 3,
+  # we have exp(par[3])*1,
+  ### and in column 4 we have exp(par[3])*a probabilty defined by
+  # par[4]. This is so it has to be smaller!
+    mat1[1,3:4] <- 1+exp(par[c(3)])*c(1,exp(par[4])/(1+exp(par[4])))
+  ## calculate what this does to the stable structure
+  prop.stable.struct.after.seed1 <-
+    Re(eigen(mat1)$vector[1:4,1])/sum(Re(eigen(mat1)$vector[1:4,1]))
+  ## get the sum of squares (measure of distance between observed and
+  # predicted, which we want to be as small as possible)
+  sum.of.squares <- sum((number.individuals[1:4]-
+                         prop.stable.struct.after.seed1*sum(number.individuals,na.rm=TRUE))^2)
+  ## put it back
+  return(sum.of.squares)
+}
+
+tmp <- optim(par=c(-0.5, -0.5, log(2.5), log(2.5)), fn = SS, 
+             number.individuals = n_by_age$N)
+
+## build matrix and predictions with these optimal results
+psurv <- exp(tmp$par[1:2])/(1+exp(tmp$par[1:2]))
+
+## make the matrix with this value of psurv
+mat1 <- matrix(0,4,4)
+mat1[2,1] <- psurv[1]*1 ## every baby becomes juvenile
+mat1[3,2] <- psurv[2]*1 ## every juvenile becomes adult
+mat1[3,3] <- psurv[2]*(1-1/3) ## 1-1/3 of them stay in that age class
+mat1[4,3] <- psurv[2]*1/3 ## 1/3 of them age up
+mat1[4,4] <- psurv[2] ## surviving
+p.reduce.fert.old <- exp(tmp$par[4])/(1+exp(tmp$par[4])) 
+mat1[1,3:4] <- 1+exp(tmp$par[3])*c(1,p.reduce.fert.old)
+
+## predict the size distribution
+optim.prop.stable.struct.after.seed <-
+  Re(eigen(mat1)$vector[1:4,1])/Re(sum(eigen(mat1)$vector[1:4,1]))
+
+## and add this one to the plot from before 
+plot(1:4, optim.prop.stable.struct.after.seed*sum(n_by_age$N, na.rm=TRUE),
+     type = "b", pch=19,
+     xlab="Age Stage", ylab="Number of Dogs", main="Canine Population",
+     ylim=range(c(0, n_by_age$N), na.rm=TRUE)) # predicted
+points(1:4, n_by_age$N[1:4], type="b", col="red") # observed
+
+## and this means, now you can figure out what the population growth
+Re(eigen(mat1)$value[1]) # growth rate = 1.35
+
+```
+
+## Adapted
+
+I adapted it to try and estimate pup survival and adult survival, and changed it so
+that all dogs > 12 mos. reproduce and fertility doesn't decline (which we think is
+how it works (ish) for dogs).
+
+In this case, should fertility be something like avg. litter size * avg. # of litters per yr * proportion pop female? Am I getting these units right?
+
+```{r}
+agemod1 <- function(par = c(psurv_pup = -1, 
+                            psurv_adult = -1),
+                    fert = 3, 
+                    n_per_age, type = "fit") {
+  
+  list2env(as.list(par), envir = environment())
+  
+  # transform parameters to [0, 1]
+  p1 <- exp(psurv_pup)/(1 + exp(psurv_pup))
+  p2 <- exp(psurv_adult)/(1 + exp(psurv_adult))
+
+  # make the Leslie matrix
+  lmat <- matrix(0, 4, 4)
+  lmat[2, 1] <- p2 # every surviving baby becomes juvenile
+  lmat[3, 2] <- p2 # every surviving juvenile becomes adult
+  lmat[3, 3] <- p2 * 2/3 # 2/3 of them stay in this age class (for years 1 & 2 in age bin)
+  lmat[4 ,3] <- p2 * 1/3 # 1/3 of them age up (after year 3 in age bin)
+  lmat[4, 4] <- p2  # surviving of final age class
+  
+  # add in the fertility (same for all adults, i.e. excluding puppies)
+  # this is pup survival * birthrate which is not actually identifiable
+  # so we look at an average litter size of fert & try and estimate pup survival
+  lmat[1, 2:4] <- fert * p1
+  
+  # calculate what this does to the stable structure
+  prop_stable <- Re(eigen(lmat)$vector[1:4, 1]) / sum(Re(eigen(lmat)$vector[1:4, 1]))
+ 
+  if(type == "pred") {
+    # predicted stable age
+    stable_age <- prop_stable*sum(n_per_age)
+    growth <- Re(eigen(lmat)$value[1])
+    return(list(stable_age = stable_age, growth = growth))
+  }
+  
+  if(type == "fit") {
+    # get the sum of squares (distance between observed and predicted prop in each age class)
+    sum_of_squares <- sum((n_per_age - prop_stable*sum(n_per_age))^2)
+    return(sum_of_squares)
+  }
+}
+
+exp_trans <- function(x) exp(x)/(1 + exp(x))
+
+age_ests <- optim(par = list(psurv_pup = -1, psurv_adult = 1),
+                  fert = 4,
+                  fn = agemod1, n_per_age = n_by_age$N)
+exp_trans(age_ests$par)
+preds <- agemod1(n_per_age = n_by_age$N, par = age_ests$par, type = "pred")
+plot(1:4, preds$stable_age,
+     type = "b", pch = 19,
+     xlab = "Age Stage", ylab = "Number of Dogs", main = "Canine Population",
+     ylim = range(c(0, n_by_age$N, preds$stable_age))) # predicted
+points(1:4, n_by_age$N[1:4], type="b", col="red") # observed
+
+preds$growth
+
+```
+
+
+## Sensitivity to initial parameter values
+
+Optim estimates are highly dependent on starting values:
+
+```{r}
+age_ests <- optim(par = list(psurv_pup = -1, psurv_adult = -1),
+                  fert = 4,
+                  fn = agemod1, n_per_age = n_by_age$N)
+exp_trans(age_ests$par)
+preds <- agemod1(n_per_age = n_by_age$N, par = age_ests$par, type = "pred")
+preds$growth
+
+age_ests <- optim(par = list(psurv_pup = -0.5, psurv_adult = -0.5),
+                  fert = 4,
+                  fn = agemod1, n_per_age = n_by_age$N)
+preds <- agemod1(n_per_age = n_by_age$N, par = age_ests$par, type = "pred")
+exp_trans(age_ests$par)
+preds$growth
+
+age_ests <- optim(par = list(psurv_pup = 1, psurv_adult = 1),
+                  fert = 4,
+                  fn = agemod1, n_per_age = n_by_age$N)
+preds <- agemod1(n_per_age = n_by_age$N, par = age_ests$par, type = "pred")
+exp_trans(age_ests$par)
+preds$growth
+
+```
+
+## Brute force 
+
+But if you brute force it, and just get SS across par values, 
+then there's a ridge along low pup survival vs. higher adult survival (which I guess makes sense), 
+and intermediate growth ( 1 - 1.5 %):
+
+```{r}
+ll_grid <- expand.grid(psurv_pup = seq(-2, 2, by = 0.1), 
+                       psurv_adult = seq(-2, 2, by = 0.1), 
+                       fert = seq(2, 5, by = 1))
+ll_grid %>%
+  rowwise() %>%
+  mutate(ss = agemod1(n_per_age = n_by_age$N, 
+                      par = c(psurv_pup = psurv_pup, 
+                              psurv_adult = psurv_adult),
+                      fert = fert, type = "fit"),
+         gr = agemod1(n_per_age = n_by_age$N, 
+                      par = c(psurv_pup = psurv_pup, 
+                              psurv_adult = psurv_adult),
+                      fert = fert, type = "pred")$growth) -> ll
+
+ggplot(data = ll) +
+  geom_tile(aes(x = factor(round(exp_trans(psurv_pup), 2)), 
+                y = factor(round(exp_trans(psurv_adult), 2)), 
+                fill = sqrt(ss))) +
+  facet_wrap(~ fert) +
+  scale_fill_gradient2(midpoint = median(sqrt(ll$ss)), name = "Sqrt SS") +
+  labs(x = "Annual survival probability - pups", 
+       y = "Annual survival probability - adults")
+
+ggplot(data = ll) +
+  geom_tile(aes(x = factor(round(exp_trans(psurv_pup), 2)), 
+                y = factor(round(exp_trans(psurv_adult), 2)), 
+                fill = gr)) +
+  facet_wrap(~ fert) +
+  scale_fill_gradient2(midpoint = 1, name = "Growth rate") + 
+  labs(x = "Annual survival probability - pups", 
+       y = "Annual survival probability - adults")
+
+```
+
+**How to present results? Use initial vals with lowest from brute forcing?**
+**Am I just asking too much from this data? I guess just fitting to four vals that could be explained by lots of combos of pars?**
+
+## Vax model
+
+Discrete time approximation:
+
+- Three years of vaccine immunity (discrete)
+- Different pup vs. adult survival
+- Different campaign strategies
+    - Campaign style (annual, target dogs of all ages, what we did in 2018)
+    - Puppy vaccination, continiously target newborn pups 
+    - Combined strategies
+```{r}
+
+# Need to track down an accounting issue where some revax get lost
+# but this is approximately right
+simvacc <- function(tmax, pup_surv, adult_surv, revacc, pup_cov, 
+                    campaign_cov, campaign_times, pup_month_vacc = 1,
+                    birthrate, S_adult_0, V_adult_0, 
+                    V_pup_0, S_pup_0) {
+  
+  # Set-up
+  V_adult <- matrix(0, nrow = 36, ncol = tmax)
+  S_adult <- rep(0, tmax)
+  V_pup <- S_pup <- matrix(0, nrow = 12, ncol = tmax)
+  
+  # Initalize
+  S_adult[1] <- S_adult_0
+  V_adult[1, 1] <- V_adult_0
+  V_pup[, 1] <- V_pup_0
+  S_pup[, 1] <- S_pup_0
+  
+  for(t in 2:tmax) {
+    
+    # Births (everyone first has babies and then dies)
+    births <- birthrate * (sum(V_adult[1:36, t - 1]) + S_adult[t - 1])
+    
+    # balance births (all to susceptibles)
+    S_pup[1, t] <- births # get replaced
+    
+    # Pup mortality
+    S_pup[2:12, t] <- S_pup[1:11, t - 1] * pup_surv
+    V_pup[2:12, t] <- V_pup[1:11, t - 1] * pup_surv
+    
+    # Balance the adults (ageing in 12 mo old pups)
+    S_adult[t] <- adult_surv * S_adult[t - 1] + pup_surv * S_pup[12, t - 1] 
+    
+    # pups to vaccinate (at age x)
+    pups_to_vacc <- ifelse(pup_month_vacc > 1, S_pup[pup_month_vacc, t], 
+                           births)
+    
+    # do puppy vaccination 
+    V_pup[pup_month_vacc, t] <- pups_to_vacc * pup_cov 
+    S_pup[pup_month_vacc, t] <- S_pup[pup_month_vacc, t] - pups_to_vacc * pup_cov 
+    
+    # Do the waning (adults only!)
+    V_adult[2:36, t] <- adult_surv * V_adult[1:35, t - 1]
+    S_adult[t] <- S_adult[t] + V_adult[36, t - 1] 
+    
+    # Vaccinate as part of campaign accounting for revax
+    cov_now <- ifelse(t %in% campaign_times, campaign_cov, 0)
+    camp_vacc_adult <- (S_adult[t] + revacc * sum(V_adult[, t])) * cov_now - revacc * sum(V_adult[, t])
+    camp_vacc_adult <- ifelse(camp_vacc_adult < 0, 0, camp_vacc_adult)
+    
+    # every vax is revaccinated with a certain revacc prob
+    if(camp_vacc_adult > 0) {
+      V_adult[1, t] <- camp_vacc_adult + revacc * sum(V_adult[, t])
+      V_adult[2:36, t] <- (1 - revacc) * V_adult[2:36, t]
+    } else {
+      V_adult[1, t] <- camp_vacc_adult # newly vaccinated
+    }
+    
+    # Balance addtl campaign vax adults
+    S_adult[t] <- S_adult[t] - camp_vacc_adult
+    
+    # Balance addtl campaign vax pups (assuming that no puppies are revax)
+    camp_vacc_pup <- S_pup[pup_month_vacc:12, t] * cov_now 
+    V_pup[pup_month_vacc:12, t] <- V_pup[pup_month_vacc:12, t] + camp_vacc_pup
+    S_pup[pup_month_vacc:12, t] <- S_pup[pup_month_vacc:12, t] - camp_vacc_pup
+    
+    # Add in surviving pups aging to adults so that they can wane appropriately
+    t_to_sub <- pup_month_vacc - 1
+    V_adult[13 - t_to_sub, t] <- V_adult[13, t] +  pup_surv * V_pup[12, t - 1]
+    
+  }
+  
+  V <- colSums(V_pup) + colSums(V_adult)
+  S <- colSums(S_pup) + S_adult
+  
+  return(list(S = S, V = V, V_adult = V_adult, V_pup = V_pup, 
+              S_adult = S_adult, S_pup = S_pup))
+  
+}
+
+```
+
+
+### Comparing campaigns vs. continuous pup vax
+```{r}
+age_ests <- optim(par = list(psurv_pup = -1, psurv_adult = 1),
+                  fert = 3,
+                  fn = agemod1, n_per_age = n_by_age$N)
+preds <- agemod1(n_per_age = n_by_age$N, par = age_ests$par, type = "pred")
+exp_trans(age_ests$par)
+preds$growth
+
+# annual survival probability to monthly
+surv <- as.list(exp_trans(age_ests$par)^(1/12))
+
+# proportion adults
+prop <- preds$stable_age/(sum(preds$stable_age))
+prop_adults <- 1 - prop[1]
+
+# for population of 1000
+# with campaigns only
+camp <- simvacc(tmax = 12*5, pup_surv = surv$psurv_pup, adult_surv = surv$psurv_adult, 
+        revacc = 1, 
+        pup_cov = 0, 
+        campaign_cov = 0.7, campaign_times = seq(12, 12*5, by = 12), 
+        pup_month_vacc = 1, 
+        birthrate = 3/12, # monthly birth rate
+        S_adult_0 = prop_adults*1000, 
+        S_pup_0 = rep(prop[1]/12, 12)*1000, V_adult_0 = 0, 
+        V_pup_0 = rep(0, 12))
+
+# with pup vacc only
+pup <- simvacc(tmax = 12*5, pup_surv = surv$psurv_pup, adult_surv = surv$psurv_adult, 
+        revacc = 1, 
+        pup_cov = 0.7, 
+        campaign_cov = 0, campaign_times = 0, 
+        pup_month_vacc = 3, 
+        birthrate = 3/12, # monthly birth rate
+        S_adult_0 = prop_adults*1000, 
+        S_pup_0 = rep(prop[1]/12, 12)*1000, V_adult_0 = 0, 
+        V_pup_0 = rep(0, 12))
+
+both <- simvacc(tmax = 12*5, pup_surv = surv$psurv_pup, adult_surv = surv$psurv_adult, 
+        revacc = 1, 
+        pup_cov = 0.7, 
+        campaign_cov = 0.7, campaign_times = seq(12, 12*5, by = 12), 
+        pup_month_vacc = 1, 
+        birthrate = 3/12, # monthly birth rate
+        S_adult_0 = prop_adults*1000, 
+        S_pup_0 = rep(prop[1]/12, 12)*1000, V_adult_0 = 0, 
+        V_pup_0 = rep(0, 12))
+
+vacc_comp <- bind_rows(tibble(month = 1:60, 
+                              cov = camp$V/(camp$S + camp$V), type = "Campaign"), 
+                       tibble(month = 1:60, 
+                              cov = pup$V/(pup$S + pup$V), type = "Puppy vax"), 
+                       tibble(month = 1:60,
+                              cov = both$V/(both$S + both$V), type = "Both"))
+
+ggplot(vacc_comp) +
+  geom_line(aes(x = month, y = cov, color = type)) +
+  geom_hline(yintercept = 0.7, linetype = 2, color = "grey")
+
+```
+

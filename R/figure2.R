@@ -1,3 +1,5 @@
+# Figure 2. Comparing costs and willingness to pay
+
 # pkgs
 library(dplyr)
 library(readr)
@@ -81,6 +83,7 @@ willing_to_pay %>%
 ggplot(willingness) +
   geom_line(aes(x = charged/3100, y = 0.6 - reduction*0.6, linetype = Commune), 
             size = 1.25) +
+  xlim(c(0, 3)) +
   scale_linetype_manual(values = c(4, 2, 1), name = "") +
   labs(x = "Amount charged to owner (USD)", y = "Coverage", tag = "C") +
   theme_minimal_hgrid(font_size = 12) -> fig2C
@@ -115,11 +118,11 @@ ggplot() +
              linetype = 2) +
   labs(x = "Amount charged (USD)", y = "Estimated cost per animal", tag = "D") +
   ylim(c(0, 5)) +
-  xlim(c(0, 1.75)) +
+  xlim(c(0, 3)) +
   scale_color_brewer(palette = "Dark2", name = "Year") +
   theme_minimal_grid(font_size = 12) -> fig2D
 
 
 # arrange
-fig2 <- fig2A + fig2B + fig2C + fig2D 
+fig2 <- fig2A + fig2C + fig2B + fig2D 
 ggsave("figs/fig2.jpeg", height = 8, width = 10)
