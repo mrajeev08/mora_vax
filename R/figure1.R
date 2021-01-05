@@ -32,7 +32,6 @@ bn_ci <- function(resighted, sighted_total) {
 mora_communes <- st_read("data/shapefile/mora_communes.shp")
 vacc_2018 <- read_csv("data/animal_2018.csv")
 vacc_2019 <- read_csv("data/campaign_2019.csv")
-vacc_pts_2018 <- read_csv("data/campaign_pts_2018.csv")
 
 # Coverage estimates based on transects
 transects <- read_csv("data/transects_2018.csv")
@@ -54,10 +53,6 @@ transects %>%
   mutate(commune = ifelse(Location == "Andasibe", "Andasibe", 
                           "Moramanga"), 
          bn_ci(resighted, sighted_total)) -> cov
-
-cov %>%
-  left_join(vacc_pts_2018) %>%
-  filter(commune == "Moramanga") -> cov_pts
 
 # @ commune level
 cov %>%
@@ -123,35 +118,26 @@ fig1A <-
   north(data = map_cov, anchor = c(x = 48.5, y = -18.2), symbol = 9) +
   scalebar(
     data = map_cov, dist = 10, dist_unit = "km",
-    transform = TRUE, model = "WGS84", anchor = c(x = 48.5, y = -19.4),
-    height = 0.01, angle = 45, hjust = 1, st.size = 3, facet.var = "year", 
-    facet.lev = 2019
+    transform = TRUE, model = "WGS84", anchor = c(x = 48.7, y = -18.2),
+    height = 0.009, angle = 45, hjust = 1, st.size = 2, facet.var = "year", 
+    facet.lev = 2019, border.size = 0.5
   ) 
 
 # fig1A inset
-mada_out <- st_read("data-raw/mada_communes/mdg_admbnda_adm3_BNGRC_OCHA_20181031.shp")
-mada_out %>%
-  mutate(dist = ifelse(ADM2_EN == "Moramanga", TRUE, FALSE)) %>%
-  group_by(dist) %>%
-  summarize() %>%
-  st_simplify() -> mada_out
+mada_out <- st_read("data/shapefile/mada_districts_simple.shp")
+mora_plot <- st_union(filter(mada_out, district == "Moramanga"))
+mada_plot <- st_union(mada_out)
 
 map_inset <- ggplot() +
-  geom_sf(data = mada_out, aes(fill = factor(dist)), color = NA) +
-  scale_fill_manual(values = c("darkgrey", "white"), guide = "none") + 
-  theme_map() 
+  geom_sf(data = mada_plot, fill = "grey50", alpha = 0.5) +
+  geom_sf(data = mora_plot, fill = "white") +
+  theme_map() +
+  theme(panel.border = element_rect(color = "black", fill = NA))
 
-# fig1A outset
-map_outset <- ggplot() +
-  ggplot(filter(map_cov, commune == "Moramanga")) +
-  geom_sf(fill = NA) + 
-  geom_point(data = cov_pts, 
-             aes(x = Long, y = Lat, size = vacc, fill = cov_est), 
-             color = "#3D4849", shape = 21) +
-  scale_fill_distiller(name = "Cov.\n estimate", direction = 1) +
-  theme_map()
-
-# patchwork them together
+# Final figure 1 formatted for pos
+layout_A <- fig1A + inset_element(map_inset, left = 0, right = 0.2,
+                                  top = 0.9, bottom = 0.5, on_top = TRUE, 
+                                  align_to = "full")
 
 # Plot with range
 fig1B <- 
@@ -161,14 +147,16 @@ fig1B <-
                       ymax = scales::squish(cov_est_upper, c(0, 1)), 
                       shape = type, color = factor(year)), 
                   position = position_dodge(width = 0.2)) +
-  scale_shape_manual(values = c(16, 18), name = "Year") +
+  scale_shape_manual(values = c(16, 18), name = "Estimate type", 
+                     labels = c("HDR", "Transect")) +
   scale_color_brewer(palette = "Dark2", name = "Year") +
+  scale_size_identity() +
   labs(x = "Commune", y = "Coverage", tag = "B") +
   ylim(c(0, 1)) +
   theme_minimal_hgrid() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-fig1 <- (fig1A / fig1B) + plot_layout(heights = c(2, 1), guides = "collect")
+fig1 <- (layout_A / fig1B) + plot_layout(heights = c(2, 1), guides = "collect")
 
 ggsave("figs/fig1.jpeg", height = 6, width = 7)
                   
