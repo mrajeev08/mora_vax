@@ -15,6 +15,7 @@ library(ggplot2)
 library(tidyr)
 library(patchwork)
 library(cowplot)
+library(here)
 
 ```
 
@@ -23,7 +24,7 @@ I have this age data from campaigns from 2018 & 2019 for doggoes in Moramanga Di
 
 ```{r}
 # Age pyramid
-animals_age <- read_csv("animals_age.csv")
+animals_age <- read_csv(here("qs_for_jess/animals_age.csv"))
 
 animals_age %>%
   mutate(Sex = toupper(Sex), age = floor(age_mos/12)) %>%
@@ -131,6 +132,7 @@ how it works (ish) for dogs).
 In this case, should fertility be something like avg. litter size * avg. # of litters per yr * proportion pop female? Am I getting these units right?
 
 ```{r}
+# constraining growth
 agemod1 <- function(par = c(psurv_pup = -1, 
                             psurv_adult = -1),
                     fert = 3, 
@@ -292,13 +294,19 @@ simvacc <- function(tmax, pup_surv, adult_surv, revacc, pup_cov,
   V_pup[, 1] <- V_pup_0
   S_pup[, 1] <- S_pup_0
   
+  # Order of steps:
+  # 1. all adults have babies (S + V)
+  # 2. survival probabilities are applies to everyone
+  # 3. Surviving vaccinated indiviudals immunity wanes
+  # 4. Then new vax and revax happends
+  
   for(t in 2:tmax) {
     
     # Births (everyone first has babies and then dies)
     births <- birthrate * (sum(V_adult[1:36, t - 1]) + S_adult[t - 1])
     
-    # balance births (all to susceptibles)
-    S_pup[1, t] <- births # get replaced
+    # balance births (all surviving to susceptibles)
+    S_pup[1, t] <- births
     
     # Pup mortality
     S_pup[2:12, t] <- S_pup[1:11, t - 1] * pup_surv
@@ -312,6 +320,7 @@ simvacc <- function(tmax, pup_surv, adult_surv, revacc, pup_cov,
                            births)
     
     # do puppy vaccination 
+    # CHECK: this should be additive no? Or is it always zero? Yes because no vaccs at t yet! Unless others have been vaccinated in campaign?
     V_pup[pup_month_vacc, t] <- pups_to_vacc * pup_cov 
     S_pup[pup_month_vacc, t] <- S_pup[pup_month_vacc, t] - pups_to_vacc * pup_cov 
     
@@ -319,30 +328,51 @@ simvacc <- function(tmax, pup_surv, adult_surv, revacc, pup_cov,
     V_adult[2:36, t] <- adult_surv * V_adult[1:35, t - 1]
     S_adult[t] <- S_adult[t] + V_adult[36, t - 1] 
     
-    # Vaccinate as part of campaign accounting for revax
+    # Campaign vaccination of adults accounting for revaccination --------------
+    
+    # Do the waning (adults only)
+    V_adult[2:36, t] <- adult_surv * V_adult[1:35, t - 1]
+    # After applying survival probabilities
+    S_adult[t] <- S_adult[t] + V_adult[36, t - 1] 
+    
+    # Coverage now
     cov_now <- ifelse(t %in% campaign_times, campaign_cov, 0)
-    camp_vacc_adult <- (S_adult[t] + revacc * sum(V_adult[, t])) * cov_now - revacc * sum(V_adult[, t])
-    camp_vacc_adult <- ifelse(camp_vacc_adult < 0, 0, camp_vacc_adult)
     
-    # every vax is revaccinated with a certain revacc prob
-    if(camp_vacc_adult > 0) {
-      V_adult[1, t] <- camp_vacc_adult + revacc * sum(V_adult[, t])
-      V_adult[2:36, t] <- (1 - revacc) * V_adult[2:36, t]
-    } else {
-      V_adult[1, t] <- camp_vacc_adult # newly vaccinated
-    }
+    # First get the number of currently vaccinated doggoes that are revaccinated
+    # Assume that these are distributed evenly across the waning continuum 
+    # i.e. same prop across V_adult[, t]
+    total_vax_adult <- cov_now * (S_adult[t] + sum(V_adult[, t]))
+    revax_adult <- sum(revacc * V_adult[, t])
     
-    # Balance addtl campaign vax adults
-    S_adult[t] <- S_adult[t] - camp_vacc_adult
+    # constrain new vaccination by preferentially revaccinating already vaxed adults
+    new_vax_adult <- ifelse(revax_adult > total_vax_adult, 0, total_vax_adult - revax_adult)
     
-    # Balance addtl campaign vax pups (assuming that no puppies are revax)
+    # constrain revaccination so it cannot exceed coverage level
+    # if greater than total_vax_adult, then adjusted coverage should be total_vax_adult/revac_adult
+    # to adjust to total expected vaccinations
+    adj_cov <- ifelse(revax_adult > total_vax_adult, 
+                      total_vax_adult/revax_adult * V_adult[, t], cov_now * V_adult[, t])
+    
+    # subtract these from currently vaccinated adults 
+    V_adult[2:36, t] <- V_adult[2:36, t] - adj_cov
+    
+    # and move them into the first waning step along with the newly vaccinated
+    V_adult[1, t] <- sum(adj_cov) + new_vax_adult
+    
+    # Balance the susceptibles as well (subtract newly vaccinated)
+    S_adult[t] <- S_adult[t] - new_vax_adult
+    
+    # Do the same vax steps for pups
+    # But assuming that puppies aren't revaccinated
     camp_vacc_pup <- S_pup[pup_month_vacc:12, t] * cov_now 
     V_pup[pup_month_vacc:12, t] <- V_pup[pup_month_vacc:12, t] + camp_vacc_pup
     S_pup[pup_month_vacc:12, t] <- S_pup[pup_month_vacc:12, t] - camp_vacc_pup
     
     # Add in surviving pups aging to adults so that they can wane appropriately
-    t_to_sub <- pup_month_vacc - 1
-    V_adult[13 - t_to_sub, t] <- V_adult[13, t] +  pup_surv * V_pup[12, t - 1]
+    # for example if vaccinated at three months, will enter adulthood at waning stage of 10 months
+    # i.e. having spent 9 mos. vaccinated!
+    v_to_sub <- 13 - pup_month_vacc
+    V_adult[v_to_sub, t] <- V_adult[v_to_sub, t] +  pup_surv * V_pup[12, t - 1]
     
   }
   
@@ -375,42 +405,43 @@ prop_adults <- 1 - prop[1]
 
 # for population of 1000
 # with campaigns only
-camp <- simvacc(tmax = 12*5, pup_surv = surv$psurv_pup, adult_surv = surv$psurv_adult, 
-        revacc = 1, 
-        pup_cov = 0, 
-        campaign_cov = 0.7, campaign_times = seq(12, 12*5, by = 12), 
-        pup_month_vacc = 1, 
-        birthrate = 3/12, # monthly birth rate
-        S_adult_0 = prop_adults*1000, 
-        S_pup_0 = rep(prop[1]/12, 12)*1000, V_adult_0 = 0, 
-        V_pup_0 = rep(0, 12))
+camp <- simvacc(tmax = 12*10, pup_surv = surv$psurv_pup, adult_surv = surv$psurv_adult, 
+                revacc = 1, 
+                pup_cov = 0, 
+                campaign_cov = 0.7, campaign_times = seq(12, 12*10, by = 12), 
+                pup_month_vacc = 1, 
+                birthrate = 3/12, # monthly birth rate
+                S_adult_0 = prop_adults*1000, 
+                S_pup_0 = rep(prop[1]/12, 12)*1000, V_adult_0 = 0, 
+                V_pup_0 = rep(0, 12))
 
 # with pup vacc only
-pup <- simvacc(tmax = 12*5, pup_surv = surv$psurv_pup, adult_surv = surv$psurv_adult, 
-        revacc = 1, 
-        pup_cov = 0.7, 
-        campaign_cov = 0, campaign_times = 0, 
-        pup_month_vacc = 3, 
-        birthrate = 3/12, # monthly birth rate
-        S_adult_0 = prop_adults*1000, 
-        S_pup_0 = rep(prop[1]/12, 12)*1000, V_adult_0 = 0, 
-        V_pup_0 = rep(0, 12))
+pup <- simvacc(tmax = 12*10, pup_surv = surv$psurv_pup, adult_surv = surv$psurv_adult, 
+               revacc = 1, 
+               pup_cov = 0.7, 
+               campaign_cov = 0, campaign_times = 0, 
+               pup_month_vacc = 3, 
+               birthrate = 3/12, # monthly birth rate
+               S_adult_0 = prop_adults*1000, 
+               S_pup_0 = rep(prop[1]/12, 12)*1000, V_adult_0 = 0, 
+               V_pup_0 = rep(0, 12))
 
-both <- simvacc(tmax = 12*5, pup_surv = surv$psurv_pup, adult_surv = surv$psurv_adult, 
-        revacc = 1, 
-        pup_cov = 0.7, 
-        campaign_cov = 0.7, campaign_times = seq(12, 12*5, by = 12), 
-        pup_month_vacc = 1, 
-        birthrate = 3/12, # monthly birth rate
-        S_adult_0 = prop_adults*1000, 
-        S_pup_0 = rep(prop[1]/12, 12)*1000, V_adult_0 = 0, 
-        V_pup_0 = rep(0, 12))
+both <- simvacc(tmax = 12*10, pup_surv = surv$psurv_pup, adult_surv = surv$psurv_adult, 
+                revacc = 1, 
+                pup_cov = 0.7, 
+                campaign_cov = 0.7, 
+                campaign_times = seq(12, 12*10, by = 12), 
+                pup_month_vacc = 1, 
+                birthrate = 3/12, # monthly birth rate
+                S_adult_0 = prop_adults*1000, 
+                S_pup_0 = rep(prop[1]/12, 12)*1000, V_adult_0 = 0, 
+                V_pup_0 = rep(0, 12))
 
-vacc_comp <- bind_rows(tibble(month = 1:60, 
+vacc_comp <- bind_rows(tibble(month = 1:120, 
                               cov = camp$V/(camp$S + camp$V), type = "Campaign"), 
-                       tibble(month = 1:60, 
+                       tibble(month = 1:120, 
                               cov = pup$V/(pup$S + pup$V), type = "Puppy vax"), 
-                       tibble(month = 1:60,
+                       tibble(month = 1:120,
                               cov = both$V/(both$S + both$V), type = "Both"))
 
 ggplot(vacc_comp) +
