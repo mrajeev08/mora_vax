@@ -31,6 +31,14 @@ exp_trans <- function(x) {
   exp(x)/(1 + exp(x))
 }
 
+apply_trans <- function(par, par_trans) {
+  for(i in 1:length(par)) {
+    par[i] <- par_trans[[i]](par[i])
+  }
+  return(par)
+}
+
+
 # First thing to try
 # estimating fertility and backing out pup survival given litter sizes
 # constraining fertility to be greater than 1 (1 + fert) vs not constrained
@@ -46,10 +54,7 @@ les_mat <- function(n_classes = 5, years_in_class = c(1, 1, 1, 2, 1),
                     trans_probs = c("p2", "p2", "p2", "p2", "p2"), 
                     type = "ss") {
   
-  
-  for(i in 1:length(par)) {
-    par[i] <- par_trans[[i]](par[i])
-  }
+  par <- apply_trans(par, par_trans)
   
   list2env(as.list(par), envir = environment())
   

@@ -1,5 +1,4 @@
 # Figure 3. Demography and vax
-
 # pkgs
 library(dplyr)
 library(readr)
@@ -7,88 +6,81 @@ library(ggplot2)
 library(tidyr)
 library(patchwork)
 library(cowplot)
-library(bbmle)
 
-# animals
-animals_2018 <- read_csv("data/animal_2018.csv")
-animals_2019 <- read_csv("data/campaign_2019.csv")
+# bring in data
+animals_age <- read_csv("out/animals_age.csv")
 
-# filter to dogs
-animals_2018 %>%
-  filter(Species == "A") %>%
-  mutate(year = 2018, 
-         AgeMonths = replace_na(AgeMonths, 0), 
-         AgeYears = replace_na(AgeYears, 0), 
-         age_mos = AgeYears*12 + AgeMonths) %>%
-  mutate(age_mos = ifelse(age_mos == 0, NA, age_mos)) %>%
-  select(Fokontany, Commune, Date, age_mos, year, Sex) -> animals_age
-
-animals_2019 %>%
-  filter(`Dog or Cat` == "dog") %>%
-  select(Date, age_mos = `Age (months)`, Commune, Fokontany = `Owner Location`, 
-         Sex) %>%
-  mutate(year = 2019) %>%
-  bind_rows(animals_age) -> animals_age
-
-# histogram of ages
-ggplot(animals_age) +
-  geom_histogram(aes(x = age_mos)) +
-  facet_wrap(~year)
-
+# A original age pyramid
 animals_age %>%
   mutate(Sex = toupper(Sex), age = floor(age_mos/12)) %>%
   group_by(Sex, age) %>%
   summarize(N  = n()) %>%
   mutate(N = ifelse(Sex == "M", -N, N)) -> age_pyramid
 
-ggplot(age_pyramid, aes(x = age, y = N, fill = Sex)) +
+pyramid_A <- 
+  ggplot(age_pyramid, aes(x = age, y = N, fill = Sex)) +
   geom_col() +
   scale_y_continuous(breaks = c(seq(-600, -200, 200), seq(200, 600, 200)), 
                      labels = c(seq(600, 200, -200), seq(200, 600, 200)), 
                      limits = c(-600, 600)) +
   coord_flip() +
-  labs(x = "Age in years", y = "Number of individuals")
+  scale_fill_manual(values = c("#6f50a1", "#0d6d64")) +
+  labs(x = "Age in years", y = "Number of individuals", tag = "A") +
+  theme_minimal_hgrid(font_size = 12)
 
-age_pyramid %>%
-  filter(!is.na(age) & !is.na(N)) %>%
-  mutate(age_class = case_when(age == 0 ~ 0, 
-                               age == 1 ~ 1, 
-                               age > 1 & age < 5 ~ 2, 
-                               age >= 5 ~ 3)) %>%
-  group_by(age_class) %>%
-  summarize(N = sum(abs(N))) %>%
-  mutate(prop = N/sum(N)) -> n_by_age
-  
-age_ests <- optim(par = list(psurv_pup = -2, psurv_adult = 1),
-                  fert = 3,
-                  fn = agemod2, n_per_age = n_by_age$N,
-                  method = "L-BFGS-B")
-exp(age_ests$par[c("psurv_pup", "psurv_adult")])/(1 + exp(age_ests$par[c("psurv_pup", "psurv_adult")]))
-agemod2(n_per_age = n_by_age$N, par = age_ests$par, type = "pred")
+ggplot(dem_ests) +
+  geom_histogram(aes(x = growth, fill = pop_growth))
+ggplot(dem_ests) +
+  geom_histogram(aes(x = fert_est, fill = pop_growth)) 
+ggplot(dem_ests) + 
+  geom_histogram(aes(x = psurv_adult_est, fill = pop_growth)) 
 
-ll_grid <- expand.grid(psurv_pup = seq(-1, 1, by = 0.1), 
-                       psurv_adult = seq(-1, 1, by = 0.1), 
-                       fert = seq(2, 5, by = 1))
-ll_grid %>%
-  rowwise() %>%
-  mutate(ss = agemod1(n_per_age = n_by_age$N, 
-                      par = c(psurv_pup = psurv_pup, 
-                              psurv_adult = psurv_adult),
-                      fert = fert, type = "fit"),
-         gr = agemod1(n_per_age = n_by_age$N, 
-                      par = c(psurv_pup = psurv_pup, 
-                              psurv_adult = psurv_adult),
-                      fert = fert, type = "pred")$growth) -> ll
+par_est_B <-
+  ggplot(filter(dem_ests), 
+         aes(x = fert_est, y = psurv_adult_est, 
+             shape = pop_growth)) +
+  geom_point() +
+  scale_shape_manual(values = c(1, 16)) +
+  theme_minimal_hgrid(font_size = 12) +
+  labs(x = "Pup survival (annual prob)", 
+       y = "Adult survival (annual prob)", 
+       tag = "B", 
+       color = "Fertility", shape = "Estimated pop \n growth")
 
-ggplot(data = ll) +
-  geom_tile(aes(x = psurv_pup, y = psurv_adult, fill = sqrt(ss))) +
-  facet_wrap(~ fert) +
-  scale_fill_gradient2(midpoint = median(sqrt(ll$ss)))
+ggplot(filter(dem_ests, sim == 0), 
+       aes(x = 1 + exp(fert_est))) +
+  geom_histogram()
 
-ggplot(data = ll) +
-  geom_tile(aes(x = exp_trans(psurv_pup), 
-                y = exp_trans(psurv_adult), fill = gr)) +
-  facet_wrap(~ fert) +
-  scale_fill_gradient2(midpoint = 1) + 
-  labs(x = "Annual survival probability - pups", 
-       y = "Annual survival probability - adults")
+ggplot(filter(dem_ests, sim == 0), 
+       aes(x = psurv_adult_est)) +
+  geom_histogram()
+
+ggplot(filter(dem_ests, sim == 0, 
+              pop_growth == "Growing"), 
+       aes(x = psurv_pup_est)) +
+  geom_histogram()
+
+# summarize
+dem_ests %>% 
+  group_by(sim, growth) %>%
+  mutate(prop_data = stable_ages_data/sum(stable_ages_data), 
+         prop_est = stable_ages_est/sum(stable_ages_est)) %>%
+  select(prop_data, prop_est, growth, pop_growth, sim, age_class) %>%
+  pivot_longer(prop_data:prop_est, names_to = "type", values_to = "prop") -> ests_summ
+
+ggplot(ests_summ) +
+  geom_boxplot(aes(x = factor(age_class), y = prop, fill = type)) +
+  scale_fill_brewer(palette = "Accent")
+
+ggplot(ests_summ) +
+  geom_boxplot(aes(x = factor(age_class), y = prop, fill = type)) +
+  scale_fill_brewer(palette = "Accent")
+
+ggplot(ests_summ) +
+  geom_density(aes(x = prop, fill = type)) +
+  facet_wrap(~age_class) +
+  scale_fill_brewer(palette = "Accent")
+
+
+# Simulate vacc given these parameters and store in data frame
+# Plot as D
