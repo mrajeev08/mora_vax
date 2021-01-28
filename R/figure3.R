@@ -21,8 +21,8 @@ animals_age %>%
 pyramid_A <- 
   ggplot(age_pyramid, aes(x = age, y = N, fill = Sex)) +
   geom_col() +
-  scale_y_continuous(breaks = c(seq(-600, -200, 200), seq(200, 600, 200)), 
-                     labels = c(seq(600, 200, -200), seq(200, 600, 200)), 
+  scale_y_continuous(breaks = c(seq(-600, -200, 200), 0, seq(200, 600, 200)), 
+                     labels = c(seq(600, 200, -200), "", seq(200, 600, 200)), 
                      limits = c(-600, 600)) +
   coord_flip() +
   scale_fill_manual(values = c("#6f50a1", "#0d6d64")) +
@@ -42,33 +42,33 @@ stable_age_B <-
             alpha = 0.25) +
   scale_x_continuous(breaks = 1:4, 
                      labels = c("0 - 1", "1 - 2", "2 - 6", "6+")) +
-  scale_color_manual(values = c("red", "blue"), 
-                     labels = c("Bootstrapped data", "Model estimate"), 
+  scale_color_manual(values = c("navy", "lightblue"), 
+                     labels = c("Bootstrapped data", "Model estimates"), 
                      name = "") +
   labs(x = "Age class", y = "Proportion of \n population", tag = "B") +
   theme_minimal_hgrid(font_size = 12) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  guides(color = guide_legend(override.aes = list(size = 1.1, alpha = 1)))
+
   
 # C: par ests ---------------
-pups_per_dogyr <- 5 * 1 * 0.4 # from Annie's thesis & Anna's
 dem_ests %>%
-  mutate(psurv_pup_est = fert_est/pups_per_dogyr) %>%
-  select(fert_est, psurv_adult_est, psurv_pup_est,
+  select(fert_est, psurv_adult_est,
          growth, pop_growth) %>%
   distinct() %>%
-  pivot_longer(fert_est:psurv_pup_est, values_to = "estimate", 
+  pivot_longer(fert_est:psurv_adult_est, values_to = "estimate", 
                names_to = "par") -> dem_pars
 
 par_labs <- c("fert_est" = "Fertility", 
-              "psurv_adult_est" = "Adult survival", 
-              "psurv_pup_est" = "Pup survival")
+              "psurv_adult_est" = "Adult survival")
 
 par_ests_C <- 
   ggplot(dem_pars) +
   geom_histogram(aes(x = estimate, fill = pop_growth)) +
   facet_wrap(~par, 
              labeller = as_labeller(par_labs), scales = "free_x", 
-             ncol = 1) +
+             nrow = 1) +
+  scale_fill_manual(values = c("grey", "#d95f02")) +
   labs(x = "Parameter estimate", y = "Frequency", fill = "Pop growth", 
        tag = "C") +
   theme_minimal_hgrid(font_size = 12)
@@ -78,14 +78,24 @@ vacc_sims %>%
   group_by(type, month) %>%
   summarize(mean = mean(cov), max = max(cov), min = min(cov)) -> vacc_summs
   
-ggplot(vacc_summs) +
+vacc_plot_D <- 
+  ggplot(vacc_summs) +
   geom_ribbon(aes(x = month, ymin = min, ymax = max, fill = type), 
-              alpha = 0.75) +
+              alpha = 0.5) +
   geom_line(aes(x = month, y = mean, color = type)) +
   scale_x_continuous(breaks = seq(0, 12*10, 12), labels = 0:10) +
   scale_fill_brewer(aesthetics = c("color", "fill"), palette = "Accent", 
-                    labels = c("Combined", "Annual campaign", 
-                               "Continuous puppy \n vax"),
+                    labels = c("Combined", "Annual campaigns", 
+                               "Continuous \n puppy vax"),
                     name = "Campaign type") +
-  labs(x = "Year", y = "Vaccination coverage")
-
+  geom_hline(yintercept = 0.7, linetype = 2) +
+  ylim(c(0, 1)) +
+  labs(x = "Year", y = "Vaccination coverage", tag = "D") +
+  theme_minimal_hgrid(font_size = 12) +
+  guides(color = guide_legend(override.aes = list(size = 1.1)))
+  
+# Pull plot together ----------
+fig3_top <- pyramid_A  + stable_age_B + plot_layout(nrow = 1, guides = "collect") 
+fig3_bottom <- par_ests_C + vacc_plot_D + plot_layout(nrow = 1, guides = "collect")
+fig3 <- fig3_top / fig3_bottom
+ggsave("figs/fig3.jpeg", fig3, height = 7, width = 8)
