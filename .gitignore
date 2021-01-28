@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 renv
+.Rapp.history
+to_do
