@@ -6,7 +6,7 @@ library(dplyr)
 library(readr)
 library(here)
 library(tidyr)
-
+select <- dplyr::select
 source("R/dem_models.R")
 
 # animals
@@ -50,11 +50,11 @@ n_by_age$`0` <- original
 # Get expanded grid
 set.seed(1335)
 par_df <- data.frame(p1 = rnorm(100, mean = 0, sd = 1), 
-                     fert = rnorm(100, mean = 0, sd = 1))
+                     fert = rnorm(100, mean = 1, sd = 1))
 ll_grid <- expand_grid(par_df,  
                        age_data = 1:length(n_by_age))
 
-# parallelize this (otherwise it takes a while...)
+# parallelize this
 cl <- makeCluster(detectCores() - 1)
 registerDoParallel(cl)
 

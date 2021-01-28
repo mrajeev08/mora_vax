@@ -25,7 +25,8 @@ set.seed(1222)
 dem_ests_sim <- dem_ests_all[sample(nrow(dem_ests_all), 1000), ]
 
 # Average # of pups born to a dog each year = 4.9 pups * 1 / 0.4
-pups_per_dogyr <- 5 * 1 * 0.4 # from Annie's thesis & Anna's
+pups_per_dogyr <- c(4, 6) * 1 * 0.4 # from Annie's thesis & Anna's
+dem_ests_sim <- expand_grid(dem_ests_sim, pups_per_dogyr)
 
 # parallelize this (otherwise it takes a while...)
 cl <- makeCluster(detectCores() - 1)
@@ -41,7 +42,7 @@ vacc_sims <-
             prop_adult <- 1 - prop_pup
             
             # take the vals from optim and convert to adult survival
-            pup_surv <- (i$fert_est/pups_per_dogyr)^(1/12) # annual to monthly 
+            pup_surv <- (i$fert_est/i$pups_per_dogyr)^(1/12) # annual to monthly 
             adult_surv <- i$psurv_adult_est^(1/12)
             
             # with campaigns only
@@ -89,19 +90,19 @@ vacc_sims <-
             vacc_comp <- bind_rows(tibble(month = 1:120, 
                                           cov = camp$V/(camp$S + camp$V), 
                                           type = "Campaign", 
-                                          pups_per_dogyr, 
+                                          i$pups_per_dogyr, 
                                           pup_surv = pup_surv, 
                                           adult_surv = adult_surv), 
                                    tibble(month = 1:120, 
                                           cov = pup$V/(pup$S + pup$V), 
                                           type = "Puppy vax", 
-                                          pups_per_dogyr, 
+                                          i$pups_per_dogyr, 
                                           pup_surv = pup_surv, 
                                           adult_surv = adult_surv), 
                                    tibble(month = 1:120,
                                           cov = both$V/(both$S + both$V), 
                                           type = "Both", 
-                                          pups_per_dogyr, 
+                                          i$pups_per_dogyr, 
                                           pup_surv = pup_surv, 
                                           adult_surv = adult_surv))
             vacc_comp

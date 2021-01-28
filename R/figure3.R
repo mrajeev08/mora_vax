@@ -1,5 +1,4 @@
 # Figure 3. Demography and vax
-# pkgs
 library(dplyr)
 library(readr)
 library(ggplot2)
@@ -9,8 +8,10 @@ library(cowplot)
 
 # bring in data
 animals_age <- read_csv("out/animals_age.csv")
+dem_ests <- read_csv("out/dem_ests.csv")
+vacc_sims <- read_csv("out/vacc_sims.csv")
 
-# A original age pyramid
+# A: age pyramid ---------------
 animals_age %>%
   mutate(Sex = toupper(Sex), age = floor(age_mos/12)) %>%
   group_by(Sex, age) %>%
@@ -28,59 +29,63 @@ pyramid_A <-
   labs(x = "Age in years", y = "Number of individuals", tag = "A") +
   theme_minimal_hgrid(font_size = 12)
 
-ggplot(dem_ests) +
-  geom_histogram(aes(x = growth, fill = pop_growth))
-ggplot(dem_ests) +
-  geom_histogram(aes(x = fert_est, fill = pop_growth)) 
-ggplot(dem_ests) + 
-  geom_histogram(aes(x = psurv_adult_est, fill = pop_growth)) 
+# B: stable age distributions ---------------
+dem_ests %>%
+  select(sim, growth, age_class, prop_data, prop_est) %>%
+  pivot_longer(prop_data:prop_est, values_to = "prop") -> dem_props
 
-par_est_B <-
-  ggplot(filter(dem_ests), 
-         aes(x = fert_est, y = psurv_adult_est, 
-             shape = pop_growth)) +
-  geom_point() +
-  scale_shape_manual(values = c(1, 16)) +
+
+stable_age_B <- 
+  ggplot(dem_props) +
+  geom_line(aes(x = age_class, y = prop, group = interaction(sim, name), 
+                color = name), 
+            alpha = 0.25) +
+  scale_x_continuous(breaks = 1:4, 
+                     labels = c("0 - 1", "1 - 2", "2 - 6", "6+")) +
+  scale_color_manual(values = c("red", "blue"), 
+                     labels = c("Bootstrapped data", "Model estimate"), 
+                     name = "") +
+  labs(x = "Age class", y = "Proportion of \n population", tag = "B") +
   theme_minimal_hgrid(font_size = 12) +
-  labs(x = "Pup survival (annual prob)", 
-       y = "Adult survival (annual prob)", 
-       tag = "B", 
-       color = "Fertility", shape = "Estimated pop \n growth")
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+# C: par ests ---------------
+pups_per_dogyr <- 5 * 1 * 0.4 # from Annie's thesis & Anna's
+dem_ests %>%
+  mutate(psurv_pup_est = fert_est/pups_per_dogyr) %>%
+  select(fert_est, psurv_adult_est, psurv_pup_est,
+         growth, pop_growth) %>%
+  distinct() %>%
+  pivot_longer(fert_est:psurv_pup_est, values_to = "estimate", 
+               names_to = "par") -> dem_pars
 
-ggplot(filter(dem_ests, sim == 0), 
-       aes(x = 1 + exp(fert_est))) +
-  geom_histogram()
+par_labs <- c("fert_est" = "Fertility", 
+              "psurv_adult_est" = "Adult survival", 
+              "psurv_pup_est" = "Pup survival")
 
-ggplot(filter(dem_ests, sim == 0), 
-       aes(x = psurv_adult_est)) +
-  geom_histogram()
+par_ests_C <- 
+  ggplot(dem_pars) +
+  geom_histogram(aes(x = estimate, fill = pop_growth)) +
+  facet_wrap(~par, 
+             labeller = as_labeller(par_labs), scales = "free_x", 
+             ncol = 1) +
+  labs(x = "Parameter estimate", y = "Frequency", fill = "Pop growth", 
+       tag = "C") +
+  theme_minimal_hgrid(font_size = 12)
+  
+# D: vacc ests ---------------
+vacc_sims %>%
+  group_by(type, month) %>%
+  summarize(mean = mean(cov), max = max(cov), min = min(cov)) -> vacc_summs
+  
+ggplot(vacc_summs) +
+  geom_ribbon(aes(x = month, ymin = min, ymax = max, fill = type), 
+              alpha = 0.75) +
+  geom_line(aes(x = month, y = mean, color = type)) +
+  scale_x_continuous(breaks = seq(0, 12*10, 12), labels = 0:10) +
+  scale_fill_brewer(aesthetics = c("color", "fill"), palette = "Accent", 
+                    labels = c("Combined", "Annual campaign", 
+                               "Continuous puppy \n vax"),
+                    name = "Campaign type") +
+  labs(x = "Year", y = "Vaccination coverage")
 
-ggplot(filter(dem_ests, sim == 0, 
-              pop_growth == "Growing"), 
-       aes(x = psurv_pup_est)) +
-  geom_histogram()
-
-# summarize
-dem_ests %>% 
-  group_by(sim, growth) %>%
-  mutate(prop_data = stable_ages_data/sum(stable_ages_data), 
-         prop_est = stable_ages_est/sum(stable_ages_est)) %>%
-  select(prop_data, prop_est, growth, pop_growth, sim, age_class) %>%
-  pivot_longer(prop_data:prop_est, names_to = "type", values_to = "prop") -> ests_summ
-
-ggplot(ests_summ) +
-  geom_boxplot(aes(x = factor(age_class), y = prop, fill = type)) +
-  scale_fill_brewer(palette = "Accent")
-
-ggplot(ests_summ) +
-  geom_boxplot(aes(x = factor(age_class), y = prop, fill = type)) +
-  scale_fill_brewer(palette = "Accent")
-
-ggplot(ests_summ) +
-  geom_density(aes(x = prop, fill = type)) +
-  facet_wrap(~age_class) +
-  scale_fill_brewer(palette = "Accent")
-
-
-# Simulate vacc given these parameters and store in data frame
-# Plot as D

@@ -93,3 +93,7 @@ les_mat <- function(n_classes = 5, years_in_class = c(1, 1, 1, 2, 1),
     return(-sum(dpois(n_per_age, prop_stable * sum(n_per_age), log = TRUE)))
   }
 }
+
+
+
+
