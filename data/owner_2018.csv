@@ -1,0 +1,2023 @@
+Date,Fokontany,Location,AdultDogs,Puppies,Cats,Kittens,Roaming,WillingnessPay,Point,Commune
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,15000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,2,2,0,Fefy,15000,Camps des Maries,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,2,0,Fefy,12000,Ambarilava,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,1,0,Mireny,10000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,1,1,0,Mireny,10000,Tsaralalana,Moramanga
+17-Apr-18,Ambatolampy,Ambatolampy,3,0,1,0,Mireny,10000,Tsaralalana,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Fefy,10000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,1,0,0,Fefy,10000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,10000,Moramanga Ambony,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,1,0,0,Mifatotra,10000,Camps des Maries,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,1,0,An-trano/ Fefy,10000,Tanambao,Moramanga
+18-Apr-18,Moramanga ville,Moramanga ville,0,0,1,0,An-trano/ Fefy,10000,Tanambao,Moramanga
+18-Apr-18,Moramanga ville,Moramanga ville,2,0,0,0,An-trano/ Fefy,10000,Tanambao,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Mifatotra,10000,Moramanga ville,Moramanga
+16-Apr-18,Maroventy,Antanamandroso,1,0,1,0,Fefy,10000,Moramanga ville,Moramanga
+16-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,10000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,2,1,1,1,Mifatotra,10000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,0,0,0,Fefy,10000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,3,0,0,0,Fefy,10000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,0,1,0,0,Fefy,10000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,1,0,0,0,Fefy,10000,Moramanga ville,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Mireny,10000,Tsarafasina,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,0,0,Fefy,10000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,2,0,,10000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,0,0,Fefy,10000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,0,0,Fefy,10000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,10000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,1,0,Fefy,10000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,6,0,0,0,Fefy,10000,Ambarilava,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,10000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,10000,Antanamandroso Est,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,8000,Tsarahonenana,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,0,0,Fefy,8000,Ambodiakondro,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,7000,Tsaralalana,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,0,1,2,Mifatotra,6000,Moramanga ville,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,5,0,0,0,Fefy,6000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,0,0,Fefy,6000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,6000,Antanamandroso Est,Moramanga
+23-Apr-18,Falierana,Falierana,2,0,1,0,Mireny,5000,Falierana,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,3,0,Mireny,5000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,2,0,Mireny,5000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,0,0,Fefy,5000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,1,0,Fefy,5000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Mireny,5000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,2,0,Fefy,5000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,2,0,1,0,Mireny,5000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,0,0,Mifatotra,5000,Ampangalatsary,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,3,Mifatotra,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Antrano,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Fefy,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,1,1,0,Fefy,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,2,5,0,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,2,Fefy,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,3,0,0,0,Fefy,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,1,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,2,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,1,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,1,0,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,2,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,0,2,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,1,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,2,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,0,1,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,1,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,1,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,2,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,1,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,2,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,3,0,3,1,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,1,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,3,1,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,1,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,3,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,4,0,2,4,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,2,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,4,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,3,0,3,1,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,5000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,5000,Andasibe,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Sahavary,Menalamba,1,0,0,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Sahavary,Menalamba,2,3,2,2,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,1,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Morarano,Menalamba,2,0,0,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,0,0,1,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,1,0,1,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,0,0,1,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,0,0,1,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Andasimbekady,Menalamba,2,0,0,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,0,0,1,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Morarano,Menalamba,1,0,0,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Morarano,Menalamba,1,0,0,0,Mireny,5000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Mireny,5000,Menalamba,Andasibe
+17-Apr-18,Tsaralalana,Tsaralalana,0,1,0,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,2,0,0,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,2,0,0,0,Mireny,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,Mireny,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,2,0,0,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Mireny,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,2,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tanambao,Antanambao,2,0,0,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Moramanga Ville,Moramanga ville,2,0,0,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tanambao,Antanambao,1,0,8,4,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Fefy,5000,Tsaralalana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,An-trano,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Mifatotra,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,Mireny/Mifatotra,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,3,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,Mireny/Mifatotra,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,2,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,3,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,3,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,2,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,,0,1,0,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,2,0,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Mireny,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,0,3,An-trano,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,2,0,Mireny,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,2,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,2,0,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,2,0,0,0,Mireny,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,2,0,1,0,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,3,0,1,0,,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,2,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,An-trano,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,0,2,An-trano,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,Fefy,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,2,0,An-trano,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,An-trano,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,3,Mireny,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,3,0,An-trano,5000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,5000,Tsarahonenana,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,1,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,4,0,1,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,2,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,2,0,2,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,0,2,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,0,1,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,0,2,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,0,1,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,1,0,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,3,0,0,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,1,0,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Mireny,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,0,0,1,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,3,0,1,1,Fefy,5000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,0,1,3,Fefy,5000,Moramanga Ambony,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,1,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,5000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,4,0,1,Mireny,5000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,1,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,1,1,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,0,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,0,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,2,0,0,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,4,0,1,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,3,0,0,0,Mireny,5000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,5000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Mireny,5000,Ambodiakondro,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mireny,5000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,5000,Ambodiakondro,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,0,1,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,4,1,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Mireny,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,3,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,3,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,2,0,0,Mireny,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,3,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,0,2,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,4,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,0,1,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,2,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,3,1,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,2,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,1,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,2,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,2,3,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,3,0,2,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,1,0,0,Mireny,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,2,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,1,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,1,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,1,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,3,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,2,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,1,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,3,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,3,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,0,An-trano,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,1,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,0,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,2,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,3,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,1,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,2,2,1,0,Fefy,5000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,4,0,0,0,Fefy,5000,Ambohimadera,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Mireny,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Mireny,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Mireny,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,1,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,1,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,1,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mireny,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,3,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,3,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,1,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,1,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,1,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mifatotra,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,1,0,Mireny,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,2,1,3,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,2,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,2,0,0,Mifatotra,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mifatotra,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Mifatotra,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,4,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Mifatotra,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,1,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,2,0,3,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Sahavazo,Ambatolampy,3,0,0,0,Mifatotra,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mireny,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,2,0,Mireny,5000,Camps des Maries,Moramanga
+15-Apr-18,Bemasoandro,Bemasoandro,1,1,0,0,Mireny,5000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,5000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,3,0,0,0,Mireny,5000,Camps des Maries,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,0,0,Fefy,5000,Tanambao,Moramanga
+18-Apr-18,Analalava,Analalava,3,0,0,0,Mireny,5000,Tanambao,Ambohibary
+18-Apr-18,Tanambao,Antanambao,0,0,0,1,Mireny,5000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,1,0,0,Mireny/Fefy,5000,Tanambao,Moramanga
+18-Apr-18,Anosimasina,Antanambao,2,0,2,0,Mireny,5000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,0,0,Mifatotra,5000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mifatotra,5000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,2,0,Mifatotra,5000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,5000,Tanambao,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mifatotra,5000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,,1,0,0,Fefy,5000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,An-trano/ Fefy,5000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,An-trano/ Fefy,5000,Tanambao,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,0,0,1,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Antanamandroso Est,Antanamandroso,0,0,2,0,Mireny,5000,Moramanga ville,Moramanga
+16-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Mifatotra,5000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,0,1,0,Mifatotra,5000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,3,0,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Mangarivotra,Antanamandroso,2,0,0,0,Mifatotra,5000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,2,0,1,0,Mifatotra,5000,Moramanga ville,Moramanga
+16-Apr-18,Camps des Maries,Campes des Maries,1,0,1,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,sahafitarana,Sahafitana,2,0,0,0,Fefy,5000,Moramanga ville,Ambohibary
+16-Apr-18,Mangarivotra,Antanamandroso,3,0,1,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga ,Moramanga ville,1,0,0,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Ambahibe,Ambahibe,0,1,0,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,1,0,0,0,Mifatotra,5000,Moramanga ville,Moramanga
+16-Apr-18,Sahafitana,Sahafitana,1,0,0,0,Fefy,5000,Moramanga ville,Ambohibary
+16-Apr-18,Moramanga,Moramanga ville,1,0,1,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,1,0,1,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,1,0,1,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,3,0,0,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Moramanga ville,Moramanga
+16-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Fefy,5000,Moramanga ville,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,,0,1,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Mireny,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Mireny,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Mireny,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Mireny,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Tsarafasina,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,5000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,0,0,Mireny,5000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,0,0,Fefy,5000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Mireny,5000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,2,0,Fefy,5000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,1,0,An-trano,5000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,0,0,Fefy,5000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,1,0,Fefy,5000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,3,0,0,0,,5000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,1,0,0,0,Mireny,5000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,3,0,0,0,Mireny,5000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,2,0,0,0,Fefy,5000,Ambarilava,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,5000,Ambarilava,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,3,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,2,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,3,0,2,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,4,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,4,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,3,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,3,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,2,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,2,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,1,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,2,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Tsilay,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Tsilay,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Tsilay,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Tsilay,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Tsilay,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ankeniheny,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Andrangina,Menalamba,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,3,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,1,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,3,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Analalava,Analalava,1,0,0,0,Fefy,5000,Ambohitranjavidy,Ambohibary
+18-Apr-18,Antanifotsy,Ambohitranjavidy,2,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,1,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,1,0,1,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,1,0,1,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,4,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,1,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,1,0,0,0,Mireny,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,0,0,4,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,2,0,0,0,Fefy,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Antanifotsy,Ambohitranjavidy,0,0,1,0,An-trano,5000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohibary,Ambohibary,1,0,0,0,Mireny,5000,Ambohitranjavidy,Ambohibary
+18-Apr-18,Ambohibary,Ambohibary,1,0,0,0,Fefy,5000,Ambohitranjavidy,Ambohibary
+18-Apr-18,Ambohibary,Ambohibary,1,0,0,0,Mireny,5000,Ambohitranjavidy,Ambohibary
+18-Apr-18,Ambohibary,Ambohibary,1,0,0,0,Fefy,5000,Ambohitranjavidy,Ambohibary
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,3,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,2,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,2,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,2,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,3,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Mirenyoraventy,Antanamandroso,1,0,0,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,3,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,1,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,5,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,1,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,1,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,1,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,3,1,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,1,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,2,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,2,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,2,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,4,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,1,1,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,2,2,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,2,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,2,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,8,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,0,2,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,1,1,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ambohimandroso,Ambohimandroso,0,0,2,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,1,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,1,0,1,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,1,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,3,0,2,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,1,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,1,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,6,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,0,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,2,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,3,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,1,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,2,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,2,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso ouest,Antanamandroso,2,0,0,1,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,2,0,0,0,Mifatotra,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso ouest,Antanamandroso,0,0,1,2,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,2,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,3,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso ouest,Antanamandroso,0,1,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,3,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,1,0,2,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,2,0,1,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso ouest,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso ouest,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso ouest,Antanamandroso,2,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,2,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,1,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,3,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,2,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,2,0,0,3,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,3,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,3,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,1,0,0,1,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,3,0,3,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,2,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,3,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,An-trano,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Ambohimandroso,Ambohimandroso,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+13-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,5000,Antanamandroso Est,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,3,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,3,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,1,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,1,1,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,2,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,1,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,1,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,2,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,2,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,1,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,7,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,1,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,1,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,2,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,3,0,1,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambatolampy,Ambatolampy,2,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,2,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,2,0,2,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,2,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,2,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,3,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,1,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Faratanjona,Faratanjona,1,0,1,0,Fefy,5000,Bemasoandro/Ambahibe,Ambohibary
+14-Apr-18,Ambarilava,Faratanjona,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Ambohibary
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,2,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,3,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,3,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,2,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,2,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,2,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,1,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,2,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,2,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,2,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,0,1,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,1,3,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,An-trano,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Mireny,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,2,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,7,0,3,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,4,1,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Bemasoandro,Bemasoandro,4,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Faratanjona,Faratanjona,4,0,0,0,Fefy,5000,Bemasoandro/Ambahibe,Ambohibary
+14-Apr-18,Ambahibe,Faratanjona,1,3,0,0,Fefy,5000,Bemasoandro/Ambahibe,Ambohibary
+14-Apr-18,Ambahibe,Ambahibe,1,0,,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,1,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+14-Apr-18,Ambahibe,Ambahibe,0,0,3,0,Fefy,5000,Bemasoandro/Ambahibe,Moramanga
+23-Apr-18,Falierana,Falierana,1,0,0,1,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,0,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,2,0,0,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,0,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,0,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,2,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,1,1,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,1,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,1,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,1,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,1,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Vatofotsy,Falierana,0,0,1,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,4,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,1,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,4000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,0,0,Mireny,4000,Falierana,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,0,0,Mireny,4000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,0,0,Fefy,4000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,0,0,Fefy,4000,Ampangalatsary,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,4,1,0,Mifatotra,4000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,2,0,2,0,Mifatotra,4000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mifatotra,4000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mifatotra,4000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,4000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,4,Fefy,4000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,4000,Andasibe,Andasibe
+17-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,Fefy,4000,Tsaralalana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,2,Fefy,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,Fefy,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,2,0,0,0,Fefy,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,4,0,0,0,Fefy,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,1,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,2,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,3,0,0,0,Fefy,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,Fefy,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,2,0,0,Fefy,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,2,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,1,0,0,Mifatotra,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,2,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,3,3,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,0,1,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,2,0,0,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,1,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,2,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,2,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,4000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,4000,Tsarahonenana,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Fefy,4000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Fefy,4000,Moramanga Ambony,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,4000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,4000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,0,1,Mireny,4000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Mireny,4000,Camps des Maries,Moramanga
+18-Apr-18,Betambako,Antanambao,1,0,0,0,Mifatotra,4000,Tanambao,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,0,0,0,Fefy,4000,Moramanga ville,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,4000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,,4000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,4000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,4000,Tsarafasina,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,4000,Ambohitranjavidy,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,2,0,Fefy,4000,Antanamandroso Est,Moramanga
+23-Apr-18,Falierana,Falierana,1,0,3,0,Mireny,3000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,1,0,Mireny,3000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,2,0,Mireny,3000,Falierana,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Mireny,3000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Antrano,3000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Antrano,3000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,2,0,Antrano,3000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,0,0,Mifatotra,3000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,1,0,Fefy,3000,Ampangalatsary,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Mifatotra,3000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Mifatotra,3000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,2,0,Mifatotra,3000,Andasibe,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,1,0,1,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,0,0,1,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,3000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,2,0,0,0,Mifatotra,3000,Menalamba,Andasibe
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,1,0,Mireny,3000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,2,0,0,0,Fefy,3000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Mireny,3000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,1,Mireny,3000,Tsaralalana,Moramanga
+17-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Fefy,3000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,0,1,Fefy,3000,Tsaralalana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,2,0,,3000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,2,1,0,,3000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,1,0,0,Fefy,3000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Mireny,3000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,4,Fefy,3000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Mireny,3000,Tsarahonenana,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,1,0,0,Fefy,3000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,0,1,0,Fefy,3000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,Fefy,3000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,3000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,1,0,0,Fefy,3000,Moramanga Ambony,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,5,1,0,Mireny,3000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,3000,Ambodiakondro,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,3000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Mireny,3000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,0,Fefy,3000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,An-trano,3000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,3000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,3000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,1,0,Fefy,3000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,3000,Ambohimadera,Moramanga
+12-Apr-18,Ambohimadera,Ambohimadera,4,0,3,1,Fefy,3000,Ambohimadera,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,1,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,2,0,0,0,Mifatotra,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,2,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,2,2,,3000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,2,1,1,0,Mifatotra,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Mifatotra,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,1,1,,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,3,,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,9,0,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,1,1,0,Fefy,3000,Camps des Maries,Moramanga
+15-Apr-18,Bemasoandro,Bemasoandro,1,0,1,0,Mireny,3000,Camps des Maries,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,0,0,Mireny/Fefy,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,2,Mifatotra,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,1,Mifatotra,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,An-trano/ Fefy,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,3,0,1,0,An-trano/ Fefy,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,1,0,An-trano/ Fefy,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,An-trano/ Fefy,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,An-trano/ Fefy,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,2,0,An-trano/ Fefy,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,2,An-trano/ Fefy,3000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,0,0,An-trano/ Fefy,3000,Tanambao,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,0,0,0,Fefy,3000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,2,1,0,0,Fefy,3000,Moramanga ville,Moramanga
+16-Apr-18,Ambodiahana,Ambodiahana,1,0,0,0,Fefy,3000,Moramanga ville,Ambohibary
+16-Apr-18,Ankazobe,Antanamandroso,2,0,0,0,Fefy,3000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,0,0,2,2,Fefy,3000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga ,Moramanga ville,2,0,0,0,Mireny,3000,Moramanga ville,Moramanga
+16-Apr-18,Sahafitana,Sahafitana,1,0,0,0,Mifatotra,3000,Moramanga ville,Ambohibary
+16-Apr-18,Moramanga,Moramanga ville,0,0,1,0,Mifatotra,3000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,1,0,0,0,Fefy,3000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,2,0,Fefy,3000,Moramanga ville,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,3000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,3000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,3000,Tsarafasina,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,3,0,An-trano,3000,Ambarilava,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,4,0,1,0,An-trano,3000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,3000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Fefy,3000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,2,0,An-trano,3000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,3000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Mireny,3000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,3000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,3000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,Mireny,3000,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,3000,Ambohitranjavidy,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,1,0,An-trano,3000,Antanamandroso Est,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,3000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,2,0,0,0,Fefy,3000,Antanamandroso Est,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,3000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,Fefy,3000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,3,0,0,0,Mireny,3000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,An-trano,3000,Antanamandroso Est,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Fefy,3000,Antanamandroso Est,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Mireny,2500,Moramanga Ambony,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,1,0,Fefy,2500,Ambodiakondro,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,2500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,2500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,2500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,2500,Camps des Maries,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,0,1,0,Fefy,2500,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,0,0,3,0,Fefy,2500,Moramanga ville,Moramanga
+23-Apr-18,Falierana,Falierana,1,0,1,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,2,0,0,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,2,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,0,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,1,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,1,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,1,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,0,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,1,0,Mifatotra,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,0,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,1,0,1,1,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,1,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,1,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,2000,Falierana,Andasibe
+23-Apr-18,Falierana,Falierana,0,0,4,0,Mireny,2000,Falierana,Andasibe
+22-Apr-18,Morafeno,Anevoka,3,0,0,0,Mireny,2000,Anevoka,Andasibe
+22-Apr-18,Morafeno,Anevoka,1,0,1,0,Mireny,2000,Anevoka,Andasibe
+22-Apr-18,Morafeno,Anevoka,0,0,1,0,Mireny,2000,Anevoka,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,2,0,Mireny,2000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Mireny,2000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Mireny,2000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,0,0,Mireny,2000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Mireny,2000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,2,0,Fefy,2000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Antrano,2000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,2,0,Antrano,2000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Antrano,2000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Antrano,2000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,1,0,0,0,Mireny,2000,Ampangalatsary,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,2000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,0,0,1,3,Mireny,2000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,2000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,2000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,2000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,2000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,0,0,1,0,Mireny,2000,Andasifaha III,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Mifatotra,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,4,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,8,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,1,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,3,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Mifatotra,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,3,0,0,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,2000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,2000,Andasibe,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,3,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,2,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,3,0,1,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,0,0,1,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Morarano,Menalamba,1,0,0,0,Mifatotra,2000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,2,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,1,0,1,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Sahamaloto,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Morarano,Menalamba,2,0,0,0,Mireny,2000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,0,0,Mireny,2000,Menalamba,Andasibe
+17-Apr-18,Tsaralalana,Tsaralalana,3,0,1,0,Mireny/Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tanambao,Antanambao,1,0,1,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,1,0,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,2,0,Mireny,2000,Tsaralalana,Moramanga
+17-Apr-18,Tanambao,Antanambao,2,0,3,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,,0,0,2,Mireny,2000,Tsaralalana,Moramanga
+17-Apr-18,Tanambao,Antanambao,2,0,0,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Moramanga Ambony,Moramanga Ambony,0,0,1,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,1,0,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Fefy,2000,Tsaralalana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Mireny,2000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,2,0,0,0,Fefy,2000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,Fefy,2000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,0,1,,2000,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,1,0,0,,2000,Tsarahonenana,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,2,0,1,0,Fefy,2000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,4,0,0,Mireny,2000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,2,0,0,0,Fefy,2000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,1,0,0,Fefy,2000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,Fefy,2000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,2,0,1,0,Fefy,2000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,Fefy,2000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,0,0,3,Fefy,2000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,1,0,0,Fefy,2000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,2000,Moramanga Ambony,Moramanga
+16-Apr-18,Antanamandroso,Antanamandroso,1,0,0,0,Fefy,2000,Moramanga Ambony,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,2,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodihasina,Ambodiakondro,1,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,2,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,0,1,1,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,3,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,0,1,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,0,0,1,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,0,2,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,2,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,0,0,1,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,1,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,2,0,0,1,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,0,1,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,0,1,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,1,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,4,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,2,2,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodihasina,Ambodiakondro,2,0,1,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,2,0,0,0,Fefy,2000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,2000,Ambodiakondro,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,1,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Mireny,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mireny,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,2,1,0,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Mifatotra,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,3,0,0,0,Mireny,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,2,0,6,6,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,AMirenypahitra,Campes des Maries,1,0,0,0,Mireny,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,2,0,0,0,Mifatotra,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Mifatotra,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,1,0,1,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambarilava,Ambarilava,1,0,1,0,,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mifatotra,2000,Camps des Maries,Moramanga
+15-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,0,1,,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,,2000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,2000,Camps des Maries,Moramanga
+15-Apr-18,Sahavazo,Ambatolampy,1,0,0,0,Fefy,2000,Camps des Maries,Moramanga
+18-Apr-18,Tanambao,Antanambao,5,0,2,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,0,0,1,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,0,0,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,1,0,0,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,1,0,0,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,0,1,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,2,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Tanimarina,Antanambao,1,0,3,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,0,0,1,1,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Tsarafasina,Tsarafasina,1,0,2,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,1,0,0,0,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,1,0,0,0,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,1,2,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,1,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,2,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,1,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Ambatolampy,Ambatolampy,1,0,0,1,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,Mifatotra,2000,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,1,0,1,0,Mireny,2000,Tanambao,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,1,0,0,Fefy,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,0,1,Fefy,2000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,0,1,An-trano/ Fefy,2000,Tanambao,Moramanga
+16-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,Fefy,2000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,0,0,0,Mifatotra,2000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,0,0,6,0,Mifatotra,2000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,4,0,0,Fefy,2000,Moramanga ville,Moramanga
+16-Apr-18,Maroventy,Antanamandroso,1,0,1,0,Fefy,2000,Moramanga ville,Moramanga
+16-Apr-18,Mangarivotra,Antanamandroso,1,3,0,0,Mireny,2000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,0,0,0,Fefy,2000,Moramanga ville,Moramanga
+16-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,2000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,0,0,1,0,Mifatotra,2000,Moramanga ville,Moramanga
+16-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Fefy,2000,Moramanga ville,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,1,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Mireny,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,1,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,2000,Tsarafasina,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Mireny,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,2,1,An-trano,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,2,0,,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,3,2,An-trano,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,1,,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Mireny,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,An-trano,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,5,0,2,4,Fefy,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,3,0,2,1,Fefy,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,0,0,Fefy,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,An-trano,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,2,0,Mireny,2000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,2,0,0,0,Mireny,2000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,0,0,2,0,An-trano,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Mireny,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,Fefy,2000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,2,0,Fefy,2000,Ambarilava,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,0,0,1,0,An-trano,2000,Ambohitranjavidy,Moramanga
+13-Apr-18,Ambohimandroso,Ambohimandroso,0,0,5,0,An-trano,2000,Antanamandroso Est,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,0,0,1,0,An-trano,2000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,Mireny,2000,Antanamandroso Est,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1500,Ambodiakondro,Moramanga
+15-Apr-18,Ambarilava,Ambarilava,0,1,0,0,Fefy,1500,Camps des Maries,Moramanga
+23-Apr-18,Falierana,Falierana,0,0,2,0,Mireny,1000,Falierana,Andasibe
+22-Apr-18,Morafeno,Anevoka,0,0,1,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Morafeno,Anevoka,0,0,1,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,1,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,3,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,0,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,0,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,0,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,0,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,2,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,0,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,0,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,0,0,1,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,0,0,2,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,0,0,1,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,0,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,0,0,4,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,0,0,3,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,0,0,1,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,2,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,1,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,0,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,2,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,0,0,1,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,1,0,0,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,0,0,1,0,Mireny,1000,Anevoka,Andasibe
+22-Apr-18,Anevoka,Anevoka,0,0,2,0,Mireny,1000,Anevoka,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,0,1,Mireny,1000,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Antrano,1000,Ampangalatsary,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,0,0,1,0,Mireny,1000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,0,0,1,0,Mireny,1000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,0,0,1,1,Mireny,1000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,1000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,1000,Andasifaha III,Andasibe
+20-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,1000,Andasifaha III,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mifatotra,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mifatotra,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,1,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,1,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,0,1,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,2,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,0,1,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,1,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,1,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Mifatotra,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Mifatotra,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mifatotra,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,2,4,Mifatotra,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mifatotra,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mifatotra,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mifatotra,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Mireny,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,2,0,Mireny,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Mireny,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mireny,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,1,0,0,Mireny,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Mireny,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Mireny,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,1,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,0,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,2,0,5,0,Fefy,1000,Andasibe,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,4,0,Fefy,1000,Andasibe,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,2,3,3,2,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,0,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Andasimbekady,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,2,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Ambohitrapanga,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,2,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,0,1,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Sahavary,Menalamba,0,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Sahavary,Menalamba,0,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,0,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,0,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,0,1,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,0,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,2,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,1,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,0,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,PK 08,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Andasimbekady,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,0,1,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Morarano,Menalamba,2,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,0,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Mangarivotra,Antanamandroso,0,0,1,0,Mireny,1000,Menalamba,Andasibe
+24-Apr-18,Andasimbekady,Menalamba,1,0,0,0,Mireny,1000,Menalamba,Andasibe
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Mireny,1000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,1,0,Mireny,1000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Fefy,1000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,1000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,1000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,1000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Mireny/Fefy,1000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Mireny,1000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,2,0,2,0,Mireny,1000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,2,0,0,0,Fefy,1000,Tsaralalana,Moramanga
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,1000,Tsaralalana,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,0,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,0,0,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,0,0,0,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,1,0,1,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,1,0,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,1,0,0,Mireny,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Mireny,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,1,0,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,Fefy,1000,Moramanga Ambony,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,0,0,1,0,Fefy,1000,Moramanga Ambony,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,1,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,1,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,2,1,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,0,1,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,3,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,1,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,2,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,3,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,0,0,3,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,2,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,0,1,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,1,0,1,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Moramanga Ambony,Moramanga Ambony,0,0,1,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,0,1,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,0,1,1,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Moramanga Ambony,Moramanga Ambony,0,0,0,1,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,2,1,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,0,1,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,1,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Mireny,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Ambodiakondro,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,1,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,0,1,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,5,0,0,Mireny,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,3,2,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,2,3,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,2,1,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,1,0,Mireny,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,1,0,1,Mireny,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Mifatotra,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,2,0,0,0,Mireny,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,2,1,0,0,Fefy,1000,Camps des Maries,Moramanga
+15-Apr-18,Ampahitra,Campes des Maries,1,0,1,2,,1000,Camps des Maries,Ambohibary
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,,1000,Camps des Maries,Moramanga
+15-Apr-18,Ambarilava,Ambarilava,4,1,0,0,Mifatotra,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,,1000,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,1,0,0,Fefy,1000,Camps des Maries,Moramanga
+18-Apr-18,Betambako,Antanambao,2,1,1,0,Mifatotra,1000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,1000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,3,0,2,0,Mireny/Fefy,1000,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,1000,Tanambao,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,0,3,0,0,Fefy,1000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,0,0,0,2,Fefy,1000,Moramanga ville,Moramanga
+16-Apr-18,Tsarahonenana,Tsarahonenana,2,0,0,0,Fefy,1000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,3,2,1,0,Fefy,1000,Moramanga ville,Moramanga
+16-Apr-18,Mangarivotra,Antanamandroso,1,3,1,0,Fefy,1000,Moramanga ville,Moramanga
+16-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,1000,Moramanga ville,Moramanga
+16-Apr-18,Mangarivotra,Antanamandroso,0,1,0,0,Fefy,1000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,3,0,7,0,Fefy,1000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,1,0,1,0,Fefy,1000,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,2,0,1,0,Fefy,1000,Moramanga ville,Moramanga
+16-Apr-18,Antanamandroso,Antanamandroso,1,0,0,0,Fefy,1000,Moramanga ville,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,1000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,1000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,1000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,1000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,1000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,1000,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,1000,Tsarafasina,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,0,1,An-trano,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,2,2,,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,3,0,2,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,4,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,1,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,3,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,An-trano,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,2,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,0,0,An-trano,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,0,0,4,0,An-trano,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,2,0,1,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,0,0,1,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,1,0,1,1,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,1,0,0,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,1,0,0,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,2,0,0,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,3,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,1,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,0,0,1,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,2,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,1,0,0,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,1,0,1,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,3,0,0,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,1,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,1,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,0,0,2,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Analalava,Analalava,1,0,1,0,Mireny,1000,Ambarilava,Ambohibary
+14-Apr-18,Analalava,Analalava,1,0,1,0,Mireny,1000,Ambarilava,Ambohibary
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Besimpona,Ambarilava,1,0,0,0,Mireny,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,1,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,,1000,Ambarilava,Moramanga
+14-Apr-18,Analalava,Analalava,1,0,1,0,Fefy,1000,Ambarilava,Ambohibary
+14-Apr-18,Ankazotokana,Ambarilava,0,0,1,0,Fefy,1000,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,Fefy,1000,Ambarilava,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,Fefy,1000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,0,0,1,0,An-trano,1000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Ouest,Antanamandroso,1,0,0,0,An-trano,1000,Antanamandroso Est,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,1000,Antanamandroso Est,Moramanga
+13-Apr-18,Ambohimadera,Ambohimadera,1,0,2,3,Fefy,1000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,0,0,1,0,An-trano,1000,Antanamandroso Est,Moramanga
+13-Apr-18,Maroventy,Antanamandroso,1,0,1,3,Fefy,1000,Antanamandroso Est,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,1,0,0,0,Fefy,800,Ambodiakondro,Moramanga
+23-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,600,Falierana,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Mireny,500,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Mireny,500,Ampangalatsary,Andasibe
+21-Apr-18,Ampangalatsary,Ampangalatsary,0,0,1,0,Mireny,500,Ampangalatsary,Andasibe
+24-Apr-18,Sahavary,Menalamba,0,0,1,0,Mireny,500,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,0,0,Mireny,500,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,0,0,Mireny,500,Menalamba,Andasibe
+24-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Mireny,500,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,1,0,0,0,Mireny,500,Menalamba,Andasibe
+24-Apr-18,Menalamba,Menalamba,0,0,1,0,Mireny,500,Menalamba,Andasibe
+17-Apr-18,Tsaralalana,Tsaralalana,0,0,1,0,Mireny,500,Tsaralalana,Moramanga
+16-Apr-18,Moramanga Ambony,Moramanga Ambony,2,0,0,0,Fefy,500,Moramanga Ambony,Moramanga
+13-Apr-18,Antanifasika,Ambodiakondro,2,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Ambodihasina,Ambodiakondro,1,0,0,0,Mireny,500,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,2,0,0,0,Mireny,500,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,1,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,3,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,1,0,0,1,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,0,0,1,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Maromahatsinjo,Menalamba,1,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+13-Apr-18,Tanifasika,Ambodiakondro,3,0,0,0,Fefy,500,Ambodiakondro,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,4,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,1,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,0,,500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,1,0,0,Mireny,500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mifatotra,500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,2,0,Mireny,500,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,2,1,0,0,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mifatotra,500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,2,0,0,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Ambarilava,Ambarilava,0,2,0,0,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,1,0,0,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,2,0,0,Fefy,500,Camps des Maries,Moramanga
+15-Apr-18,Sahavazo,Ambatolampy,1,0,1,2,Mireny,500,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,0,0,1,2,,500,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,0,0,0,1,Fefy,500,Camps des Maries,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,500,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,1,0,Fefy,500,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,500,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,0,0,Mifatotra,500,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,500,Tanambao,Moramanga
+16-Apr-18,Ambodiakondro,Ambodiakondro,2,4,0,0,Mireny,500,Moramanga ville,Moramanga
+16-Apr-18,Ambohimadera,Ambohimadera,2,0,0,0,Fefy,500,Moramanga ville,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,500,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,500,Tsarafasina,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,500,Tsarafasina,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,,500,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,,500,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,,500,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,3,,500,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,,500,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,3,,500,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,Mireny,500,Ambarilava,Moramanga
+13-Apr-18,Mangarivotra,Antanamandroso,1,0,2,1,Fefy,500,Antanamandroso Est,Moramanga
+13-Apr-18,Ankazobe,Antanamandroso,1,0,0,0,Fefy,500,Antanamandroso Est,Moramanga
+20-Apr-18,Andasifaha III,Andasifaha III,1,0,0,0,Mireny,400,Andasifaha III,Andasibe
+19-Apr-18,Andasibe,Andasibe,0,0,1,0,Mifatotra,300,Andasibe,Andasibe
+17-Apr-18,Tsaralalana,Tsaralalana,1,0,0,0,Fefy,300,Tsaralalana,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,300,Camps des Maries,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,300,Tanambao,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,0,1,0,0,Fefy,300,Moramanga ville,Moramanga
+12-Apr-18,Tsarafasina,Tsarafasina,0,0,1,0,Fefy,300,Tsarafasina,Moramanga
+23-Apr-18,Falierana,Falierana,0,0,1,0,Mireny,200,Falierana,Andasibe
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mireny,200,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mireny,200,Camps des Maries,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Mireny,200,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,4,Fefy,200,Camps des Maries,Moramanga
+18-Apr-18,Anosimasina,Antanambao,3,2,2,0,Mireny/Fefy,200,Tanambao,Moramanga
+21-Apr-18,Moramanga Ambony,Moramanga Ambony,2,0,0,0,Fefy,,en route,Moramanga
+21-Apr-18,Andasibe,Andasibe,1,0,0,0,Fefy,,Alain's,Andasibe
+21-Apr-18,Andasibe,Andasibe,0,0,1,0,Fefy,,Alain's,Andasibe
+21-Apr-18,Andasibe,Andasibe,1,0,5,0,Fefy,,Alain's,Andasibe
+19-Apr-18,Andasibe,Andasibe,1,0,1,0,Mifatotra,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,1,0,0,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,2,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,1,0,0,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,1,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,1,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,1,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,1,0,0,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,1,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,1,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,4,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,1,0,2,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,2,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,2,0,0,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,1,0,0,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,1,0,1,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,1,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,1,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,1,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,4,0,1,4,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,1,0,3,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,1,0,,,Andasibe,Andasibe
+20-Apr-18,Andasibe,Andasibe,0,0,1,0,,,Andasibe,Andasibe
+24-Apr-18,Berano,Menalamba,2,0,0,0,Mireny,,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,1,0,Mireny,,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,2,0,1,0,Mireny,,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,0,0,2,0,Mireny,,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,2,0,0,0,Mireny,,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,,Menalamba,Andasibe
+24-Apr-18,Berano,Menalamba,1,0,0,0,Mireny,,Menalamba,Andasibe
+24-Apr-18,Morarano,Menalamba,1,0,0,0,Mireny,,Menalamba,Andasibe
+17-Apr-18,Tsaralalana,Tsaralalana,3,0,5,0,Fefy,,Tsaralalana,Moramanga
+17-Apr-18,Anosimasina,Antanambao,1,0,1,0,Fefy,,Tsaralalana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,1,0,Fefy,,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,,,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,1,0,0,0,,,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,2,0,,,Tsarahonenana,Moramanga
+17-Apr-18,Tsarahonenana,Tsarahonenana,0,0,1,0,,,Tsarahonenana,Moramanga
+13-Apr-18,Ambodiakondro,Ambodiakondro,0,2,0,0,,,Ambodiakondro,Moramanga
+15-Apr-18,Ambatolampy,Ambatolampy,1,0,0,0,Fefy,,Camps des Maries,Moramanga
+15-Apr-18,Camps des Maries,Campes des Maries,1,0,0,0,Mifatotra,,Camps des Maries,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Fefy,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Fefy,,Tanambao,Moramanga
+18-Apr-18,Ambohimadera,Ambohimadera,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,0,0,Fefy,,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,2,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Fefy,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,0,0,Fefy,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,1,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,1,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,1,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Fefy,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tsarafasina,Tsarafasina,1,0,0,1,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,1,0,Fefy,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,3,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,0,0,2,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,2,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,1,0,1,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,0,0,Fefy,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,3,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,3,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Anosimasina,Antanambao,2,2,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Betambako,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,3,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mifatotra,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,3,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,2,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,0,0,1,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,2,7,4,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,,Tanambao,Moramanga
+18-Apr-18,Tanambao,Antanambao,1,0,0,0,Mireny,,Tanambao,Moramanga
+16-Apr-18,Ambodiakondro,Ambodiakondro,1,2,1,0,Mireny,,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,0,2,0,Mifatotra,,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,1,0,0,0,Mifatotra,,Moramanga ville,Moramanga
+16-Apr-18,Mangarivotra,Antanamandroso,1,0,0,0,Fefy,,Moramanga ville,Moramanga
+16-Apr-18,Moramanga Ville,Moramanga ville,4,9,1,0,Fefy,,Moramanga ville,Moramanga
+16-Apr-18,Moramanga,Moramanga ville,1,1,0,0,Fefy,,Moramanga ville,Moramanga
+16-Apr-18,Antanamandroso,Antanamandroso,0,0,2,0,Mifatotra,,Moramanga ville,Moramanga
+16-Apr-18,Sahafitana,Sahafitana,1,0,0,0,,,Moramanga ville,Ambohibary
+12-Apr-18,Tsarafasina,Tsarafasina,1,0,0,0,Fefy,,Tsarafasina,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,3,0,An-trano,,Ambarilava,Moramanga
+14-Apr-18,Ambarilava,Ambarilava,0,0,1,0,Fefy,,Ambarilava,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,1,0,0,0,,,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,,Ambohitranjavidy,Moramanga
+18-Apr-18,Tsilay,Ambohitranjavidy,1,0,1,0,An-trano,,Ambohitranjavidy,Moramanga
+18-Apr-18,Ambohitranjavidy,Ambohitranjavidy,2,0,0,0,Fefy,,Ambohitranjavidy,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,3,0,0,0,An-trano,,Antanamandroso Est,Moramanga
+13-Apr-18,Antanamandroso Est,Antanamandroso,1,0,0,0,Mireny,,Antanamandroso Est,Moramanga

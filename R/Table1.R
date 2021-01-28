@@ -113,12 +113,12 @@ vacc_pts_2018 %>%
   
   
 all_stats %>%
-  mutate(name = case_when(name == "total" ~ "Total # of dogs \n vaccinated", 
+  mutate(name = case_when(name == "total" ~ "Total dogs \n vaccinated", 
                           name == "prev_vacc" ~ "Previous history of vaccination", 
                           name == "vacc_in_year" ~ "Vaccinated within last year", 
                           name == "perc_m" ~ "Percent male", 
-                          name == "avg_dogs" ~ "Average # of dogs per owner", 
-                          name == "avg_cats" ~  "Average # of cats per owner", 
+                          name == "avg_dogs" ~ "Average dogs per owner", 
+                          name == "avg_cats" ~  "Average cats per owner", 
                           name == "roaming" ~ "Percent of owners with \n free-roaming animals", 
                           TRUE ~ name)) %>%
   gt() %>%
