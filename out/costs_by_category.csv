@@ -1,0 +1,13 @@
+category,year,cost_usd,prop,type
+Advertisement,2018,202.26,0.03586411850443824,Implementation
+Advertisement,2019,0,0,Implementation
+Food,2018,606.63,0.10756575797660126,Implementation
+Food,2019,0,0,Implementation
+Lodging,2018,233.36,0.04137867444969697,Implementation
+Lodging,2019,0,0,Implementation
+Personnel,2018,2586.75,0.45867452062373,Implementation
+Personnel,2019,1024.29,0.30941484589522145,Implementation
+Supplies,2018,412.15,0.07308116504303482,Implementation
+Supplies,2019,374.12,0.1130131917194547,Implementation
+Vaccine,2018,1598.47,0.28343576340249876,Vaccine
+Vaccine,2019,1912,0.5775719623853239,Vaccine

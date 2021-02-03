@@ -1,6 +1,5 @@
 ---
-title: Lessons learned from pilot canine rabies vaccination campaigns in Moramanga
-  District, Madagascar
+title: "Lessons learned and paths forward for mass dog vaccination in Madagascar: a case study of pilot canine rabies vaccination campaigns in Moramanga District"
 author: "Malavika Rajeev"
 date: "11/19/2020"
 output:
@@ -20,13 +19,13 @@ library(tidyverse)
 
 *CITE*
 
-Canine rabies results in an estimated 60,000 human deaths per year globally. These deaths are entirely preventable: prompt post-exposure prophylaxis (PEP) of humans is highly effective at preventing death and mass dog vaccination can interrupt transmission in domestic dogs and eventually lead to disease elimination. Annual vaccination campaigns achieving atleast 70% coverage are the recommended target for controlling rabies in domestic dog populations. However, achieving this coverage target in low and middle income countries where the virus can be challenging due to economic, sociocultural, and political reasons.
+Canine rabies results in an estimated 60,000 human deaths per year globally. These deaths are entirely preventable: prompt post-exposure prophylaxis (PEP) of humans is highly effective at preventing death and mass dog vaccination can interrupt transmission in domestic dogs and eventually lead to disease elimination. Annual vaccination campaigns achieving atleast 70% coverage are the recommended target for controlling rabies in domestic dog populations. However, achieving this coverage target in low and middle income countries where the virus ia endemic can be challenging due to economic, ecological sociocultural, and political reasons.
 
 *Vax challenges and limitations here. Diff between SE Asia & SSA*
 
 In Madagascar, canine rabies has been endemic for over a century and the Institut Pasteur de Madagascar has provided PEP free-of-charge to patients in the country shortly therafter. However, currently, there are only 31 clinics where the vaccine is available, and there is limited dog vaccination due to high costs to owners and lack of availability of the vaccine and veterinary services more generally. *Estimates of dog population + Vet sector (WHO report)*. Livestock vaccination campaigns for anthrax as mandated by the government are conducted on an annual basis (owners are also charged, but fees vary by location and veterinarian).
 
-Here, we summarize lessons learned through implementation of pilot vaccination programs in the Moramanga District of Madagascar, where previous work has shown high incidence of dog rabies cases and human exposures. In 2018 and 2019, we deployed two different vaccination strategies. In 2018, we led a larger scale volunteer and NGO led pilot vaccination campaign in two Communes (sub-district level) using a central point strategy. In 2019/2020, we provided vaccinations and a per-vaccine fee to the District Veterinarian (DV) to vaccinate animals as part of routine services. We compare monetary costs and coverage estimates between the campaigns. Using demographic data collected during the campaigns and a vaccination model, we explore different vaccination strategies based on what we learned during implementation.
+Here, we summarize lessons learned through implementation of pilot vaccination programs in the Moramanga District of Madagascar, where previous work has shown high incidence of dog rabies cases and human exposures. In 2018 and 2019, we deployed two different vaccination strategies. In 2018, we led a larger scale volunteer-led pilot vaccination campaign in two Communes (sub-district level) using a central point strategy. In 2019/2020, we provided vaccinations and a per-vaccine fee to the District Veterinarian (DV) to vaccinate animals as part of routine services. We compare monetary costs and coverage estimates between the campaigns. Using demographic data collected during the campaigns and a vaccination model, we explore different vaccination strategies based on what we learned during implementation.
 
 ## Methods
 
@@ -55,21 +54,17 @@ For the 2019 campaign, instead of a central point campaign strategy, we distribu
 
 ### Analyses
 
-#### Coverage estimates
-
-For the 2018 campaign, we used the transect data to estimate coverage as the proportion of dogs sighted that were marked with a binomial confidence interval for each location and at the commune level. For the 2019 campaign, we used a range of human:dog ratios (HDR) of 8 - 25, based on previous data from Madagascar [cite that tana study] and from the Moramanga District [cite leblanc thesis] to estimate the dog population from human population estimates [world pop] in each commune where the vaccinations were delivered [cite other papers that do this]. Then, coverage was estimated as the number of dogs vaccinated in total in that commune divided by the estimated dog population (the range given high and low HDRs). We used this same method for the 2018 campaign, as well, to compare coverage estimated by the post-vaccination transects vs. the HDR range.
-
 #### Cost estimates
 
 We documented the overall costs of the two vaccination efforts. For the 2018 campaign, we broke costs down into the following categories: direct vaccine costs (cost for Rabisin `.r`, syringes, needles, vaccination cards), supplies (livestock crayons, muzzles, gloves, alcohol, swabs), transportation costs (gas and associated vehicle costs for transport), food and lodging for NGO personnel and other vaccinators during the campaign, personnel costs (per diems for DSV veterinarian, livestock field officers, local guides, and NGO employees), and advertisement (posters and banners for advertising the campaign). Foreign NGO volunteers expenses for travel to Madagascar were not included in this costs. Vehicles and drivers are also not included in these costs, as the drivers' time and vehicle use were donated to the campaign by volunteers involved in the campaign. 
 
 In 2019, costs were split into two categories, direct vaccine costs (for same items as in 2018), and personnel costs (per vaccine fee paid to the district veterinarian), and supplies (a generator and fuel for the veterinarian to maintain the vaccine on a cold chain when there were power outages).
 
-*Willingness to pay*. 
+*Willingness to pay*. *Person days*. *Vax per point*.
 
-*Person days*.
+#### Coverage estimates
 
-*Vax per point*.
+For the 2018 campaign, we used the transect data to estimate coverage as the proportion of dogs sighted that were marked with a binomial confidence interval for each location and at the commune level. For the 2019 campaign, we used a range of human:dog ratios (HDR) of 8 - 25, based on previous data from Madagascar [cite that tana study] and from the Moramanga District [cite leblanc thesis] to estimate the dog population from human population estimates [world pop] in each commune where the vaccinations were delivered [cite other papers that do this]. Then, coverage was estimated as the number of dogs vaccinated in total in that commune divided by the estimated dog population (the range given high and low HDRs). We used this same method for the 2018 campaign, as well, to compare coverage estimated by the post-vaccination transects vs. the HDR range.
 
 #### Dog Demography
 
@@ -107,35 +102,40 @@ We split the dog population into pups (\< 1 yr old) and adults based on the stab
 ```{r}
 species_2018 <- table(animals_2018$Species)
 species_2019 <- table(tolower(animals_2019$`Dog or Cat`))
-
 ```
-
 
 During the 2018 campaign, a total of `nrow(animals_2018)` animals were vaccinated (`r species_2018["A"]` dogs and `r species_2018["A"]` cats) in the Moramanga (urban) and Andasibe (rural) communes over a period of xx days (Table 1). We vaccinated at `r table(pts$Commune)["Andasibe"]` points in Andasibe and `r table(pts$Commune)["Moramanga Ville"]` in Moramanga Ville. On average, we vaccinated xx animals per vaccination point, but this varied significantly between the two communes, with a maximum of 354 animals vaccinated at one point. Overall, 10.7% of animals (15.1% of dogs and 2 % of cats) had a history of previous vaccination (owner reported), however only 4.7% had been vaccinated in the previous year (6.7% of dogs and \<1% of cats). While less than 20% of owners reported that animals were not free roaming, fenced animals were frequently observed outside fences during the campaign, and thus the majority of animals could be classified as semi-confined in the more urban township of Moramanga Ville, and free-roaming in the rural setting of Andasibe where almost 70% of owners reported their dogs as free-roaming. 
 
 During 2019/2020, the DV vaccinated a total of 2,384 animals (1,898 dogs, 486 cats, Table 1) over a period of xx months and in N communes in the Moramanga District. Overall, 72% of animals (75% of dogs and 20% of cats) had a history of previous vaccination (owner reported), however only 1.1% had been vaccinated in the previous year (0.6% of dogs and 2% of cats). 218 animals were reported as having been previously vaccinated in April 2018, likely during the volunteer-led campaign. Additionally, 23% of all animals vaccinated were spayed or neutered (27% of dogs and 8% of cats)**. The majority of people estimated travelling less than xx meters to bring their animal to the DV. 
 
-*Table 1 should describe dogs!! (Take out cat parts & keep dogs only, & person days!)* 
+*Table 1 should describe dogs!! (Take out cat parts & keep dogs only, & person days, split by location!)* 
 
 ```{r}
 knitr::include_graphics("figs/table1.png")
 ```
 
+### Comparing campaign costs and willingness to pay
+
+The 2018 campaign cost more overall and per animal vaccinated than the 2019 campaign, largely due to increased personnel costs (Fig 3A & B, Table 1). Reflecting the extra personnel necessary to run the central point campaign, the 2018 campaign also took substantially more person-days per animal vaccinated (Table 1). We found that in most contexts, charging owners for vaccination would result in minimal cost recovery (Fig 3C), but that even a nominal fee would significantly reduce vaccination coverage acheived (Fig 3D), particulary in the rural commune of Andasibe.
+
+
+```{r this is a code chunk!} 
+knitr::include_graphics("figs/fig2.jpeg")
+```
+
 ### Comparing campaign coverage estimates
 
-In Andasibe Ville, we were only able to did this in one of our campaign locations, due to the sparsely distributed households and roads throughout the area, as such coverage in this
+In Andasibe Ville, we were only able to did this in one of our campaign locations, due to the sparsely distributed households and roads throughout the area, as such coverage in this. Make sure to mention back calc of pop & hdr is it reasonable?
 
-### Comparing campaign costs and willingness to pay
-Costs (different categories)
-Person days + dogs vax per person day (number of vaccination points)
-Willingness to pay
+```{r this is a code chunk!}
+knitr::include_graphics("figs/fig1.jpeg")
+```
 
 ### Dog demography and simulating vaccination strategies
-
 For dogs, the sex ratio was male-biased (55%); while for cats it was female-biased (68% female). For dogs, the sex ratio was male-biased (65%), while for cats it was female-biased (66% female).
 
 ```{r this is a code chunk!}
-
+knitr::include_graphics("figs/fig3.jpeg")
 ```
 
 ## Discussion
@@ -144,10 +144,22 @@ Main findings para (feasible, should not charge, costs vs. coverage).
 
 Limitations (owner reports, no solid ests of dog pop although HDR is reasonable and supported) Need to monitor incidence (Rajeev unpublished data anecdotally). Limitations of age data and methods. Limitations of cov data and methods. One limitation here is unowned dogs Better understanding of demography (using campaigns to monitor pop growth etc. costs may rise given increase in dog pops, pop control strategies may also be important for humane implementation of vaccination programs). Estimates were not super identifiable. No carrying cap. Turnover of the dog pop. Compare to LeBlanc + Rila studies Better understanding of transmission (i.e. Bourrhy & Chad studies). Cost not included was PEP for exposures during a campaign (mostly cat scratches). Getting vaccinators prep. Focusing on puppies could also help that, as they are easier to handle. Covid?
 
+Targeting dogs only?
+Point to lit on willingness to pay / person day comp / cost per animal vaccinated 
+
+PrEP and exposures during vax, we had N exposures. Puppies were the easiest to handle for both owners and vaccinators and vax is effective in them. Better dosing guidelines. Longer lasting vax.
+
 More community based delivery (Ahmed's paper, Pivot, accessibility, etc.). Possibly combining different campaign strategies could work per models Turnover is tricky & waning doesn't contribute too much. Thermotolerant & 3 yrs even without booster. (although most dogs are revaccinated and we do this in the model). Volunteer based/NGO based. Push for govt investment and viewing as a public good. Modeling after childhood vax = routine through local offices of puppies + supplemental activities by trained vets annually to catch unvax (feral, oral). The veterinary workforce (relieving pressures on them, challenges with private-public roles).
+Paying people is important hard/relieving pressures and making sure it's viewed as a public good (Ahmed's paper). Veterinary students?
 
 Conclude with main points & how to move forward in Madagascar
 
+Policy recommendations:
+- Dog vax as a public good, remove barriers for dog owners & incentivize vets/etc/ remove economic pressures
+- Community based vax delivery particulalry in novel areas (could lower cost while improving coverage)
+- Easier ways to estimate coverage (& coupling with surveillance to assess impact)
+
 ## Acknowledgements
 
-A note abt Annie. Others who helped
+We thank vets livestock officers volunteers fokontany leaders government officials. We want to especially acknowledge the important contributions made by Annie Yang, an undergraduate researcher and volunteer with Princeton University and the Madagascar Dog Initiative who tragically passed away in a car accident before this research was published. 
+

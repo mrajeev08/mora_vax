@@ -12,6 +12,9 @@ library(cowplot)
 costs <- read_csv("data/costs_summarized.csv")
 willing_to_pay <- read_csv("data/owner_2018.csv")
 
+# exchange rate (midpoint between 2018 and 2019 est)
+exch_rate <- (3128 + 3500)/2
+
 # animals
 animals_2018 <- read_csv("data/animal_2018.csv")
 animals_2019 <- read_csv("data/campaign_2019.csv")
@@ -36,6 +39,8 @@ ggplot(costs) +
   scale_fill_brewer(palette = "Dark2", name = "Year") +
   theme_minimal_hgrid(font_size = 12) +
   coord_flip() -> fig2A
+
+write_csv(costs, "out/costs_by_category.csv")
 
 # Figure 1B Cost per animal vaccinated
 costs %>%
@@ -70,7 +75,9 @@ ggplot() +
   theme(axis.line.y = element_blank()) +
   guides(color = guide_legend(override.aes = list(fill = NA))) -> fig2B
 
-# Figure 1C Willingness to pay
+write_csv(costs_per_animal, "out/costs_per_animal.csv")
+
+# cost recovery bits
 prop_willing <- function(charge, willing) {
   length(willing[willing >= charge])/length(willing)
 }
@@ -92,18 +99,7 @@ willing_to_pay %>%
   mutate(charged = charge, Commune = "Overall") %>%
   bind_rows(willing_by_loc) -> willingness
 
-ggplot(willingness) +
-  geom_line(aes(x = charged/3100, y = prop_willing, linetype = Commune), 
-            size = 1.2) +
-  xlim(c(0, 3)) +
-  scale_linetype_manual(values = c(3, 2, 1), 
-                        c("Andasibe (rural)", "Moramanga (urban)", 
-                          "Overall"), name = "Location") +
-  labs(x = "Amount charged to \n owner (USD)", y = "Proportion of owners \n willing to pay", tag = "C") +
-  theme_minimal_hgrid(font_size = 12) +
-  guides(linetype = guide_legend(override.aes = list(size = 0.5))) -> fig2C
-
-# Figure 1D cost recovery (given estimate for both years)
+# Figure 1C cost recovery (given estimate for both years)
 cost_tradeoff <- function(charged, base_cost, cost_per_animal, nvacc, 
                           prop_willing) {
   new_vacc <- nvacc - (1 - prop_willing)*nvacc
@@ -118,13 +114,15 @@ costs_per_animal %>%
          cost_per_animal = cost_per_animal_Vaccine, 
          nvacc = n_animals) %>%
   left_join(willingness, by = character()) %>%
-  mutate(new_cost = cost_tradeoff(charged = charged/3100, base_cost = base_cost, 
+  mutate(new_cost = cost_tradeoff(charged = charged/exch_rate, 
+                                  base_cost = base_cost, 
                                   cost_per_animal = 0.75, 
-                                  nvacc = nvacc, prop_willing = prop_willing)) -> cost_compare
+                                  nvacc = nvacc, 
+                                  prop_willing = prop_willing)) -> cost_recovery
   
 ggplot() +
-  geom_line(data = cost_compare, 
-            aes(x = charged/3100, y = ifelse(new_cost > 5, 5, new_cost), 
+  geom_line(data = cost_recovery, 
+            aes(x = charged/exch_rate, y = ifelse(new_cost > 5, 5, new_cost), 
                 color = factor(year), linetype = Commune), 
             size = 1.5) +
   geom_hline(data = total_per_animal, aes(yintercept = total, 
@@ -134,14 +132,29 @@ ggplot() +
                         labels = c("Andasibe (rural)", "Moramanga (urban)", 
                                    "Overall"), name = "Location") +
   scale_x_continuous(breaks = c(0, 1, 2, 3), limits = c(0, 3)) +
-  labs(x = "Amount charged \n owner (USD)", y = "Estimated cost per animal", tag = "D") +
+  labs(x = "Amount charged \n owner (USD)", y = "Estimated cost per animal", tag = "C") +
   ylim(c(0, 5)) +
   scale_color_brewer(palette = "Dark2", guide = "none") +
   facet_wrap(~year) +
   theme_minimal_hgrid(font_size = 12, ) +
   guides(linetype = guide_legend(override.aes = list(size = 0.5))) +
-  theme(panel.border = element_rect(color = "black"))-> fig2D
+  theme(panel.border = element_rect(color = "black"))-> fig2C
 
+write_csv(cost_recovery, "out/cost_recovery.csv")
+
+# Willingess to pay
+ggplot(willingness) +
+  geom_line(aes(x = charged/exch_rate, y = (1 - prop_willing)*100, linetype = Commune), 
+            size = 1.2) +
+  xlim(c(0, 3)) +
+  scale_linetype_manual(values = c(3, 2, 1), 
+                        c("Andasibe (rural)", "Moramanga (urban)", 
+                          "Overall"), name = "Location") +
+  labs(x = "Amount charged to \n owner (USD)", y = "Reduction in coverage (%)", tag = "D") +
+  theme_minimal_hgrid(font_size = 12) +
+  guides(linetype = guide_legend(override.aes = list(size = 0.5))) -> fig2D
+
+write_csv(willingness, "out/willingess_to_pay.csv")
 
 # arrange
 fig2 <- (fig2A | fig2B) / (fig2C | fig2D) + plot_layout(guides = "collect")

@@ -1,4 +1,4 @@
-# Table 1
+# Table 1 & other stats
 
 # pkgs
 library(dplyr)
@@ -13,6 +13,20 @@ vacc_2018 <- read_csv("data/animal_2018.csv")
 vacc_2019 <- read_csv("data/campaign_2019.csv")
 owner_2018 <- read_csv("data/owner_2018.csv")
 vacc_pts_2018 <- read_csv("data/campaign_pts_2018.csv")
+
+# Get all animals vaccinated
+vacc_2018 %>%
+  mutate(year = 2018, 
+         location = ifelse(Commune %in% "Ambohibary", "Moramanga", Commune)) %>%
+  group_by(year, location) %>%
+  summarize(n_animals = n()) %>%
+  bind_rows(vacc_2018 %>% 
+              summarize(n_animals = n()) %>% 
+              mutate(year = 2018, location = "All")) %>%
+  bind_rows(vacc_2019 %>% 
+              summarize(n_animals = n()) %>%
+              mutate(year = 2019, 
+                    location = "All")) -> animals_All
 
 # filter to dogs
 vacc_2018 %>%
@@ -64,7 +78,6 @@ animals_all %>%
 owner_2018 %>%
   group_by(Commune) %>%
   summarize(avg_dogs = number(mean(AdultDogs + Puppies, na.rm = TRUE), accuracy = 0.1), 
-            avg_cats = number(mean(Cats + Kittens, na.rm = TRUE),  accuracy = 0.1), 
             roaming = percent(sum(grepl("mireny", 
                                         Roaming, 
                                         ignore.case = TRUE))/n())) %>%
@@ -80,7 +93,6 @@ owner_2018 %>%
   mutate(loc = "All_2018") %>%
   group_by(loc) %>%
   summarize(avg_dogs = number(mean(AdultDogs + Puppies, na.rm = TRUE), accuracy = 0.1), 
-            avg_cats = number(mean(Cats + Kittens, na.rm = TRUE),  accuracy = 0.1), 
             roaming = percent(sum(grepl("mireny", 
                                         Roaming, 
                                         ignore.case = TRUE))/n())) %>%
@@ -90,37 +102,66 @@ owner_2018 %>%
   left_join(owner_stats) %>%
   bind_rows(dog_stats, .) -> all_stats
 
-# Get owner stats -------
-vacc_2019 %>% 
-  select(Date) %>% 
-  summarize(person_days = n_distinct(dmy(Date))) %>%
-  mutate(loc = "All_2019") -> person_days
-
+# Get location/person stats -------
+# N locs
 vacc_pts_2018 %>%
-  mutate(loc = ifelse(Commune %in% "Moramanga Ville", "Moramanga", Commune)) %>%
-  group_by(loc) %>% 
-  summarize(person_days = sum(People)) %>%
-  bind_rows(tibble(loc = "All", person_days = sum(vacc_pts_2018$People))) %>%
-  mutate(loc = paste(loc, 2018, sep = "_")) %>%
-  bind_rows(person_days) %>%
-  mutate(person_days = as.character(person_days)) %>%
+  mutate(location = ifelse(Commune %in% "Moramanga Ville", "Moramanga", Commune)) %>%
+  group_by(location) %>%
+  summarize(ndays = n_distinct(Date), 
+            npoint = n(), 
+            n_person_days = sum(People)) %>%
+  bind_rows(vacc_pts_2018 %>%
+              summarize(ndays = n_distinct(Date), 
+                        npoint = n(), 
+                        n_person_days = sum(People)) %>% 
+              mutate(location = "All")) %>%
+  mutate(year = 2018) -> vacc_metrics_2018
+
+vacc_2019 %>%
+  summarize(ndays = n_distinct(Date), 
+            npoint = n_distinct(Date, `Vaccination Location`), 
+            n_person_days = n_distinct(Date)) %>%
+  mutate(location = "All", year = 2019) -> vacc_metrics_2019
+
+vacc_metrics <- bind_rows(vacc_metrics_2018, vacc_metrics_2019) 
+write_csv(vacc_metrics, "out/vacc_metrics.csv")
+
+vacc_metrics %>%
+  left_join(animals_All) %>%
+  mutate(across(ndays:n_person_days, 
+                ~ paste0(round(n_animals/.x, 1), " (", .x, ")"))) -> vacc_mets_all
+
+vacc_mets_all %>%
+  mutate(loc = paste0(location, "_", year), 
+         n_animals = as.character(n_animals)) %>%
+  select(-location, -year) %>%
+  pivot_longer(starts_with("n")) %>%
   pivot_wider(names_from = loc, 
-              values_from = person_days) %>%
-  mutate(name = "Person days \n for campaign") %>%
+              values_from = value) %>%
   bind_rows(all_stats, .) %>%
   select(name, All_2018, Moramanga_2018, Andasibe_2018, All_2019) -> all_stats
-  
-  
-  
+
+write_csv(all_stats, "out/table1_stats.csv")
+
+# Table 1
+# look up vals
+lookup <- tribble(~name, ~label, ~order, 
+                  "n_animals", "Total animals \n vaccinated", 1,
+                  "total", "Total dogs \n vaccinated", 2, 
+                  "prev_vacc", "Dogs with history of vaccination", 3,
+                  "vacc_in_year",  "Dogs vaccinated within last year", 4,
+                  "perc_m",  "Percent male dogs", 5,
+                  "avg_dogs",  "Average dogs per owner", 6,
+                  "roaming",  "Percent of owners with \n free-roaming dogs", 7,
+                  "ndays", "Animals vaccinated per day (total days)", 8, 
+                  "npoint", "Animals vaccinated per \n vaccination point (total points)", 9,
+                  "n_person_days",  "Animals vaccinated per \n person day (total person days)", 10)
+
+
 all_stats %>%
-  mutate(name = case_when(name == "total" ~ "Total dogs \n vaccinated", 
-                          name == "prev_vacc" ~ "Previous history of vaccination", 
-                          name == "vacc_in_year" ~ "Vaccinated within last year", 
-                          name == "perc_m" ~ "Percent male", 
-                          name == "avg_dogs" ~ "Average dogs per owner", 
-                          name == "avg_cats" ~  "Average cats per owner", 
-                          name == "roaming" ~ "Percent of owners with \n free-roaming animals", 
-                          TRUE ~ name)) %>%
+  left_join(lookup) %>%
+  arrange(order) %>%
+  select(label, everything(), -name, -order) %>%
   gt() %>%
   tab_spanner(
     label = "2018",
@@ -129,7 +170,7 @@ all_stats %>%
   tab_spanner(label = "2019",
               columns = vars(All_2019)) %>%
   cols_label(
-    name = "",
+    label = "",
     All_2019 = "All Communes",
     All_2018 = "All Communes",
     Andasibe_2018 = "Andasibe",
