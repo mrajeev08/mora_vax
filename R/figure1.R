@@ -101,7 +101,7 @@ cov_commune %>%
 st_geometry(map_cov) <- map_cov$geometry
 
 # Map with midpoint
-fig1A <-
+fig2A <-
   ggplot(map_cov) +
   geom_sf(fill = NA) + 
   stat_sf_coordinates(data = filter(map_cov, vacc != 0), 
@@ -123,7 +123,7 @@ fig1A <-
     facet.lev = 2019, border.size = 0.5
   ) 
 
-# fig1A inset
+# fig2A inset
 mada_out <- st_read("data/shapefile/mada_districts_simple.shp")
 mora_plot <- st_union(filter(mada_out, district == "Moramanga"))
 mada_plot <- st_union(mada_out)
@@ -135,12 +135,12 @@ map_inset <- ggplot() +
   theme(panel.border = element_rect(color = "black", fill = NA))
 
 # Final figure 1 formatted for pos
-layout_A <- fig1A + inset_element(map_inset, left = 0, right = 0.2,
+layout_A <- fig2A + inset_element(map_inset, left = 0, right = 0.2,
                                   top = 0.9, bottom = 0.5, on_top = TRUE, 
                                   align_to = "full")
 
 # Plot with range
-fig1B <- 
+fig2B <- 
   ggplot(cov_commune) +
   geom_pointrange(aes(x = Commune, y = cov_est, 
                       ymin = scales::squish(cov_est_lower, c(0, 1)), 
@@ -156,7 +156,7 @@ fig1B <-
   theme_minimal_hgrid() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-fig1 <- (layout_A / fig1B) + plot_layout(heights = c(2, 1), guides = "collect")
+fig2 <- (layout_A / fig2B) + plot_layout(heights = c(2, 1), guides = "collect")
 
-ggsave("figs/fig1.jpeg", height = 6, width = 7)
+ggsave("figs/fig2.jpeg", height = 6, width = 7)
                   

@@ -38,7 +38,7 @@ ggplot(costs) +
   labs(x = "Category", y = "Approximate cost (USD)", tag = "A") +
   scale_fill_brewer(palette = "Dark2", name = "Year") +
   theme_minimal_hgrid(font_size = 12) +
-  coord_flip() -> fig2A
+  coord_flip() -> fig1A
 
 write_csv(costs, "out/costs_by_category.csv")
 
@@ -73,7 +73,7 @@ ggplot() +
   coord_flip() +
   theme_cowplot(font_size = 12) + 
   theme(axis.line.y = element_blank()) +
-  guides(color = guide_legend(override.aes = list(fill = NA))) -> fig2B
+  guides(color = guide_legend(override.aes = list(fill = NA))) -> fig1B
 
 write_csv(costs_per_animal, "out/costs_per_animal.csv")
 
@@ -138,7 +138,7 @@ ggplot() +
   facet_wrap(~year) +
   theme_minimal_hgrid(font_size = 12, ) +
   guides(linetype = guide_legend(override.aes = list(size = 0.5))) +
-  theme(panel.border = element_rect(color = "black"))-> fig2C
+  theme(panel.border = element_rect(color = "black"))-> fig1C
 
 write_csv(cost_recovery, "out/cost_recovery.csv")
 
@@ -152,10 +152,10 @@ ggplot(willingness) +
                           "Overall"), name = "Location") +
   labs(x = "Amount charged to \n owner (USD)", y = "Reduction in coverage (%)", tag = "D") +
   theme_minimal_hgrid(font_size = 12) +
-  guides(linetype = guide_legend(override.aes = list(size = 0.5))) -> fig2D
+  guides(linetype = guide_legend(override.aes = list(size = 0.5))) -> fig1D
 
 write_csv(willingness, "out/willingess_to_pay.csv")
 
 # arrange
-fig2 <- (fig2A | fig2B) / (fig2C | fig2D) + plot_layout(guides = "collect")
-ggsave("figs/fig2.jpeg", height = 8, width = 10)
+fig1 <- (fig1A | fig1B) / (fig1C | fig1D) + plot_layout(guides = "collect")
+ggsave("figs/fig1.jpeg", height = 8, width = 10)
