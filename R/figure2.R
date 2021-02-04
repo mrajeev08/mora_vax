@@ -1,161 +1,176 @@
-# Figure 2. Comparing costs and willingness to pay
-
 # pkgs
+library(sf)
 library(dplyr)
 library(readr)
 library(ggplot2)
 library(tidyr)
 library(patchwork)
 library(cowplot)
+library(ggsn)
 
-# data on costs
-costs <- read_csv("data/costs_summarized.csv")
-willing_to_pay <- read_csv("data/owner_2018.csv")
+# From Claire's MSC
+range_people_ph <- c(4.13, 5.654)
+range_dogs_ph <- c(0.24, 0.26)
 
-# exchange rate (midpoint between 2018 and 2019 est)
-exch_rate <- (3128 + 3500)/2
+# Range of hdrs then
+mora_hdrs <- range_people_ph / range_dogs_ph
+mora_mid_hdr <- median(mora_hdrs)
+hdr_high <- 25
+hdr_low <- 8
 
-# animals
-animals_2018 <- read_csv("data/animal_2018.csv")
-animals_2019 <- read_csv("data/campaign_2019.csv")
-
-# Figure 1A costs by category
-costs %>%
-  filter(include == "Y") %>%
-  group_by(year, category) %>%
-  summarize(cost_usd = sum(usd)) %>%
-  group_by(year) %>%
-  mutate(prop = cost_usd/sum(cost_usd)) %>%
-  ungroup() %>%
-  tidyr::complete(category, year = 2018:2019, 
-                  fill = list(cost_usd = 0, prop = 0)) %>%
-  mutate(type = case_when(category == "Vaccine" ~ "Vaccine", 
-                   TRUE ~ "Implementation")) -> costs
-
-ggplot(costs) +
-  geom_col(aes(x = category, y = cost_usd, fill = factor(year)), 
-           position = position_dodge()) +
-  labs(x = "Category", y = "Approximate cost (USD)", tag = "A") +
-  scale_fill_brewer(palette = "Dark2", name = "Year") +
-  theme_minimal_hgrid(font_size = 12) +
-  coord_flip() -> fig1A
-
-write_csv(costs, "out/costs_by_category.csv")
-
-# Figure 1B Cost per animal vaccinated
-costs %>%
-  group_by(year, type) %>%
-  summarize(cost = sum(cost_usd, na.rm = TRUE)) %>%
-  mutate(n_animals = case_when(year == 2018 ~ nrow(animals_2018), 
-                                  year == 2019 ~ nrow(animals_2019)), 
-          cost_per_animal = cost/n_animals) -> costs_per_animal
-
-costs_per_animal %>%
-  group_by(year) %>%
-  summarize(total = sum(cost_per_animal)) -> total_per_animal
-
-# jerry rig
-costs_per_animal %>%
-  filter(type == "Vaccine") %>%
-  mutate(border = cost_per_animal + 0.04) -> bord_2b
-
-ggplot() +
-  geom_col(data = costs_per_animal, 
-           aes(x = factor(year), y = cost_per_animal, color = type, 
-               fill = factor(year)), width = 0.5, size = 1.2) +
-  geom_text(data = total_per_animal, 
-            aes(x = factor(year), y = total, label = format(total, digits = 3)), 
-            hjust = -0.15) +
-  scale_color_manual(values = c("grey", "black"), name = "Category") + 
-  scale_fill_brewer(palette = "Dark2", name = "Year", guide = "none") +
-  labs(x = "Year", y = "Cost per animal \n vaccinated (USD)", tag = "B") +
-  ylim(c(0, 3)) +
-  coord_flip() +
-  theme_cowplot(font_size = 12) + 
-  theme(axis.line.y = element_blank()) +
-  guides(color = guide_legend(override.aes = list(fill = NA))) -> fig1B
-
-write_csv(costs_per_animal, "out/costs_per_animal.csv")
-
-# cost recovery bits
-prop_willing <- function(charge, willing) {
-  length(willing[willing >= charge])/length(willing)
+# function to get upper & lower conf intervals from binomial into a data.frame
+bn_ci <- function(resighted, sighted_total) {
+  out <- binom.test(resighted, sighted_total, resighted/sighted_total,
+                    alternative = "two.sided", 
+                    conf.level = 0.95)
+  return(data.frame(cov_est = resighted/sighted_total, 
+                    cov_est_lower = out$conf.int[1], 
+                    cov_est_upper = out$conf.int[2]))
 }
 
-charge <- seq(0, 16000, by = 500)
-willing_to_pay %>%
-  filter(AdultDogs + Puppies > 0, Commune %in% c("Moramanga", "Andasibe"), 
-         !is.na(WillingnessPay)) %>%
+# Match vacc #s to gis
+mora_communes <- st_read("data/shapefile/mora_communes.shp")
+vacc_2018 <- read_csv("data/animal_2018.csv")
+vacc_2019 <- read_csv("data/campaign_2019.csv")
+
+# Coverage estimates based on transects
+transects <- read_csv("data/transects_2018.csv")
+
+vacc_2018 %>%
+  filter(Species == "A") %>%
+  group_by(Location) %>%
+  summarize(vacc = n()) -> vacc_by_loc
+
+transects %>% 
+  filter(Species == "A") %>%
+  count(Mark, Location) %>%
+  tidyr::pivot_wider(names_from = Mark, values_from = n) %>%
+  rowwise() %>%
+  mutate(sighted_total = sum(N, Y, na.rm = TRUE), 
+         resighted = Y) %>%
+  select(Location, sighted_total, resighted) %>%
+  left_join(vacc_by_loc) %>%
+  mutate(commune = ifelse(Location == "Andasibe", "Andasibe", 
+                          "Moramanga"), 
+         bn_ci(resighted, sighted_total)) -> cov
+
+# @ commune level
+cov %>%
+  group_by(commune) %>%
+  summarise(across(where(is.numeric), sum)) %>%
+  rowwise() %>%
+  mutate(year = 2018, 
+         bn_ci(resighted, sighted_total), 
+         type = "transect") %>%
+  left_join(mora_communes) -> cov_commune_2018
+
+vacc_2018 %>%
+  filter(Species %in% "A") %>%
   group_by(Commune) %>%
-  summarize(prop_willing = unlist(lapply(charge, prop_willing, 
-                                         willing = WillingnessPay))) %>%
-  mutate(charged = charge) -> willing_by_loc
+  summarize(nvacc = n()) %>%
+  left_join(select(cov_commune_2018, starts_with("cov"), pop, 
+                   Commune = commune)) %>%
+  filter(Commune != "Ambohibary") %>%
+  mutate(across(starts_with("cov"), ~round(pop/(nvacc/.x), 1), 
+                .names = "hdr_{.col}")) -> hdr_backcalcs
+write_csv(hdr_backcalcs, "out/hdr_backcalcs.csv")
 
-willing_to_pay %>%
-  filter(AdultDogs + Puppies > 0, Commune %in% c("Moramanga", "Andasibe"), 
-         !is.na(WillingnessPay)) %>%
-  summarize(prop_willing = unlist(lapply(charge, prop_willing, 
-                                         willing = WillingnessPay))) %>%
-  mutate(charged = charge, Commune = "Overall") %>%
-  bind_rows(willing_by_loc) -> willingness
+vacc_2018 %>%
+  filter(Species == "A") %>%
+  group_by(Commune) %>%
+  summarize(vacc = n()) %>%
+  filter(!(Commune %in% "Ambohibary")) %>%
+  left_join(mora_communes, by = c("Commune" = "commune")) %>%
+  mutate(cov_est = vacc/(pop/mora_mid_hdr), 
+         cov_est_lower = vacc/(pop/hdr_low), 
+         cov_est_upper = vacc/(pop/hdr_high), 
+         year = 2018, 
+         type = "hdr") %>%
+  bind_rows(rename(cov_commune_2018, Commune = commune)) -> cov_commune_2018
 
-# Figure 1C cost recovery (given estimate for both years)
-cost_tradeoff <- function(charged, base_cost, cost_per_animal, nvacc, 
-                          prop_willing) {
-  new_vacc <- nvacc - (1 - prop_willing)*nvacc
-  total_cost <- base_cost + new_vacc*cost_per_animal - new_vacc*charged
-  new_cost_per_animal <- total_cost/new_vacc
-  return(new_cost_per_animal)
-}
+# back calculate hdr from cov est
+cov_commune
 
-costs_per_animal %>%
-  pivot_wider(names_from = type, values_from = c(cost, cost_per_animal)) %>%
-  select(year, base_cost = cost_Implementation, 
-         cost_per_animal = cost_per_animal_Vaccine, 
-         nvacc = n_animals) %>%
-  left_join(willingness, by = character()) %>%
-  mutate(new_cost = cost_tradeoff(charged = charged/exch_rate, 
-                                  base_cost = base_cost, 
-                                  cost_per_animal = 0.75, 
-                                  nvacc = nvacc, 
-                                  prop_willing = prop_willing)) -> cost_recovery
-  
-ggplot() +
-  geom_line(data = cost_recovery, 
-            aes(x = charged/exch_rate, y = ifelse(new_cost > 5, 5, new_cost), 
-                color = factor(year), linetype = Commune), 
-            size = 1.5) +
-  geom_hline(data = total_per_animal, aes(yintercept = total, 
-                                          color = factor(year)), 
-             linetype = 2) +
-  scale_linetype_manual(values = c(3, 2, 1), 
-                        labels = c("Andasibe (rural)", "Moramanga (urban)", 
-                                   "Overall"), name = "Location") +
-  scale_x_continuous(breaks = c(0, 1, 2, 3), limits = c(0, 3)) +
-  labs(x = "Amount charged \n owner (USD)", y = "Estimated cost per animal", tag = "C") +
-  ylim(c(0, 5)) +
-  scale_color_brewer(palette = "Dark2", guide = "none") +
-  facet_wrap(~year) +
-  theme_minimal_hgrid(font_size = 12, ) +
-  guides(linetype = guide_legend(override.aes = list(size = 0.5))) +
-  theme(panel.border = element_rect(color = "black"))-> fig1C
+# 2019 coverage estimates
+vacc_2019 %>%
+  filter(`Dog or Cat` == "dog") %>%
+  group_by(Commune) %>%
+  summarize(vacc = n()) %>%
+  left_join(mora_communes, by = c("Commune" = "commune")) %>%
+  mutate(cov_est = vacc/(pop/mora_mid_hdr), 
+         cov_est_lower = vacc/(pop/hdr_low), 
+         cov_est_upper = vacc/(pop/hdr_high), 
+         year = 2019, 
+         type = "hdr") %>%
+  bind_rows(cov_commune_2018) -> cov_commune
 
-write_csv(cost_recovery, "out/cost_recovery.csv")
+cov_commune %>%
+  select(commune = Commune, year, vacc, cov_est, cov_est_lower, 
+         cov_est_upper, type) %>%
+  filter(!(interaction(year, type) %in% "2018.hdr")) %>%
+  complete(year = 2018:2019, commune = mora_communes$commune, 
+           fill = list(vacc = 0, cov_est = 0)) %>%
+  right_join(mora_communes) %>%
+  filter(!is.na(year)) -> map_cov
+st_geometry(map_cov) <- map_cov$geometry
 
-# Willingess to pay
-ggplot(willingness) +
-  geom_line(aes(x = charged/exch_rate, y = (1 - prop_willing)*100, linetype = Commune), 
-            size = 1.2) +
-  xlim(c(0, 3)) +
-  scale_linetype_manual(values = c(3, 2, 1), 
-                        c("Andasibe (rural)", "Moramanga (urban)", 
-                          "Overall"), name = "Location") +
-  labs(x = "Amount charged to \n owner (USD)", y = "Reduction in coverage (%)", tag = "D") +
-  theme_minimal_hgrid(font_size = 12) +
-  guides(linetype = guide_legend(override.aes = list(size = 0.5))) -> fig1D
+# Map with midpoint
+fig2A <-
+  ggplot(map_cov) +
+  geom_sf(fill = NA) + 
+  stat_sf_coordinates(data = filter(map_cov, vacc != 0), 
+                      aes(size = vacc, fill = cov_est, shape = type), 
+                      color = "#3D4849") +
+  facet_wrap(~year, ncol = 2) +
+  theme_map() +
+  theme(strip.text = element_text(face = "bold", hjust = 0.45)) +
+  scale_fill_distiller(name = "Cov.\n estimate", direction = 1) +
+  scale_shape_manual(values = c(21, 23), guide = "none") +
+  scale_size(name = "No. dogs\n vaccinated", 
+             breaks = c(50, 150, 400, 1000)) +
+  labs(tag = "A") +
+  north(data = map_cov, anchor = c(x = 48.5, y = -18.2), symbol = 9) +
+  scalebar(
+    data = map_cov, dist = 10, dist_unit = "km",
+    transform = TRUE, model = "WGS84", anchor = c(x = 48.7, y = -18.2),
+    height = 0.009, angle = 45, hjust = 1, st.size = 2, facet.var = "year", 
+    facet.lev = 2019, border.size = 0.5
+  ) 
 
-write_csv(willingness, "out/willingess_to_pay.csv")
+# fig2A inset
+mada_out <- st_read("data/shapefile/mada_districts_simple.shp")
+mora_plot <- st_union(filter(mada_out, district == "Moramanga"))
+mada_plot <- st_union(mada_out)
 
-# arrange
-fig1 <- (fig1A | fig1B) / (fig1C | fig1D) + plot_layout(guides = "collect")
-ggsave("figs/fig1.jpeg", height = 8, width = 10)
+map_inset <- ggplot() +
+  geom_sf(data = mada_plot, fill = "grey50", alpha = 0.5) +
+  geom_sf(data = mora_plot, fill = "white") +
+  theme_map() +
+  theme(panel.border = element_rect(color = "black", fill = NA))
+
+# Final figure 1 formatted for pos
+layout_A <- fig2A + inset_element(map_inset, left = 0, right = 0.2,
+                                  top = 0.9, bottom = 0.5, on_top = TRUE, 
+                                  align_to = "full")
+
+# Plot with range
+fig2B <- 
+  ggplot(cov_commune) +
+  geom_pointrange(aes(x = Commune, y = cov_est, 
+                      ymin = scales::squish(cov_est_lower, c(0, 1)), 
+                      ymax = scales::squish(cov_est_upper, c(0, 1)), 
+                      shape = type, color = factor(year)), 
+                  position = position_dodge(width = 0.2)) +
+  scale_shape_manual(values = c(16, 18), name = "Estimate type", 
+                     labels = c("HDR", "Transect")) +
+  scale_color_brewer(palette = "Dark2", name = "Year") +
+  scale_size_identity() +
+  labs(x = "Commune", y = "Coverage", tag = "B") +
+  ylim(c(0, 1)) +
+  theme_minimal_hgrid() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+fig2 <- (layout_A / fig2B) + plot_layout(heights = c(2, 1), guides = "collect")
+
+ggsave("figs/fig2.jpeg", height = 6, width = 7)
+                  
