@@ -40,7 +40,7 @@ vacc_2018 %>%
          vacc_in_year) -> animals_2018
 
 vacc_2019 %>%
-  filter(`Dog or Cat` %in% "dog") %>%
+  filter(tolower(`Dog or Cat`) %in% "dog") %>%
   select(Date, Commune, Fokontany = `Owner Location`, 
          Sex, prev_vacc = `Previous Vaccination`,
          vacc_in_year = `Last Vaccination Date`) %>%

@@ -144,13 +144,13 @@ write_csv(cost_recovery, "out/cost_recovery.csv")
 
 # Willingess to pay
 ggplot(willingness) +
-  geom_line(aes(x = charged/exch_rate, y = 1 - prop_willing*100, linetype = Commune), 
+  geom_line(aes(x = charged/exch_rate, y = (1 - prop_willing)*100, linetype = Commune), 
             size = 1.2) +
   xlim(c(0, 3)) +
   scale_linetype_manual(values = c(3, 2, 1), 
                         c("Andasibe (rural)", "Moramanga (urban)", 
                           "Overall"), name = "Location") +
-  labs(x = "Amount charged to \n owner (USD)", y = "Reduction in # \n of dogs vaccinated", tag = "D") +
+  labs(x = "Amount charged to \n owner (USD)", y = "% Reduction in dogs vaccinated", tag = "D") +
   theme_minimal_hgrid(font_size = 12) +
   guides(linetype = guide_legend(override.aes = list(size = 0.5))) -> fig1D
 
