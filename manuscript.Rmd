@@ -146,6 +146,8 @@ To assess coverage, post-vaccination coverage surveys were conducted according t
 knitr::include_graphics("figs/fig1.jpeg")
 ```
 
+#### Figure 1. Photos from the 2018 campaign. Topleft: advertisement for the campaign posted on the door of the fokontany office as the campaign starts; Topright: a dog post-vaccination marked with a crayon; Bottomleft: a basket of puppies brought for vaccination; Bottomright: a line of owners and dogs waiting for vaccination.
+
 ### 2019 Campaign
 
 For the 2019 campaign, instead of a static point campaign strategy, vaccine vials(Rabisin) and the supplies needed to administer them (needle, syringe, vaccination card for owners) were distributed to the District Veterinarian, who then delivered the vaccination at no cost to owners, but was directly compensated 1,500 Ar (~ 0.40 USD) per rabies vaccine administered. The campaign lasted from September 6, 2019 to June 19, 2020, One week prior to her visiting each location, the District Veterinarian advertised the vaccines by calling ahead to the fokontany leaders and other officials who then advertised to their communities, largely through word-of-mouth. For each animal vaccinated, the District Veterinarian collected the animal's age and sex, and also asked owners to approximate the distance they travelled to receive the vaccination in meters. Researchers communicated with the District Veterinarian about progress periodically throughout the campaign, primarily through telephone calls. No other compensation or instructions were provided, and we asked the District Veterinarian to administer as many (or as few) as feasible or wanted. As the vaccinations were delivered continuously, we were unable to do comparable post-vaccination surveys.
