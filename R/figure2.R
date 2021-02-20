@@ -88,9 +88,6 @@ vacc_2018 %>%
          type = "hdr") %>%
   bind_rows(rename(cov_commune_2018, Commune = commune)) -> cov_commune_2018
 
-# back calculate hdr from cov est
-cov_commune
-
 # 2019 coverage estimates
 vacc_2019 %>%
   filter(`Dog or Cat` == "dog") %>%
