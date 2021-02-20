@@ -2,9 +2,9 @@
 title: "Lessons learned and paths forward for rabies dog vaccination in Madagascar: a case study of pilot vaccination campaigns in Moramanga District"
 author:
   - name: Caitlynn Filla
-    affil: 1, *
+    affil: 1, \dagger
   - name: Malavika Rajeev
-    affil: 2, *
+    affil: 2, \dagger
     orcid: 0000-0001-6030-4995
   - name: Zoavina Randriana
     affil: 3
@@ -140,8 +140,6 @@ acknowledgement: |
    an undergraduate researcher and volunteer with Princeton University and the 
    Mad Dog Initiative who tragically passed away in a car accident before this 
    research was published.
-authorcontributions: |
-  Conceptualization, MR, KV, JL, TS, ZF, GE; methodology, MR, KV, JL, TS, ZF, GE, KH, CJEM, AY; data collection: MR, ZR, CH, RRR, GE, MA, NPR, JN, AF, TR, FD; formal analysis, MR, CF, AY; writing—original draft preparation, CF, MR; writing—review and editing, CF, MR, CJEM, TC, ZF, KV, KH, GE, CH; visualization, MR; supervision, KV, KH, CJEM, ZF; project administration, MR, ZR, CH, RRR, GE, MA, NPR, JN, AF, TR, FD, KV, ZF; funding acquisition, MR, KV, JL, TS, ZF, TC. 
 conflictsofinterest: |
   The authors declare no conflict of interest. The funders had no role in the
   design of the study; in the collection, analyses, or interpretation of data; 
@@ -161,7 +159,7 @@ library(lubridate)
 library(sf)
 library(gt)
 library(here)
-source("R/dem_models.R")
+source(here("R/dem_models.R"))
 
 # stats
 # From Claire's MSC 
