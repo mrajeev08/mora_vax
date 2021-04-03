@@ -266,8 +266,8 @@ FUNCTION {output.check.colon}
 FUNCTION {output.year.check}
 { year empty$
      { "empty year in " cite$ * warning$ }
-     { write$
-        ". " year * extra.label *
+     { add.period$ write$
+        " " year * extra.label *
        month empty$
           { }
           { ", " * month * }
@@ -775,7 +775,7 @@ FUNCTION {format.tr.number}
 
 FUNCTION {format.article.crossref}
 { "See"
-  "\citeN{" * crossref * "}" *
+  "\citep{" * crossref * "}" *
 }
 
 FUNCTION {format.crossref.editor}
@@ -821,12 +821,12 @@ FUNCTION {format.book.crossref}
     }
     { format.crossref.editor * }
   if$
-  " \citeN{" * crossref * "}" *
+  " \citep{" * crossref * "}" *
 }
 
 FUNCTION {format.incoll.inproc.crossref}
 { "See"
-  " \citeN{" * crossref * "}" *
+  " \citep{" * crossref * "}" *
 }
 
 % format.lab.names:
@@ -1609,19 +1609,6 @@ FUNCTION {forward.pass}
 % Need to concatenate year to the stack (done by calc.label) to determine
 % if two entries are the same (see presort)
 %
-{ last.label
-  calc.label year field.or.null purify$ #-1 #4 substring$ * % add year
-  #1 entry.max$ substring$ =     % are they equal?
-     { last.extra.num #1 + 'last.extra.num :=
-       last.extra.num int.to.chr$ 'extra.label :=
-     }
-     { "a" chr.to.int$ 'last.extra.num :=
-       "" 'extra.label :=
-       calc.label year field.or.null purify$ #-1 #4 substring$ * % add year
-       #1 entry.max$ substring$ 'last.label := % assign to last.label
-     }
-  if$
-}
 
 FUNCTION {reverse.pass}
 { next.extra "b" =
@@ -1633,8 +1620,6 @@ FUNCTION {reverse.pass}
 }
 
 EXECUTE {initialize.extra.label.stuff}
-
-ITERATE {forward.pass}
 
 REVERSE {reverse.pass}
 

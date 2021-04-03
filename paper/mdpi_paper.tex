@@ -1,10 +1,10 @@
 %  LaTeX support: latex@mdpi.com
-%  In case you need support, please attach all files that are necessary for compiling as well as the log file, and specify the details of your LaTeX setup (which operating system and LaTeX version / tools you are using).
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
 
 %=================================================================
 \documentclass[tropicalmed,article,submit,moreauthors,pdftex]{mdpi}
 
-% If you would like to post an early version of this manuscript as a preprint, you may use preprint as the journal and change 'submit' to 'accept'. The document class line would be, e.g., \documentclass[preprints,article,accept,moreauthors,pdftex]{mdpi}. This is especially recommended for submission to arXiv, where line numbers should be removed before posting. For preprints.org, the editorial staff will make this change immediately prior to posting.
+% For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal and change "submit" to "accept". The document class line would be, e.g., \documentclass[preprints,article,accept,moreauthors,pdftex]{mdpi}. This is especially recommended for submission to arXiv, where line numbers should be removed before posting. For preprints.org, the editorial staff will make this change immediately prior to posting.
 
 %% Some pieces required from the pandoc template
 \providecommand{\tightlist}{%
@@ -13,6 +13,21 @@
 \setlist[enumerate]{leftmargin=*,labelsep=4.9mm}
 
 \usepackage{longtable}
+
+%% https://tex.stackexchange.com/questions/161431/how-to-solve-longtable-is-not-in-1-column-mode-error
+\usepackage{xtab}
+
+\makeatletter
+\def\longtable{\@ifnextchar[\newlongtable@i \newlongtable@ii}
+\def\newlongtable@i[#1]{%
+\renewcommand{\endhead}{\ignorespaces}
+\xtabular[#1]}
+\def\newlongtable@ii{%
+\renewcommand{\endhead}{\ignorespaces}
+\xtabular}
+\def\endlongtable{\endxtabular}
+\makeatother
+
 
 % see https://stackoverflow.com/a/47122900
 
@@ -23,13 +38,13 @@
 % journal
 %----------
 % Choose between the following MDPI journals:
-% acoustics, actuators, addictions, admsci, aerospace, agriculture, agriengineering, agronomy, algorithms, animals, antibiotics, antibodies, antioxidants, applsci, arts, asc, asi, atmosphere, atoms, axioms, batteries, bdcc, behavsci , beverages, bioengineering, biology, biomedicines, biomimetics, biomolecules, biosensors, brainsci , buildings, cancers, carbon , catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, children, cleantechnol, climate, clockssleep, cmd, coatings, colloids, computation, computers, condensedmatter, cosmetics, cryptography, crystals, dairy, data, dentistry, designs , diagnostics, diseases, diversity, drones, econometrics, economies, education, electrochem, electronics, energies, entropy, environments, epigenomes, est, fermentation, fibers, fire, fishes, fluids, foods, forecasting, forests, fractalfract, futureinternet, futurephys, galaxies, games, gastrointestdisord, gels, genealogy, genes, geohazards, geosciences, geriatrics, hazardousmatters, healthcare, heritage, highthroughput, horticulturae, humanities, hydrology, ijerph, ijfs, ijgi, ijms, ijns, ijtpp, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jcdd, jcm, jcp, jcs, jdb, jfb, jfmk, jimaging, jintelligence, jlpea, jmmp, jmse, jnt, jof, joitmc, jpm, jrfm, jsan, land, languages, laws, life, literature, logistics, lubricants, machines, magnetochemistry, make, marinedrugs, materials, mathematics, mca, medicina, medicines, medsci, membranes, metabolites, metals, microarrays, micromachines, microorganisms, minerals, modelling, molbank, molecules, mps, mti, nanomaterials, ncrna, neuroglia, nitrogen, notspecified, nutrients, ohbm, particles, pathogens, pharmaceuticals, pharmaceutics, pharmacy, philosophies, photonics, physics, plants, plasma, polymers, polysaccharides, preprints , proceedings, processes, proteomes, psych, publications, quantumrep, quaternary, qubs, reactions, recycling, religions, remotesensing, reports, resources, risks, robotics, safety, sci, scipharm, sensors, separations, sexes, signals, sinusitis, smartcities, sna, societies, socsci, soilsystems, sports, standards, stats, surfaces, surgeries, sustainability, symmetry, systems, technologies, test, toxics, toxins, tropicalmed, universe, urbansci, vaccines, vehicles, vetsci, vibration, viruses, vision, water, wem, wevj
+% acoustics, actuators, addictions, admsci, adolescents, aerospace, agriculture, agriengineering, agronomy, ai, algorithms, allergies, analytica, animals, antibiotics, antibodies, antioxidants, appliedchem, applmech, applmicrobiol, applnano, applsci, arts, asi, atmosphere, atoms, audiolres, automation, axioms, batteries, bdcc, behavsci, beverages, biochem, bioengineering, biologics, biology, biomechanics, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, biosensors, biotech, birds, bloods, brainsci, buildings, businesses, cancers, carbon, cardiogenetics, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, civileng, cleantechnol, climate, clinpract, clockssleep, cmd, coatings, colloids, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, crops, cryptography, crystals, curroncol, cyber, dairy, data, dentistry, dermato, dermatopathology, designs, diabetology, diagnostics, digital, disabilities, diseases, diversity, dna, drones, dynamics, earth, ebj, ecologies, econometrics, economies, education, ejihpe, electricity, electrochem, electronicmat, electronics, encyclopedia, endocrines, energies, eng, engproc, entropy, environments, environsciproc, epidemiologia, epigenomes, fermentation, fibers, fire, fishes, fluids, foods, forecasting, forensicsci, forests, fractalfract, fuels, futureinternet, futuretransp, futurepharmacol, futurephys, galaxies, games, gases, gastroent, gastrointestdisord, gels, genealogy, genes, geographies, geohazards, geomatics, geosciences, geotechnics, geriatrics, hazardousmatters, healthcare, hearts, hemato, heritage, highthroughput, histories, horticulturae, humanities, hydrogen, hydrology, hygiene, idr, ijerph, ijfs, ijgi, ijms, ijns, ijtm, ijtpp, immuno, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jcdd, jcm, jcp, jcs, jdb, jfb, jfmk, jimaging, jintelligence, jlpea, jmmp, jmp, jmse, jne, jnt, jof, joitmc, jor, journalmedia, jox, jpm, jrfm, jsan, jtaer, jzbg, kidney, land, languages, laws, life, liquids, literature, livers, logistics, lubricants, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, materials, materproc, mathematics, mca, measurements, medicina, medicines, medsci, membranes, metabolites, metals, metrology, micro, microarrays, microbiolres, micromachines, microorganisms, minerals, mining, modelling, molbank, molecules, mps, mti, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, network, neuroglia, neurolint, neurosci, nitrogen, notspecified, nri, nursrep, nutrients, obesities, oceans, ohbm, onco, oncopathology, optics, oral, organics, osteology, oxygen, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pharmaceuticals, pharmaceutics, pharmacy, philosophies, photochem, photonics, physchem, physics, physiolsci, plants, plasma, pollutants, polymers, polysaccharides, proceedings, processes, prosthesis, proteomes, psych, psychiatryint, publications, quantumrep, quaternary, qubs, radiation, reactions, recycling, regeneration, religions, remotesensing, reports, reprodmed, resources, risks, robotics, safety, sci, scipharm, sensors, separations, sexes, signals, sinusitis, smartcities, sna, societies, socsci, soilsystems, solids, sports, standards, stats, stresses, surfaces, surgeries, suschem, sustainability, symmetry, systems, taxonomy, technologies, telecom, textiles, thermo, tourismhosp, toxics, toxins, transplantology, traumas, tropicalmed, universe, urbansci, uro, vaccines, vehicles, vetsci, vibration, viruses, vision, water, wevj, women, world
 
 %---------
 % article
 %---------
 % The default type of manuscript is "article", but can be replaced by:
-% abstract, addendum, article, benchmark, book, bookreview, briefreport, casereport, changes, comment, commentary, communication, conceptpaper, conferenceproceedings, correction, conferencereport, expressionofconcern, extendedabstract, meetingreport, creative, datadescriptor, discussion, editorial, essay, erratum, hypothesis, interestingimages, letter, meetingreport, newbookreceived, obituary, opinion, projectreport, reply, retraction, review, perspective, protocol, shortnote, supfile, technicalnote, viewpoint
+% abstract, addendum, article, book, bookreview, briefreport, casereport, comment, commentary, communication, conferenceproceedings, correction, conferencereport, entry, expressionofconcern, extendedabstract, datadescriptor, editorial, essay, erratum, hypothesis, interestingimage, obituary, opinion, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, systematicreview, supfile, technicalnote, viewpoint, guidelines, registeredreport, tutorial
 % supfile = supplementary materials
 
 %----------
@@ -48,44 +63,57 @@
 % The option pdftex is for use with pdfLaTeX. If eps figures are used, remove the option pdftex and use LaTeX and dvi2pdf.
 
 %=================================================================
+% MDPI internal commands
 \firstpage{1}
 \makeatletter
 \setcounter{page}{\@firstpage}
 \makeatother
-\pubvolume{xx}
+\pubvolume{1}
 \issuenum{1}
-\articlenumber{5}
-\pubyear{2019}
-\copyrightyear{2019}
-%\externaleditor{Academic Editor: name}
-\history{Received: date; Accepted: date; Published: date}
-\updates{yes} % If there is an update available, un-comment this line
-
-%% MDPI internal command: uncomment if new journal that already uses continuous page numbers
-%\continuouspages{yes}
-
+\articlenumber{0}
+\pubyear{2021}
+\copyrightyear{2020}
+%\externaleditor{Academic Editor: Firstname Lastname} % For journal Automation, please change Academic Editor to "Communicated by"
+\datereceived{}
+\dateaccepted{}
+\datepublished{}
+\hreflink{https://doi.org/} % If needed use \linebreak
 %------------------------------------------------------------------
 % The following line should be uncommented if the LaTeX file is uploaded to arXiv.org
 %\pdfoutput=1
 
-%=================================================================
-% Add packages and commands here. The following packages are loaded in our class file: fontenc, calc, indentfirst, fancyhdr, graphicx, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, amsthm, hyphenat, natbib, hyperref, footmisc, geometry, caption, url, mdframed, tabto, soul, multirow, microtype, tikz
+%%%% If original paper need add "Retraction", please release the following command!!%%%%%%
+%\retractiondate{Date Month Year} % For example,  13 October 2020
+%\retractionnoticeyear{Year}
+%\retractionnoticevolume{0}
+%\retractionnoticeidnumber{0000}
+%\retractionnoticedoi{10.3390/xxx}
 
 %=================================================================
-%% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, soul, multirow, microtype, tikz, totcount, changepage, paracol, attrib, upgreek, cleveref, amsthm, hyphenat, natbib, hyperref, footmisc, url, geometry, newfloat, caption
+
+%=================================================================
+%% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
 %% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
 
 %=================================================================
+
 % Full title of the paper (Capitalized)
 \Title{Lessons learned and paths forward for rabies dog vaccination in
 Madagascar: a case study of pilot vaccination campaigns in Moramanga
 District}
 
+% MDPI internal command: Title for citation in the left column
+\TitleCitation{Lessons learned and paths forward for rabies dog
+vaccination in Madagascar: a case study of pilot vaccination campaigns
+in Moramanga District}
+
+
 % Authors, for the paper (add full first names)
-\Author{Caitlynn Filla$^{1, \dagger}$, Malavika Rajeev$^{2,
-\dagger}$\href{https://orcid.org/0000-0001-6030-4995}{\orcidicon}, Zoavina
+\Author{Caitlynn Filla$^{1, \dagger}$, Malavika Rajeev$^{2, \dagger,
+*}$\href{https://orcid.org/0000-0001-6030-4995}{\orcidicon}, Zoavina
 Randriana$^{3}$, Chantal Hanitriniana$^{4}$, Radoniaina R.
-Rafaliarison$^{3}$, Glenn Edosoa$^{5}$, Mamitiana
+Rafaliarison$^{3}$, Glenn Torrencelli Edosoa$^{5}$, Mamitiana
 Andriamananjara$^{6}$, Nivohanitra P. Razafindraibe$^{6}$, José
 Nely$^{7}$, Angelique Ferreira$^{3, 8}$, Annie Yang$^{2,
 \ddagger}$, Fenomanana Daniel$^{3}$, Tara A. Clarke$^{3, 9}$, Zachary
@@ -95,18 +123,18 @@ Metcalf$^{2}$, Kim Valenta$^{1, 3}$}
 
 % Authors, for metadata in PDF
 \AuthorNames{Caitlynn Filla, Malavika Rajeev, Zoavina Randriana, Chantal
-Hanitriniana, Radoniaina R. Rafaliarison, Glenn Edosoa, Mamitiana
-Andriamananjara, Nivohanitra P. Razafindraibe, José Nely, Angelique
-Ferreira, Annie Yang, Fenomanana Daniel, Tara A. Clarke, Zachary
-Farris, Terry Stone, Jochem Lastdrager, Tsiky Rajaonarivelo, Katie
-Hampson, C. Jessica E. Metcalf, Kim Valenta}
+Hanitriniana, Radoniaina R. Rafaliarison, Glenn Torrencelli
+Edosoa, Mamitiana Andriamananjara, Nivohanitra P. Razafindraibe, José
+Nely, Angelique Ferreira, Annie Yang, Fenomanana Daniel, Tara A.
+Clarke, Zachary Farris, Terry Stone, Jochem Lastdrager, Tsiky
+Rajaonarivelo, Katie Hampson, C. Jessica E. Metcalf, Kim Valenta}
 
 % Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
 \address{%
 $^{1}$ \quad University of Florida, Department of Anthropology
-Gainesville, Florida, USA; \\
+Gainesville, Florida, 32611 USA; \\
 $^{2}$ \quad Department of Ecology and Evolutionary Biology, Princeton
-University Princeton, NJ, United States; \\
+University Princeton, NJ, 08544 United States; \\
 $^{3}$ \quad The Mad Dog Initiative Akanin'ny Veterinera, Akaikiniarivo,
 Ambatobe, Antananarivo 101, Madagascar; \\
 $^{4}$ \quad Mention Zoologie et Biodiversité Animale, Faculté des
@@ -140,8 +168,8 @@ University of Glasgow, Glasgow, UK; \\
 
 
 
-% The commands \thirdnote{} till \eighthnote{} are available for further notes
 
+% The commands \thirdnote{} till \eighthnote{} are available for further notes
 % Simple summary
 
 % Abstract (Do not insert blank lines, i.e. \\)
@@ -170,6 +198,8 @@ to move the country towards elimination.}
 \keyword{canine rabies; mass dog vaccination; central point vaccination;
 puppy vaccination; Zeroby30;}
 
+%\conference{} % An extended version of a conference paper
+
 % The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
 %\PACS{J0101}
 %\MSC{}
@@ -194,15 +224,16 @@ puppy vaccination; Zeroby30;}
 % Only for the journal Toxins
 %\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Encyclopedia
+%\encyclopediadef{Instead of the abstract}
+%\entrylink{The Link to this entry published on the encyclopedia platform.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %\setcounter{secnumdepth}{4}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Pandoc citation processing
 
-\usepackage{amsmath}
-\usepackage{booktabs}
-\usepackage{caption}
-\usepackage{longtable}
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -220,10 +251,10 @@ have set a goal to eliminate human deaths due to canine rabies by the
 year 2030 (`ZeroBy30')\citep{abela-ridder2016}. Annual dog vaccination
 campaigns achieving at least 70\% coverage are the recommended target
 for controlling rabies in domestic dog populations
-\citep{worldhealthorganization2013}. However, achieving this coverage
-target in low and middle income countries where the burden of human
-rabies is highest can be challenging due to economic, ecological,
-sociocultural, and political barriers \citep{fahrion2017}.
+\citep{world2018expert}. However, achieving this coverage target in low
+and middle income countries where the burden of human rabies is highest
+can be challenging due to economic, ecological, sociocultural, and
+political barriers \citep{fahrion2017}.
 
 In sub-Saharan African countries, parenteral vaccinations implemented
 through static point campaigns have been shown to be cost-effective and
@@ -242,21 +273,25 @@ In Madagascar, canine rabies has been endemic for over a century, and
 for most of that period, the Institut Pasteur de Madagascar has provided
 post-exposure prophylaxis free-of-charge to bite patients in the country
 \citep{reynes2011}. Currently, there are only 31 clinics where these
-human vaccines are available, and there is minimal dog vaccination due
-to high costs to owners and lack of vaccine availability
-\citep{rajeev2018}. Recent studies have estimated a high burden of human
-deaths, masked by weak surveillance across the country
-\citep{rajeev2020, rajeev2018}.
+human vaccines are available, with one clinic serving on average greater
+than 700,000 persons and over 20,000 bite patients treated annually
+\citep{rajeev2020}. There is minimal dog vaccination due to high costs
+to owners and lack of vaccine availability \citep{rajeev2018}. Recent
+studies have estimated a high burden of human rabies deaths
+(approximately 1000 deaths annually), masked by weak surveillance across
+the country \citep{rajeev2020, rajeev2018}.
 
-The veterinary sector is largely private, with 204 veterinarians
-employed in hybrid private/public employment as designated district
-veterinarians. While dog vaccination is rare, livestock officers and
-veterinarians work together to implement cattle vaccination campaigns
-for anthrax on an annual basis as mandated by the government (owners are
-charged a fee per animal for these vaccines which vary by location)
-\citep{mondiale2017evaluation}. No routine mass dog vaccinations have
-been conducted on the island, although a few pilot programs have begun
-in recent years, largely implemented by NGO-government partnerships.
+The veterinary sector is largely private and practices are largely
+limited to urban areas, but approximately 204 veterinarians are employed
+in hybrid private/public employment as designated district veterinarians
+by the national government. While dog vaccination is rare, livestock
+officers and veterinarians work together to implement cattle vaccination
+campaigns for anthrax on an annual basis as mandated by the government
+(owners are charged a fee per animal for these vaccines which vary by
+location) \citep{mondiale2017evaluation}. No routine mass dog
+vaccinations have been conducted on the island, although a few pilot
+programs have begun in recent years, largely implemented by
+NGO-government partnerships.
 
 Here, we summarize lessons learned through the implementation of pilot
 vaccination programs in the Moramanga District of Madagascar, where
@@ -264,12 +299,14 @@ previous work has shown high incidence of dog rabies cases and human
 rabies exposures. In 2018 and 2019, we deployed two different
 vaccination strategies. In 2018, we carried out a larger scale
 volunteer-led pilot vaccination campaign in two communes (sub-district
-level) using a static point strategy. In 2019/2020, we provided
-vaccines, all necessary supplies for vaccine administration, and a
-per-vaccine fee to the District Veterinarian to vaccinate animals as
-part of routine services delivered continuously. We compare time, human
-resources, costs, and coverage estimates between these campaigns, and
-using a demographic and vaccination model we further explore different
+level) using a static point strategy where owners brought their animals
+to a fixed location for vaccination. In 2019/2020, we provided vaccines,
+all necessary supplies for vaccine administration, and a per-vaccine fee
+to the District Veterinarian to vaccinate animals as part of continuous
+vaccination strategy, where vaccines were delivered alongside routine
+services provided by the veterinarian. We compare time, human resources,
+costs, and coverage estimates between these campaigns, and using a
+demographic and vaccination model we further explore different
 vaccination strategies based on what we learned during implementation.
 
 \hypertarget{methods}{%
@@ -283,17 +320,17 @@ and the east coast of Madagascar, at an average altitude of 936 m. It
 comprises 21 communes, covering approximately 7150 km\textsuperscript{2}
 with an approximate human population of 347,000\citep{instat2021}.
 Previous work in the district has established a high burden of rabies
-exposures and deaths despite the availability of post-exposure
-prophylaxis at the district hospital \citep{rajeev2018}. While Moramanga
-is relatively close to the capital city of Antananarivo
-(\textasciitilde{} 3 hours by bus), within the district, travel times
-between locations are highly variable, with much of the population
-living in more rural areas with limited access to roads and
-transportation \citep{rajeev2020}. Before 2018, there were limited
-animal rabies vaccination services, with most animal vaccines available
-in the urban commune of Moramanga Ville where owners were often charged
-\textgreater{} 15,000 Ariary (\textasciitilde{} 4.28 USD) per vaccine
-administered.
+exposures (42 - 110 per 100,000 persons) and deaths (1 - 3 deaths per
+100,000 persons) despite the availability of post-exposure prophylaxis
+at the district hospital \citep{rajeev2018}. While Moramanga is
+relatively close to the capital city of Antananarivo (\textasciitilde{}
+3 hours by bus), within the district, travel times between locations are
+highly variable, with much of the population living in more rural areas
+with limited access to roads and transportation \citep{rajeev2020}.
+Before 2018, there were limited animal rabies vaccination services, with
+most animal vaccines available in the urban commune of Moramanga Ville
+where owners were often charged \textgreater{} 15,000 Ariary
+(\textasciitilde{} 4.28 USD) per vaccine administered.
 
 \hypertarget{campaign}{%
 \subsection{2018 Campaign}\label{campaign}}
@@ -301,8 +338,8 @@ administered.
 In 2018, two NGOs (the Mad Dog Initiative (MDI) and Traveling Animal
 Doctors (TAD)) organized a pilot vaccination campaign in collaboration
 with the Department of Veterinary Services, and the Ministry of Public
-Health in the District of Moramanga. This campaign focused on two
-communes in Moramanga, Moramanga Ville (the district center) and
+Health in the District of Moramanga (fig 2). This campaign focused on
+two communes in Moramanga, Moramanga Ville (the district center) and
 Andasibe (a rural commune surrounding Andasibe National Park), where
 previously high incidence of probable rabies exposures (Moramanga Ville)
 and a high burden of deaths (Andasibe) had been recorded
@@ -311,46 +348,45 @@ and a high burden of deaths (Andasibe) had been recorded
 The campaign was planned as a series of static point vaccination
 stations covering 1 - 3 fokontany (i.e., sub-communes) per day. A week
 before the campaign dates, the vaccination team informed the chief of
-the fokontany about the campaign and provided posters advertising the
-date of the vaccine and that it would be available at no cost to owners.
-During the campaign, we used Rabisin (10 mL vials with 1 mL per dose,
-Boehringer Ingelheim) to vaccinate both dogs and cats presented that
-were at least 1 month old. As part of the campaign, owners were surveyed
-by vaccinators about how many dogs and cats they owned in total (split
-by \textgreater{} 1 year vs.~\textless{} 1 year in order to avoid
-language ambiguities that might result in excluding puppies and
-kittens), as well as if their dogs were free roaming (no restrictions on
-movement by the owner/`mirenyreny', tied/`mifatora', or
+the fokontany about the campaign and provided fliers advertising the
+date of the vaccine and that it would be available at no cost to owners
+(fig 2). During the campaign, we used Rabisin (10 mL vials with 1 mL per
+dose, Boehringer Ingelheim) to vaccinate both dogs and cats presented
+that were at least 1 month old based on current WHO recommendations for
+endemic settings \citep{morters2015, world2018expert}. Rabisin has a
+manufacturor stated duration of protection of 1 year given one dose, and
+of an additional three years if an additional dose is given
+approximately one year after the first dose. As part of the campaign,
+owners were surveyed by vaccinators about how many dogs and cats they
+owned in total (split by \textgreater{} 1 year vs.~\textless{} 1 year in
+order to avoid language ambiguities that might result in excluding
+puppies and kittens), as well as if their dogs were free roaming (no
+restrictions on movement by the owner/`mirenyreny', tied/`mifatora', or
 fenced/`mifefy'). Vaccinations were delivered at no cost to owners, but
 as animal vaccination is generally thought of as a paid service in
 Madagascar, owners were asked how much in Ariary they would be willing
-to pay to have one animal vaccinated against rabies. For each animal
+to pay to have one animal vaccinated against rabies (after being
+informed that the current vaccination was being free). For each animal
 vaccinated, we recorded the species (cat or dog), sex, approximate age
-in years, and whether the animal had been previously vaccinated.
+in years as reported by the owner, and whether the animal had been
+previously vaccinated.
 
 To assess coverage, post-vaccination coverage surveys were conducted
 according to previously established
 methodology\citep{sambo2017, gibson2015}. All animals vaccinated were
 concurrently marked with a colored, non-toxic, livestock crayon along
-the top of the head or back. Between 4 - 6 PM when dogs are most active
-\citep{sambo2017} and on the same day as the campaign, in each
-vaccination location two transect surveys were done. Each team (two
-people per team) walked a transect for 1 hour starting in opposite
-directions and accompanied by a local guide to ensure that walking paths
-did not overlap. Teams recorded any marked and unmarked dogs observed,
-their roaming status (whether roaming, inside a fence, or tied), and
-their approximate age (greater or less than 1 year of age).
+the top of the head or back. At the end of each campaign day between
+1600-1800 hours, when dogs are most active \citep{sambo2017}, two
+transect surveys were conducted on vaccination campaign days in each
+vaccination location by two teams (consisting of two volunteers and one
+local guide) for one hour on separate paths and in opposite directions.
+Marked and unmarked dogs were recorded as well as their roaming status
+(i.e., roaming, inside a fence, or tied), and their approximate age
+(\textgreater1 year or \textless{} 1 year of age).
 
-\includegraphics[width=0.8\linewidth]{/Users/mrajeev/Documents/Projects/mora_vax/figs/fig1}
-
-\hypertarget{figure-1.-photos-from-the-2018-campaign.-topleft-advertisement-for-the-campaign-posted-on-the-door-of-the-fokontany-office-as-the-campaign-starts-topright-a-dog-post-vaccination-marked-with-a-crayon-bottomleft-a-basket-of-puppies-brought-for-vaccination-bottomright-a-line-of-owners-and-dogs-waiting-for-vaccination.}{%
-\paragraph{\texorpdfstring{\textbf{Figure 1. Photos from the 2018
-campaign}. \emph{Topleft: advertisement for the campaign posted on the
-door of the fokontany office as the campaign starts; Topright: a dog
-post-vaccination marked with a crayon; Bottomleft: a basket of puppies
-brought for vaccination; Bottomright: a line of owners and dogs waiting
-for
-vaccination.}}{Figure 1. Photos from the 2018 campaign. Topleft: advertisement for the campaign posted on the door of the fokontany office as the campaign starts; Topright: a dog post-vaccination marked with a crayon; Bottomleft: a basket of puppies brought for vaccination; Bottomright: a line of owners and dogs waiting for vaccination.}}\label{figure-1.-photos-from-the-2018-campaign.-topleft-advertisement-for-the-campaign-posted-on-the-door-of-the-fokontany-office-as-the-campaign-starts-topright-a-dog-post-vaccination-marked-with-a-crayon-bottomleft-a-basket-of-puppies-brought-for-vaccination-bottomright-a-line-of-owners-and-dogs-waiting-for-vaccination.}}
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{/Users/mrajeev/Documents/Projects/mora_vax/figs/fig1} \caption{Photos from the 2018 campaign. Topleft: advertisement for the campaign posted on the door of the fokontany office as the campaign starts; Topright: a dog post-vaccination marked with a crayon; Bottomleft: a basket of puppies brought for vaccination; Bottomright: a line of owners and dogs waiting for vaccination. Photo credit: Jochem Lastdrager, Traveling Animal Doctors.}\label{fig:fig1}
+\end{figure}
 
 \hypertarget{campaign-1}{%
 \subsection{2019 Campaign}\label{campaign-1}}
@@ -428,9 +464,10 @@ coverage as the proportion of dogs sighted that were marked using a
 binomial confidence interval at the commune level. For the 2019
 campaign, we estimated vaccination coverage using human-to-dog ratios
 (HDRs) and human population estimates
-\citep{cleaveland2003, athingo2020}. We used a range of 8 - 25, based on
-previous data from Madagascar \citep{ratsitorahina2009} and based on
-recent estimates from household surveys in the Moramanga District
+\citep{cleaveland2003, athingo2020}. We used a ratio range of 8 - 25
+humans-to-dogs, based on previous data from Madagascar
+\citep{ratsitorahina2009} and based on recent estimates from household
+surveys in the Moramanga District
 \citep{leblancclaireRabiesMadagascarThreepronged2019}. We set the point
 estimate using an HDR of 19.5, the midpoint between the HDRs estimated
 for two communities in the District by LeBlanc et al.~2019. We used
@@ -447,12 +484,15 @@ post-vaccination transects vs.~HDRs.
 Using the age data on vaccinated animals collected during both
 vaccination campaigns, we estimated the proportion of the population in
 four age classes: puppies under the age of 1 year, juveniles aged 1 - 2
-yrs, adults aged 2 - 6 years, and older dogs aged 6+ years based on .
-With the assumption that these estimates represent the population at a
-stable age distribution, we use a Leslie matrix model to estimate annual
-adult survival probability and fertility using maximum likelihood
-estimation \citep{Fujiwara2017}. Specifically, we assume that the number
-of individuals in each age class follows a Poisson distribution with the
+years, adults aged 2 - 6 years, and older dogs aged 6+ years based on
+broad patterns of survival in comparable dog populations (i.e.~low
+survival in the first year of life, followed by plateauing survival
+probabilites, \citep{czupryna2016, davlin2012}). With the assumption
+that these estimates represent the population at a stable age
+distribution, we use a Leslie matrix model to estimate annual adult
+survival probability and fertility using maximum likelihood estimation
+\citep{Fujiwara2017}. Specifically, we assume that the number of
+individuals in each age class follows a Poisson distribution with the
 mean predicted by the stable age distribution from the model (the
 proportion of individuals in each age class at equilibrium, equal to the
 eigenvector associated with the dominant eigenvalue of the matrix
@@ -513,7 +553,7 @@ filtered to parameter estimates which corresponded to positive
 population growth.
 
 \hypertarget{data-and-ethics-statement}{%
-\paragraph{Data and ethics statement}\label{data-and-ethics-statement}}
+\subsection{Data and ethics statement}\label{data-and-ethics-statement}}
 
 All data were analysed in R version 4.0.2 (2020-06-22) \citep{R2020},
 largely using the \texttt{tidyverse} package suite \citep{wickham2019}.
@@ -525,6 +565,10 @@ officials, the NGOs involved, and in partnership with the Ministry of
 Public Health and the Department of Veterinary Services at the national
 level. MDI also maintains national research permits (MICET permit:
 \#130-19/MEDD/SG/DGEF/DGRNE) for its research and volunteer programs.
+Prior to vaccination, verbal informed consent was obtained from animal
+owners, and owners could opt out of answering any questions or services
+provided. No personally identifiable information was collected at any
+point during the campaigns.
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -538,7 +582,7 @@ dogs and 1080 cats) in the Moramanga (urban) and Andasibe (rural)
 communes over 13 days during the month of April (Table 1). We vaccinated
 at 7 points in Andasibe and 14 points in Moramanga Ville. During the
 2019 campaign, between September 2019 - June 2020, the District
-Veterinarian vaccinated a total of 2385animals (1898 dogs and 486 cats)
+Veterinarian vaccinated a total of 2385 animals (1898 dogs and 486 cats)
 over 48 days in seven communes in the Moramanga District. While more
 animals were vaccinated per vaccination point and per vaccination day in
 2018 compared to 2019, the number of animals vaccinated per person-day
@@ -571,38 +615,39 @@ how far they travelled in meters to get their animals vaccinated, and
 94\% of people reportedly travelled less than 1 km to reach the
 vaccination point.
 
-\hypertarget{table-1.-summary-of-2018-and-2019-campaigns.-breakdown-of-of-animals-vaccinated-prior-vaccination-history-dog-demography-dog-ownership-daily-and-per-vaccination-rates-by-year-and-location-for-2018.-photo-credict-jochem-lastdrager-traveling-animal-doctors.}{%
-\paragraph{\texorpdfstring{\textbf{Table 1. Summary of 2018 and 2019
-campaigns}. \emph{Breakdown of of animals vaccinated, prior vaccination
-history, dog demography, dog ownership, daily and per vaccination rates
-by year and location (for 2018). Photo credict: Jochem Lastdrager,
-Traveling Animal
-Doctors.}}{Table 1. Summary of 2018 and 2019 campaigns. Breakdown of of animals vaccinated, prior vaccination history, dog demography, dog ownership, daily and per vaccination rates by year and location (for 2018). Photo credict: Jochem Lastdrager, Traveling Animal Doctors.}}\label{table-1.-summary-of-2018-and-2019-campaigns.-breakdown-of-of-animals-vaccinated-prior-vaccination-history-dog-demography-dog-ownership-daily-and-per-vaccination-rates-by-year-and-location-for-2018.-photo-credict-jochem-lastdrager-traveling-animal-doctors.}}
-
-\captionsetup[table]{labelformat=empty,skip=1pt}
-\begin{longtable}{lllll}
+\begin{specialtable}[H] 
+\caption{Summary of 2018 and 2019 campaigns. Breakdown of of animals vaccinated, prior vaccination history, dog demography, dog ownership, daily and per vaccination rates by year and location (for 2018).\label{tab1}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.3}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.12}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.15}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.15}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.15}}@{}}
 \toprule
-& \multicolumn{3}{c}{2018} & \\ 
- \cmidrule(lr){2-4}
- & Andasibe & Moramanga Ville & All Communes & All Communes \\ 
+& & 2018 & & 2019 \\ \addlinespace
 \midrule
-Total animals 
- vaccinated & 528 & 2609 & 3137 & 2385 \\ 
-Total dogs 
- vaccinated & 254 & 1,803 & 2,057 & 1,898 \\ 
-Dogs with history of vaccination & 5\% & 16\% & 15\% & 13\% \\ 
-Dogs vaccinated within last year & 5\% & 7\% & 7\% & 13\% \\ 
-Percent male dogs & 55\% & 56\% & 56\% & 65\% \\ 
-Average dogs per owner & 0.8 & 1.1 & 1.0 & NA \\ 
-Percent of owners with 
- free-roaming dogs & 67\% & 19\% & 28\% & NA \\ 
-Animals vaccinated per day (total days) & 88 (6) & 372.7 (7) & 241.3 (13) & 49.7 (48) \\ 
-Animals vaccinated per 
- vaccination point (total points) & 75.4 (7) & 186.4 (14) & 149.4 (21) & 37.3 (64) \\ 
-Animals vaccinated per 
- person day (total person days) & 11.7 (45) & 21.6 (121) & 18.9 (166) & 49.7 (48) \\ 
+\endhead
+& Andasibe & Moramanga Ville & All Communes & All
+Communes \\ \addlinespace
+Total animals vaccinated & 528 & 2609 & 3137 & 2385 \\ \addlinespace
+Total dogs vaccinated & 254 & 1,803 & 2,057 & 1,898 \\ \addlinespace
+Dogs with history of vaccination & 5\% & 16\% & 15\% &
+13\% \\ \addlinespace
+Dogs vaccinated within last year & 5\% & 7\% & 7\% &
+13\% \\ \addlinespace
+Percent male dogs & 55\% & 56\% & 56\% & 65\% \\ \addlinespace
+Average dogs per owner & 0.8 & 1.1 & 1.0 & -- \\ \addlinespace
+Percent of owners with free-roaming dogs & 67\% & 19\% & 28\% &
+-- \\ \addlinespace
+Animals vaccinated per day (total days) & 88 (6) & 372.7 (7) & 241.3
+(13) & 49.7 (48) \\ \addlinespace
+Animals vaccinated per vaccination point (total points) & 75.4 (7) &
+186.4 (14) & 149.4 (21) & 37.3 (64) \\ \addlinespace
+Animals vaccinated per person day (total person days) & 11.7 (45) & 21.6
+(121) & 18.9 (166) & 49.7 (48) \\ \addlinespace
 \bottomrule
 \end{longtable}
+\end{specialtable}
 
 \hypertarget{cost-comparison-and-willingness-to-pay}{%
 \subsection{Cost comparison and willingness to
@@ -618,31 +663,15 @@ and beyond a minimal cost would actually result in increased costs per
 vaccinated individual than free-of-charge campaigns. Cost recovery would
 be more likely given a 2019 style strategy where the majority of the
 costs are incurred on a per animal basis, compared to the 2018 campaigns
-where the costs are largely due to setting up the static point
-vaccination stations (fig 4A). More importantly, in all cases, even a
-nominal fee would significantly reduce numbers of dogs vaccinated and
+where the costs were largely due to setting up the static point
+vaccination stations (fig 2A \& B). More importantly, in all cases, even
+a nominal fee would significantly reduce numbers of dogs vaccinated and
 thus vaccination coverage, particularly in the rural commune of Andasibe
 (fig 2D).
 
-\includegraphics[width=0.8\linewidth]{/Users/mrajeev/Documents/Projects/mora_vax/figs/fig2}
-
-\hypertarget{figure-2.-comparing-campaign-costs-and-willingness-to-pay.-a-vaccine-costs-broken-down-by-category-and-by-year-colors.-b-overall-cost-per-animal-vaccinated-for-the-two-campaign-years-split-by-direct-costs-of-vaccination-per-animal-i.e.-vaccine-vaccination-card-syringes-and-baseline-implementation-costs-i.e.-personnel-supplies-subsistence-costs-for-vaccinators-during-the-campaign.-c-estimated-cost-per-animal-vaccinated-under-a-willingness-to-pay-model-for-two-campaigns-examining-increasing-costs-charged-to-the-owner-with-estimated-costs-declining-due-to-cost-recovery-through-owner-payments-and-then-peaking-once-owners-report-to-be-no-longer-willing-to-pay-for-the-vaccine.-d-the-percent-reduction-in-number-of-animals-vaccinated-given-owners-willingness-to-pay.-the-curves-in-c-and-d-are-shown-based-on-the-overall-responses-on-willingness-to-pay-solid-line-from-both-moramanga-and-andasibe-and-the-responses-split-by-commune-dashed-and-dotted-lines.}{%
-\paragraph{\texorpdfstring{\textbf{Figure 2. Comparing campaign costs
-and willingness to pay}. \emph{A) Vaccine costs broken down by category
-and by year (colors). B) Overall cost per animal vaccinated for the two
-campaign years, split by direct costs of vaccination per animal
-(i.e.~vaccine, vaccination card, syringes) and baseline implementation
-costs (i.e.~personnel, supplies, subsistence costs for vaccinators
-during the campaign). C) Estimated cost per animal vaccinated under a
-willingness to pay model for two campaigns examining increasing costs
-charged to the owner, with estimated costs declining due to cost
-recovery through owner payments and then peaking once owners report to
-be no longer willing to pay for the vaccine. D) The percent reduction in
-number of animals vaccinated given owners willingness to pay. The curves
-in C and D are shown based on the overall responses on willingness to
-pay (solid line) from both Moramanga and Andasibe, and the responses
-split by Commune (dashed and dotted
-lines).}}{Figure 2. Comparing campaign costs and willingness to pay. A) Vaccine costs broken down by category and by year (colors). B) Overall cost per animal vaccinated for the two campaign years, split by direct costs of vaccination per animal (i.e.~vaccine, vaccination card, syringes) and baseline implementation costs (i.e.~personnel, supplies, subsistence costs for vaccinators during the campaign). C) Estimated cost per animal vaccinated under a willingness to pay model for two campaigns examining increasing costs charged to the owner, with estimated costs declining due to cost recovery through owner payments and then peaking once owners report to be no longer willing to pay for the vaccine. D) The percent reduction in number of animals vaccinated given owners willingness to pay. The curves in C and D are shown based on the overall responses on willingness to pay (solid line) from both Moramanga and Andasibe, and the responses split by Commune (dashed and dotted lines).}}\label{figure-2.-comparing-campaign-costs-and-willingness-to-pay.-a-vaccine-costs-broken-down-by-category-and-by-year-colors.-b-overall-cost-per-animal-vaccinated-for-the-two-campaign-years-split-by-direct-costs-of-vaccination-per-animal-i.e.-vaccine-vaccination-card-syringes-and-baseline-implementation-costs-i.e.-personnel-supplies-subsistence-costs-for-vaccinators-during-the-campaign.-c-estimated-cost-per-animal-vaccinated-under-a-willingness-to-pay-model-for-two-campaigns-examining-increasing-costs-charged-to-the-owner-with-estimated-costs-declining-due-to-cost-recovery-through-owner-payments-and-then-peaking-once-owners-report-to-be-no-longer-willing-to-pay-for-the-vaccine.-d-the-percent-reduction-in-number-of-animals-vaccinated-given-owners-willingness-to-pay.-the-curves-in-c-and-d-are-shown-based-on-the-overall-responses-on-willingness-to-pay-solid-line-from-both-moramanga-and-andasibe-and-the-responses-split-by-commune-dashed-and-dotted-lines.}}
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{/Users/mrajeev/Documents/Projects/mora_vax/figs/fig2} \caption{Comparing campaign costs and willingness to pay. A) Vaccine costs broken down by category and by year (colors). B) Overall cost per animal vaccinated for the two campaign years, split by direct costs of vaccination per animal (i.e. vaccine, vaccination card, syringes) and baseline implementation costs (i.e. personnel, supplies, subsistence costs for vaccinators during the campaign). C) Estimated cost per animal vaccinated under a willingness to pay model for two campaigns examining increasing costs charged to the owner, with estimated costs declining due to cost recovery through owner payments and then peaking once owners report to be no longer willing to pay for the vaccine. D) The percent reduction in number of animals vaccinated given owners willingness to pay. The curves in C and D are shown based on the overall responses on willingness to pay (solid line) from both Moramanga and Andasibe, and the responses split by Commune (dashed and dotted lines).}\label{fig:fig2}
+\end{figure}
 
 \hypertarget{comparing-campaign-coverage-estimates}{%
 \subsection{Comparing campaign coverage
@@ -664,66 +693,37 @@ were similar to the HDRs calculated from the household survey (15.7 -
 32.8 for Andasibe compared to 21.7 in a rural community and 17.8 - 21.2
 for Moramanga Ville compared to 17.2 in an urban community).
 
-\includegraphics[width=0.8\linewidth]{/Users/mrajeev/Documents/Projects/mora_vax/figs/fig3}
-
-\hypertarget{figure-3.-estimates-of-coverage-achieved-by-the-2018-and-2019-campaigns.-a-the-commune-level-numbers-of-dogs-vaccinated-size-of-points-and-the-associated-coverage-estimates-color-of-points-for-the-year-2018-estimated-using-post-vaccination-transects-and-2019-estimated-using-a-human-to-dog-ratio-hdr-of-19.5-based-on-a-recent-household-survey-in-the-moramanga-district.-the-inset-shows-the-location-of-the-moramanga-district-in-madagascar.-b-a-comparison-of-coverage-estimates-by-location-and-by-method-of-estimation-post-vaccination-transects-vs.-hdr-based-estimates-for-the-transect-based-estimates-the-line-range-shows-the-95-exact-binomial-confidence-interval-while-for-the-hdr-based-estimates-the-line-range-shows-the-range-of-coverage-estimates-assuming-an-hdr-range-of-8---25-according-to-estimates-from-the-literature.}{%
-\paragraph{\texorpdfstring{\textbf{Figure 3. Estimates of coverage
-achieved by the 2018 and 2019 campaigns}. \emph{A) The commune level
-numbers of dogs vaccinated (size of points) and the associated coverage
-estimates (color of points) for the year 2018 (estimated using
-post-vaccination transects) and 2019 (estimated using a human-to-dog
-ratio (HDR) of 19.5, based on a recent household survey in the Moramanga
-District). The inset shows the location of the Moramanga District in
-Madagascar. B) A comparison of coverage estimates by location and by
-method of estimation (post-vaccination transects vs.~HDR based
-estimates); for the transect based estimates, the line range shows the
-95\% exact binomial confidence interval while for the HDR based
-estimates, the line range shows the range of coverage estimates assuming
-an HDR range of 8 - 25 according to estimates from the
-literature.}}{Figure 3. Estimates of coverage achieved by the 2018 and 2019 campaigns. A) The commune level numbers of dogs vaccinated (size of points) and the associated coverage estimates (color of points) for the year 2018 (estimated using post-vaccination transects) and 2019 (estimated using a human-to-dog ratio (HDR) of 19.5, based on a recent household survey in the Moramanga District). The inset shows the location of the Moramanga District in Madagascar. B) A comparison of coverage estimates by location and by method of estimation (post-vaccination transects vs.~HDR based estimates); for the transect based estimates, the line range shows the 95\% exact binomial confidence interval while for the HDR based estimates, the line range shows the range of coverage estimates assuming an HDR range of 8 - 25 according to estimates from the literature.}}\label{figure-3.-estimates-of-coverage-achieved-by-the-2018-and-2019-campaigns.-a-the-commune-level-numbers-of-dogs-vaccinated-size-of-points-and-the-associated-coverage-estimates-color-of-points-for-the-year-2018-estimated-using-post-vaccination-transects-and-2019-estimated-using-a-human-to-dog-ratio-hdr-of-19.5-based-on-a-recent-household-survey-in-the-moramanga-district.-the-inset-shows-the-location-of-the-moramanga-district-in-madagascar.-b-a-comparison-of-coverage-estimates-by-location-and-by-method-of-estimation-post-vaccination-transects-vs.-hdr-based-estimates-for-the-transect-based-estimates-the-line-range-shows-the-95-exact-binomial-confidence-interval-while-for-the-hdr-based-estimates-the-line-range-shows-the-range-of-coverage-estimates-assuming-an-hdr-range-of-8---25-according-to-estimates-from-the-literature.}}
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{/Users/mrajeev/Documents/Projects/mora_vax/figs/fig3} \caption{Estimates of coverage achieved by the 2018 and 2019 campaigns. A) The commune level numbers of dogs vaccinated (size of points) and the associated coverage estimates (color of points) for the year 2018 (squares, estimated using post-vaccination transects) and 2019 (circles, estimated using a human-to-dog ratio (HDR) of 19.5, based on a recent household survey in the Moramanga District). The inset shows the location of the Moramanga District in Madagascar. B) A comparison of coverage estimates by location and by method of estimation (shape of points correspond to post-vaccination transects vs. HDR based estimates); for the transect based estimates, the line range shows the 95\% exact binomial confidence interval while for the HDR based estimates, the line range shows the range of coverage estimates assuming an HDR range of 8 - 25 according to estimates from the literature.}\label{fig:fig3}
+\end{figure}
 
 \hypertarget{dog-demography-and-simulating-vaccination-strategies}{%
 \subsection{Dog demography and simulating vaccination
 strategies}\label{dog-demography-and-simulating-vaccination-strategies}}
 
-Demographic data from vaccinated dogs shows a population pyramid with a
+Demographic data from vaccinated dogs showed a population pyramid with a
 large base, indicative of a fast-growing population, and with a male
 bias (approximately 60\% male, Fig 4A). We fit these data to an
 age-structured model, and were able to generate parameter estimates
 which resulted in stable age distributions consistent with the data (Fig
-4B). We filter to parameter estimates that are consistent with a growing
-population resulting in mean adult annual survival probability of 0.77
-(95\% quantile: 0.59 - 0.97). We use estimates of fertility (on average
-1.09, 95\% quantile: 0.82 - 1.41) to back-calculate pup survival, which
-ranges from 0.34 - 0.68. We find that given these demographic
-parameters, annual campaigns that target dogs of all ages result in
-rapid decline in vaccination coverage between campaigns, largely due to
-rapid turnover of the dog population (compared to the impact of waning
-immunity assuming a discrete 3 year period of vaccine immunity, evident
-in the additional dip at year 3, fig 4D). Continuously targeting 70\% of
-the puppy population for vaccination, while unable to achieve the peak
-coverage, consistently reaches coverage of about 50\% of the dog
-population. A combined strategy maintains the highest and most
-temporally stable levels of coverage close to the target of 70\%.
+4B). We filtered to parameter estimates that are consistent with a
+growing population resulting in mean adult annual survival probability
+of 0.77 (95\% quantile: 0.59 - 0.97). We used estimates of fertility (on
+average 1.09, 95\% quantile: 0.82 - 1.41) to back-calculate pup
+survival, which ranged from 0.34 - 0.68. We found that given these
+demographic parameters, annual campaigns that target dogs of all ages
+result in rapid decline in vaccination coverage between campaigns,
+largely due to rapid turnover of the dog population (compared to the
+impact of waning immunity assuming a discrete 3 year period of vaccine
+immunity, evident in the additional dip at year 3, fig 4D). Continuously
+targeting 70\% of the puppy population for vaccination, while unable to
+achieve the peak coverage, consistently reached coverage of about 50\%
+of the dog population. A combined strategy maintains the highest and
+most temporally stable levels of coverage close to the target of 70\%.
 
-\includegraphics[width=0.8\linewidth]{/Users/mrajeev/Documents/Projects/mora_vax/figs/fig4}
-
-\hypertarget{figure-4.-dog-demography-and-implications-for-campaign-strategies.-a-the-age-pyramid-for-vaccinated-dogs-by-sex.-b-bootstrapped-estimates-of-the-proportion-of-the-population-in-each-age-class-from-the-age-data-dark-blue-compared-to-estimates-from-the-demographic-models-fit-to-these-data-light-blue.-c-parameter-estimates-for-annual-fertility-rates-and-adult-survival-probability-with-estimates-highlighted-in-orange-showing-the-parameter-estimates-which-result-in-positive-population-growth.-b-simulated-vaccination-coverage-n-1000-using-the-demographic-parameters-from-c-in-a-hypothetical-commune-with-1000-dogs-for-three-different-campaign-strategies-1-annual-vaccination-campaigns-targeting-dogs-of-all-ages-purple-2-routine-vaccination-of-puppies-at-3-months-of-age-and-3-a-combined-strategy-with-campaigns-annually-and-continuous-puppy-vaccination-in-between-campaigns.}{%
-\paragraph{\texorpdfstring{\textbf{Figure 4. Dog demography and
-implications for campaign strategies}. \emph{A) The age pyramid for
-vaccinated dogs by sex. B) Bootstrapped estimates of the proportion of
-the population in each age class from the age data (dark blue) compared
-to estimates from the demographic models fit to these data (light blue).
-C) Parameter estimates for annual fertility rates and adult survival
-probability, with estimates highlighted in orange showing the parameter
-estimates which result in positive population growth. B) Simulated
-vaccination coverage (N = 1000) using the demographic parameters from
-(C) in a hypothetical commune with 1000 dogs for three different
-campaign strategies: 1) annual vaccination campaigns targeting dogs of
-all ages (purple), 2) routine vaccination of puppies at 3 months of age,
-and 3) a combined strategy with campaigns annually and continuous puppy
-vaccination in between
-campaigns.}}{Figure 4. Dog demography and implications for campaign strategies. A) The age pyramid for vaccinated dogs by sex. B) Bootstrapped estimates of the proportion of the population in each age class from the age data (dark blue) compared to estimates from the demographic models fit to these data (light blue). C) Parameter estimates for annual fertility rates and adult survival probability, with estimates highlighted in orange showing the parameter estimates which result in positive population growth. B) Simulated vaccination coverage (N = 1000) using the demographic parameters from (C) in a hypothetical commune with 1000 dogs for three different campaign strategies: 1) annual vaccination campaigns targeting dogs of all ages (purple), 2) routine vaccination of puppies at 3 months of age, and 3) a combined strategy with campaigns annually and continuous puppy vaccination in between campaigns.}}\label{figure-4.-dog-demography-and-implications-for-campaign-strategies.-a-the-age-pyramid-for-vaccinated-dogs-by-sex.-b-bootstrapped-estimates-of-the-proportion-of-the-population-in-each-age-class-from-the-age-data-dark-blue-compared-to-estimates-from-the-demographic-models-fit-to-these-data-light-blue.-c-parameter-estimates-for-annual-fertility-rates-and-adult-survival-probability-with-estimates-highlighted-in-orange-showing-the-parameter-estimates-which-result-in-positive-population-growth.-b-simulated-vaccination-coverage-n-1000-using-the-demographic-parameters-from-c-in-a-hypothetical-commune-with-1000-dogs-for-three-different-campaign-strategies-1-annual-vaccination-campaigns-targeting-dogs-of-all-ages-purple-2-routine-vaccination-of-puppies-at-3-months-of-age-and-3-a-combined-strategy-with-campaigns-annually-and-continuous-puppy-vaccination-in-between-campaigns.}}
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{/Users/mrajeev/Documents/Projects/mora_vax/figs/fig4} \caption{Dog demography and implications for campaign strategies. A) The age pyramid for vaccinated dogs by sex. B) Bootstrapped estimates of the proportion of the population in each age class from the age data (dark blue) compared to estimates from the demographic models fit to these data (light blue). C) Parameter estimates for annual fertility rates and adult survival probability, with estimates highlighted in orange showing the parameter estimates which result in positive population growth. D) Simulated vaccination coverage (N = 1000) using the demographic parameters from (C) in a hypothetical commune with 1000 dogs for three different campaign strategies: 1) annual vaccination campaigns targeting dogs of all ages (purple), 2) routine vaccination of puppies at 3 months of age, and 3) a combined strategy with campaigns annually and continuous puppy vaccination in between campaigns.}\label{fig:fig4}
+\end{figure}
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
@@ -745,71 +745,68 @@ in the rural setting of Andasibe, the static point campaign strategy
 achieved lower coverage, reflecting less accessible, hard-to-reach human
 communities in this location. Based on the lessons learned through these
 campaigns, in particular the observation that puppies were relatively
-easy to handle for vaccinators and owners, we find that continuous
-vaccination targeting puppies in particular may be an effective way to
-maintain vaccination coverage levels given high turnover in dog
-populations.
+easy to handle for vaccinators and owners (fig 2), we find that
+continuous vaccination targeting puppies in particular may be an
+effective way to maintain vaccination coverage levels given high
+turnover in dog populations.
 
 There were several limitations to our analyses. Owner reports of
 willingness to pay, age of animals, and distance travelled to the
-vaccination point likely all suffer from recall bias and uncertainty,
-whilst willingness to pay studies are often overestimates of observed
-practice \citep{birhane2016}. In addition, the age of animals brought to
+vaccination point likely all suffer from recall bias and uncertainty.
+Owner based estimates of age are very coarse, but given the broad age
+classes we use, likely are of sufficient precision to capture broad
+patterns in age structure. However,, the age of animals brought to
 vaccination points may not be representative of the age structure of the
-underlying population, and other work has shown that in general puppies
+underlying population. Previous work has shown that in general puppies
 (individuals \textless{} 1 year) tend to have lower vaccination coverage
 than adults
 \citep{arief2016, sanchez-soriano2020, mazeri2019, minyoo2015}.
 Additionally, we did not vaccinate animals less than 1 month of age,
 which may explain why we sometimes estimated declining populations (as
 part of the age class of 0-1 years was not captured by the data).
-However, our analyses based on these data are consistent with previous
-findings from SSA that demonstrate male-biased populations, skewed
-towards puppies, and with high mortality in the first year of life
-\citep{czupryna2016, taylor2017}. Studies have also shown that charging
-fees for vaccines can greatly reduce the efficacy of campaigns and are a
-significant barrier to vaccination for owners
-\citep{schildecker2016, yoak2021, barbosacosta2020}. Similarly, distance
-to campaign points has been identified as a barrier to vaccination, and
-in most cases owners report traveling less than 1km to reach a
-vaccination point \citep{mazeri2018barriers, mazeri2019}. We used HDRs,
-which can be sensitive to underlying estimates of the human population
-and the spatial scale of estimation
+Despite these issues, our analyses based on these data are consistent
+with previous findings from sub-Saharan Africa that demonstrate
+male-biased populations, skewed towards puppies, and with high mortality
+in the first year of life \citep{czupryna2016, taylor2017}.
+
+Willingness to pay studies have been done previously for rabies
+vaccination, and have consistently shown that cost recovery is minimal
+given the price dog owners are willing to pay for vaccination
+\citep{schildecker2016, durr2008, sambo2014, barbosacosta2020, yoak2021}.
+In fact, owners generally overstate the amounts they are willing to pay
+when compared to observed practice \citep{birhane2016}, and thus our
+analysis could underestimate the impact of charging owners on coverage
+reductions. Similarly, distance to campaign points has been identified
+as a barrier to vaccination, and in most cases owners report traveling
+less than 1km to reach a vaccination point
+\citep{mazeri2018barriers, mazeri2019}. In the context of Madagascar,
+these findings are of particular relevance, as animal vaccinations can
+be mandated by the government, but at cost to animal owners (for
+example, for the anthrax vaccine in cattle). Importantly, dog owners in
+the district do believe that vaccination can prevent rabies transmission
+\citep{leblancclaireRabiesMadagascarThreepronged2019}, and given the
+observed demand during the campaigns, are amenable to vaccination of
+their animals. Our results confirm that implementing dog rabies
+vaccinations as a public health measure and removing as many barriers as
+possible to dog vaccination will be important to the success of control
+programs.
+
+We used HDRs, which can be sensitive to underlying estimates of the
+human population and the spatial scale of estimation
 \citep{sambo2018estimating, sambo2017}. However, we used HDR estimates
 from a recent household survey study in the district, and found these to
 give coverage estimates consistent with those from post-vaccination
 transects. Finally, in our vaccination model, we make several
-simplifying assumptions: we assume that immunity wanes after three years
-(simulating vaccination with a long-lasting vaccine such as Nobivac),
-but we also assume that vaccinated dogs that survive to the following
-year are revaccinated in subsequent campaigns (effectively assuming
-boosting per manufacturer recommendations for Rabisin). Overall waning
-vaccinal immunity plays a lesser role in declining vaccination coverage
-given the high population turnover in this context. In our
-age-structured models, we also do not account for population carrying
-capacity, which likely overestimates growth of the dog population.
-
-Our estimates of costs per animal vaccinated are in line with recent
-estimates from other countries \citep{undurraga2020}, although we likely
-underestimate costs given the donation of time and resources by the
-organizations and individuals involved (i.e.~costs associated with
-international volunteers including airfare and visa costs as well as
-costs of transportation donated to the campaign). We also did not
-include costs of pre-exposure prophylaxis as all of our volunteers and
-vaccinators had been vaccinated prior to the campaigns. Both pre- and
-post-exposure vaccines should however always be readily available for
-vaccinators and should be included in vaccination program budgets. While
-the volunteer-led effort resulted in significant financial and personnel
-resources being devoted to the campaign, costs were higher overall and
-per animal vaccinated. In addition, NGO and volunteer based campaigns
-may be difficult to sustain given unpredictable funding, time
-commitments, and turnover in staff \citep{ferguson2020}. Dog vaccination
-delivered through the District Veterinarian was less costly, with the
-majority of the costs directly related to vaccination. Although we
-included costs of implementing transect based coverage estimates, these
-were negligible (less than 0.10 USD per dog vaccinated), in line with
-recent studies which have shown this strategy is a cheap and effective
-way to estimate coverage \citet{sambo2017}; \citet{gibson2015}{]}.
+simplifying assumptions: we assume that the protective effect of
+vaccination is lost after three years (simulating vaccination with a
+long-lasting vaccine such as Nobivac), but we also assume that
+vaccinated dogs that survive to the following year are revaccinated in
+subsequent campaigns (effectively assuming boosting per manufacturer
+recommendations for Rabisin). Overall loss of vaccine induced immunity
+plays a lesser role in declining vaccination coverage given the high
+population turnover in this context. In our age-structured models, we
+also do not account for population carrying capacity, likely resulting
+in overestimates of growth of the dog population.
 
 One key aspect we do not consider is potential feedback loops between
 vaccination and demography. Estimates of the effects of vaccination on
@@ -824,49 +821,71 @@ increasing veterinary services could all complement vaccination efforts,
 but have not been demonstrated to result in meaningful rabies control
 without parallel dog vaccination \citep{taylor2017}.
 
+Our estimates of costs per animal vaccinated are in line with recent
+estimates from other countries \citep{undurraga2020}, although these are
+likely underestimates given the donation of time and resources by the
+organizations and individuals involved (i.e.~costs associated with
+international volunteers including airfare and visa costs as well as
+costs of transportation donated to the campaign). We also did not
+include costs of pre-exposure prophylaxis as all of our volunteers and
+vaccinators had been vaccinated prior to the campaigns. Both pre- and
+post-exposure vaccines should however always be readily available for
+vaccinators and should be included in vaccination program budgets. While
+the volunteer-led effort resulted in significant financial and personnel
+resources being devoted to the campaign, costs were higher overall and
+per animal vaccinated. In addition, NGO and volunteer based campaigns
+may be difficult to sustain given unpredictable funding, time
+commitments, and turnover in staff \citep{ferguson2020}. For volunteer
+based efforts, focusing on local volunteers (i.e.~veterinary students)
+may be a more cost-effective strategy. However similar to international
+volunteers, volunteers require subsistence during vaccination campaigns
+when not based in the communities where they study or live. Although we
+included costs of implementing transect based coverage estimates, these
+were negligible (less than 0.10 USD per dog vaccinated), in line with
+recent studies which have shown this strategy is a cheap and effective
+way to estimate coverage \citet{sambo2017}; \citet{gibson2015}{]}.
+
+Dog vaccination delivered through the District Veterinarian was less
+costly, with the majority of the costs directly related to vaccination.
 In settings with high dog ownership, moving towards community-based
 vaccination strategies could be an effective way to achieve sufficient
 and consistent coverage, particularly in hard-to-reach communities.
-During our campaign, we found that puppies at approximately 3 months old
-were easy to handle for both vaccinators and owners. Puppy vaccination
-could be carried out by local officials embedded in communities (along
-the lines of community health workers), especially given recent findings
-on thermotolerance of rabies vaccines and locally manufactured methods
-for maintaining temperatures required for sustained vaccine storage (up
-to 3 months) \citep{lugelo2020}. Incentivizing vaccinators appropriately
-will be a key challenge, as currently providing no-cost rabies
-vaccination is not seen as part of routine duties for district
-veterinarians or for livestock officers. Implementing dog vaccination
-alongside government mandated livestock vaccination campaigns may also
-be a strategy to scale up vaccination efforts at relatively low-cost.
-Expanding veterinary services across the country and relieving financial
-pressures on veterinarians and animal health workers through appropriate
-compensation could greatly improve veterinary services across Madagascar
-\citep{mondiale2017evaluation}. For volunteer based efforts, focusing on
-local volunteers (i.e.~veterinary students) may be a more cost-effective
-strategy. However similar to international volunteers, volunteers
-require subsistence during vaccination campaigns when not based in the
-communities where they study or live.
+During our campaign, we found that puppies (aged approximately 1 - 6
+months) were easier to handle compared to adult dogs for both
+vaccinators and owners. Puppy vaccination could be carried out by local
+officials embedded in communities (along the lines of community health
+workers who may not have full veterinary qualifications), especially
+given recent findings on thermotolerance of rabies vaccines and locally
+manufactured methods for maintaining temperatures required for sustained
+vaccine storage (up to 3 months) \citep{lugelo2020}. Incentivizing
+vaccinators appropriately will be a key challenge, as currently
+providing no-cost rabies vaccination is not seen as part of routine
+duties for district veterinarians or for livestock officers.
+Implementing dog vaccination alongside government mandated livestock
+vaccination campaigns may also be a strategy to scale up vaccination
+efforts at relatively low-cost. Expanding veterinary services across the
+country and relieving financial pressures on veterinarians and animal
+health workers through appropriate compensation could greatly improve
+veterinary services across Madagascar \citep{mondiale2017evaluation}.
 
-Overall, our results suggest that dog vaccination is a feasible and
-effective strategy for controlling canine rabies in Madagascar. However,
-rabies vaccination must be recognized as a public good. Strategies to
-remove barriers for dog owners and to incentivize veterinarians and
-other animal health workers to implement vaccination will be key to
-long-term campaign success. Borrowing strategies from human vaccination
-efforts, i.e.~deploying community health workers, could be a way to
-deliver vaccinations and reduce costs in the hardest-to-reach
-communities. In addition, refining vaccination strategies to local
-contexts and using improved tools and systems, such as mobile phone
-based data collection, could improve efficacy and lower costs of
-campaigns \citep{mazeri2021, gibson2016a}. To monitor the success of
-these campaigns, it will be critical to develop efficient and effective
-methods to estimate vaccination coverage and to measure their impact on
-reducing rabies incidence through robust surveillance
-\citep{lushasi2020, ferguson2020}. With limited chances for
-reintroduction from outside the island, Madagascar could be a model for
-rabies elimination, and strategies that tackle the context specific
-challenges could be a path forward for the country to reach ZeroBy30.
+Overall, our results suggest that dog vaccination is a feasible strategy
+for controlling canine rabies in Madagascar. However, rabies vaccination
+must be recognized as a public good. Removing barriers for dog owners
+and incentivizing veterinarians and other animal health workers to
+implement vaccination will be key to long-term campaign success.
+Borrowing strategies from human vaccination efforts, i.e.~deploying
+community health workers, could be a way to deliver vaccinations and
+reduce costs in the hardest-to-reach communities. In addition, refining
+vaccination strategies to local contexts and using improved tools and
+systems, such as mobile phone based data collection, could improve
+efficacy and coverage levels reached \citep{mazeri2021, gibson2016a}. To
+monitor the success of these campaigns, it will be critical to develop
+efficient and effective methods to estimate vaccination coverage and to
+measure their impact on reducing rabies incidence through robust
+surveillance \citep{lushasi2020, ferguson2020}. With limited chances for
+reintroduction from outside the island, implementing community based
+mass dog vacciantion campaigns could be a path forward for Madagascar to
+reach ZeroBy30.
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %% optional
@@ -900,6 +919,15 @@ with Princeton University and the Mad Dog Initiative who tragically
 passed away in a car accident before this research was published.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\authorcontributions{Conceptualization, MR, GTE, MA, JN, ZF, TS, JL and
+KV; Data curation, CF, MR, ZR, CH, RR, AF, AY, FD, JL and TR; Formal
+analysis, CF, MR, AY and CJEM; Funding acquisition, MR, ZF, TS, JL, CJEM
+and KV; Investigation, MR, ZR, CH, RR, AF, TAC and TR; Methodology, MR,
+ZR, CH, GTE, MA, AF, AY, ZF, JL, TR, KH, CJEM and KV; Project
+administration, ZR, CH, RR, GTE, MA, NPR, JN, AF, FD, TAC, ZF, TS, JL,
+TR and KV; Supervision, GTE, MA, NPR, JN, ZF, KH, CJEM and KV;
+Visualization, MR; Writing---original draft, CF and KV; Writing---review
+\& editing, CF, MR, ZR, CH, GTE, TAC, ZF, KH, CJEM and KV.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \conflictsofinterest{The authors declare no conflict of interest. The
@@ -910,6 +938,9 @@ or in the decision to publish the results.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% optional
 
+
+\end{paracol}
+\reftitle{References}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Citations and References in Supplementary files are permitted provided that they also appear in the reference list here.
@@ -950,3 +981,4 @@ or in the decision to publish the results.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
+

@@ -122,7 +122,7 @@ fig3A <-
   theme_map() +
   theme(strip.text = element_text(face = "bold", hjust = 0.45)) +
   scale_fill_distiller(name = "Cov.\n estimate", direction = 1) +
-  scale_shape_manual(values = c(21, 23), guide = "none") +
+  scale_shape_manual(values = c(21, 22), guide = "none") +
   scale_size(name = "No. dogs\n vaccinated", 
              breaks = c(50, 150, 400, 1000)) +
   labs(tag = "A") +
@@ -157,8 +157,9 @@ fig3B <-
                       ymin = scales::squish(cov_est_lower, c(0, 1)), 
                       ymax = scales::squish(cov_est_upper, c(0, 1)), 
                       shape = type, color = factor(year)), 
-                  position = position_dodge(width = 0.2)) +
-  scale_shape_manual(values = c(16, 18), name = "Estimate type", 
+                  position = position_dodge(width = 0.25),
+                  fatten = 5) +
+  scale_shape_manual(values = c(16, 15), name = "Estimate type", 
                      labels = c("HDR", "Transect")) +
   scale_color_brewer(palette = "Dark2", name = "Year") +
   scale_size_identity() +
