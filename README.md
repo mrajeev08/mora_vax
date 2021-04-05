@@ -27,7 +27,7 @@ elimination.
 
 ## Repository structure
 
-All processed data are in [data/](data), and raw data and the processing script are in[data-raw/](data-raw), although note that not all cost and location data have been shared. All analyses and functions are in [R/](R). 
+All processed data are in [data/](data), and raw geospatial data and the processing script are in[data-raw/](data-raw), although note that not all cost data have been shared. All analyses and functions are in [R/](R). 
 
 All figures and tables are in figs/ and analysis outputs are in out/.
 
