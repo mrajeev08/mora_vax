@@ -10,3 +10,6 @@ paper/cover_letter_initial
 data-raw/Resultat*
 data-raw/tad_photos
 paper/*.zip
+paper/drafts
+paper/logo*.pdf
+paper/*.log
