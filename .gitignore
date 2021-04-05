@@ -4,7 +4,6 @@
 .Ruserdata
 renv
 .Rapp.history
-# don't commit drafts
 drafts 
 data-raw/cost_data_not_public
 paper/cover_letter_initial
