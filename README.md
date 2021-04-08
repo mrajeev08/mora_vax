@@ -26,8 +26,9 @@ vaccination as a public good will be required to move the country towards
 elimination. 
 
 ## Repository structure
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4663084.svg)](https://doi.org/10.5281/zenodo.4663084)
 
-All processed data are in [data/](data), and raw geospatial data and the processing script are in[data-raw/](data-raw), although note that not all cost data have been shared. All analyses and functions are in [R/](R). 
+All processed data are in [data/](data), and raw geospatial data and the processing script are in [data-raw/](data-raw), although note that not all cost data have been shared. All analyses and functions are in [R/](R). 
 
 All figures and tables are in figs/ and analysis outputs are in out/.
 
