@@ -1,6 +1,6 @@
 
 ages_to_class <- function(age_yrs, years_in_class = c(1, 1, 4, 1),
-                          sample = FALSE, N = 1000) {
+                          sample = FALSE) {
   
   years_grtr_eq <- cumsum(years_in_class) - years_in_class
   years_less <- cumsum(years_in_class)
@@ -12,7 +12,7 @@ ages_to_class <- function(age_yrs, years_in_class = c(1, 1, 4, 1),
   age_names[nclass] <- glue::glue("{years_grtr_eq[nclass]} +")
   
   if(sample) {
-    age_yrs <- sample(age_yrs[!is.na(age_yrs)], N, replace = TRUE)
+    age_yrs <- sample(age_yrs[!is.na(age_yrs)], sum(!is.na(age_yrs), replace = TRUE)
   }
   
   # group by age class
