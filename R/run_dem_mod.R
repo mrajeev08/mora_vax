@@ -38,7 +38,7 @@ set.seed(1334)
 n_by_age <- (replicate(100, 
                        ages_to_class(age_yrs = animals_age$age_mos/12, 
                                      years_in_class = c(1, 1, 4, 1),
-                                     sample = TRUE, N = 1000)))
+                                     sample = TRUE)))
 n_by_age <- split(n_by_age, rep(1:ncol(n_by_age), each = nrow(n_by_age)))
 
 # original data
